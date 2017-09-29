@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d2d/"
+         xmlns:_ad="http://ucds.cs.vu.nl/d2d/ad/ItemList#"
+>
+
+  <_ad:ItemList rdf:about="" _ad:maxItems="4"> <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
+
+    <_ad:header>
+      Current Projects
+    </_ad:header>
+
+    <_ad:hasItemSet>
+      <_ad:ItemSet rdf:about="#Projects">
+        <_ad:hasItem rdf:parseType="Collection">
+
+          <rdf:Description rdf:about="/d2d/a/projects/ControcuratorProject" />
+          <rdf:Description rdf:about="/d2d/a/projects/Dive" />
+          <rdf:Description rdf:about="/d2d/a/projects/CrowdTruth" />
+          <rdf:Description rdf:about="/d2d/a/projects/BiographyNet" />
+          <rdf:Description rdf:about="/d2d/a/projects/DutchShipsAndSailors" />
+
+        </_ad:hasItem>
+      </_ad:ItemSet>
+    </_ad:hasItemSet>
+
+    <d2d:prefRenderDef rdf:resource="/d2d/ard/ResearchProjectRendering#HomePage" />
+  </_ad:ItemList>
+
+</rdf:RDF>

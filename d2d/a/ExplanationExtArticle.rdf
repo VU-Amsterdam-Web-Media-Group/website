@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d2d/"
+         xmlns:_ad="http://example.d2dsite.net/d2d/ad/BasicArticle#"
+>
+
+  <_ad:BasicArticle rdf:about=""> <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
+
+    <_ad:header rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+        External Content
+    </_ad:header>
+
+    <_ad:subheader>
+        Placing articles by IRI
+    </_ad:subheader>
+
+    <_ad:content>
+      <![CDATA[
+        <p>The article below this one is hosted on the main d2d website. It is <a href="http://www.data2documents.org/#documentation" target="_blank">this article</a> which is placed using its <a href="http://www.data2documents.org/d2df/a/Documentation" target="_blank">resource IRI</a> and rendered using the default article rendering definition for this site. It is hosted on another domain, on a different physical server located at a different Web service provider.</p>
+      ]]>
+    </_ad:content>
+
+    <_ad:nested>
+
+    </_ad:nested>
+
+    <_ad:footer>
+      <![CDATA[]]>
+    </_ad:footer>
+
+  </_ad:BasicArticle>
+
+</rdf:RDF>
+
+
+
+
+
+
+

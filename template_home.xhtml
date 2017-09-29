@@ -1,0 +1,1303 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <!-- BEGIN HEAD -->
+
+    <head>
+        <base href="/" />
+
+        <meta charset="utf-8" />
+        <title>User Centric Data Science</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta content="" name="description" />
+        <meta content="" name="author" />
+        <!-- BEGIN GLOBAL MANDATORY STYLES -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700&amp;subset=all' rel='stylesheet' type='text/css' />
+        <link href="assets/plugins/socicon/socicon.css" rel="stylesheet" type="text/css" />
+        <link href="assets/plugins/bootstrap-social/bootstrap-social.css" rel="stylesheet" type="text/css" />
+        <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/plugins/animate/animate.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- END GLOBAL MANDATORY STYLES -->
+        <!-- BEGIN: BASE PLUGINS  -->
+        <link href="assets/plugins/revo-slider/css/settings.css" rel="stylesheet" type="text/css" />
+        <link href="assets/plugins/revo-slider/css/layers.css" rel="stylesheet" type="text/css" />
+        <link href="assets/plugins/revo-slider/css/navigation.css" rel="stylesheet" type="text/css" />
+        <link href="assets/plugins/cubeportfolio/css/cubeportfolio.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/plugins/owl-carousel/assets/owl.carousel.css" rel="stylesheet" type="text/css" />
+        <link href="assets/plugins/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+        <link href="assets/plugins/slider-for-bootstrap/css/slider.css" rel="stylesheet" type="text/css" />
+        <!-- END: BASE PLUGINS -->
+        <!-- BEGIN: PAGE STYLES -->
+        <link href="assets/plugins/ilightbox/css/ilightbox.css" rel="stylesheet" type="text/css" />
+        <!-- END: PAGE STYLES -->
+        <!-- BEGIN THEME STYLES -->
+        <link href="assets/base/css/plugins.css" rel="stylesheet" type="text/css" />
+        <link href="assets/base/css/components.css" id="style_components" rel="stylesheet" type="text/css" />
+        <link href="assets/base/css/themes/blue3.css" rel="stylesheet" id="style_theme" type="text/css" />
+        <link href="assets/base/css/custom.css" rel="stylesheet" type="text/css" />
+        <!-- END THEME STYLES -->
+        <link rel="shortcut icon" href="favicon.ico" />
+    </head>
+
+    <body class="c-layout-header-fixed c-layout-header-mobile-fixed" xmlns:d2d="http://rdfns.org/d2d/">
+
+      <d2d:Content>
+      <d2d:Template d2d:for="http://ucds.cs.vu.nl/d2d/ard/MainPageRendering#This">
+
+        <!-- BEGIN: LAYOUT/HEADERS/HEADER-1 -->
+        <!-- BEGIN: HEADER -->
+        <header class="c-layout-header c-layout-header-4 c-layout-header-default-mobile" data-minimize-offset="34">
+            <div class="c-navbar">
+                <div class="container">
+                    <!-- BEGIN: BRAND -->
+                    <div class="c-navbar-wrapper clearfix">
+                        <div class="c-brand c-pull-left">
+                            <a href="/" class="c-logo">
+                                <img src="images/ucds-logo.png" alt="VU User Centric Data Science" class="c-desktop-logo" />
+                                <img src="images/ucds-logo.png" alt="VU User Centric Data Science" class="c-desktop-logo-inverse" style="width: 500px;" />
+                                <img src="images/ucds-logo.png" alt="VU User Centric Data Science" class="c-mobile-logo" style="width: 500px;" />
+                            </a>
+                            <button class="c-hor-nav-toggler" type="button" data-target=".c-mega-menu">
+                                <span class="c-line"> </span>
+                                <span class="c-line"> </span>
+                                <span class="c-line"> </span>
+                            </button>
+                            <button class="c-topbar-toggler" type="button">
+                                <i class="fa fa-ellipsis-v"> </i>
+                            </button>
+                            <button class="c-search-toggler" type="button">
+                                <i class="fa fa-search"> </i>
+                            </button>
+<!--
+                            <button class="c-cart-toggler" type="button">
+                                <i class="icon-handbag"> </i>
+                                <span class="c-cart-number c-theme-bg">2</span>
+                            </button>
+-->
+                        </div>
+                        <!-- END: BRAND -->
+                        <!-- BEGIN: QUICK SEARCH -->
+                        <form class="c-quick-search" action="#">
+                            <input type="text" name="query" placeholder="Type to search..." value="" class="form-control" autocomplete="off" />
+                            <span class="c-theme-link">&#120;</span>
+                        </form>
+                        <!-- END: QUICK SEARCH -->
+
+                        <d2d:Field d2d:index="1">
+                          <!-- BEGIN: HOR NAV -->
+                          <!-- BEGIN: LAYOUT/HEADERS/MEGA-MENU -->
+                          <!-- BEGIN: MEGA MENU -->
+                          <!-- Dropdown menu toggle on mobile: c-toggler class can be applied to the link arrow or link itself depending on toggle mode -->
+                          <nav class="c-mega-menu c-pull-right c-mega-menu-light c-mega-menu-light-mobile c-fonts-uppercase c-fonts-bold">
+                            <d2d:Content>
+                            <d2d:Template d2d:for="http://ucds.cs.vu.nl/d2d/ard/MenuRendering#Menu">
+                              <ul class="nav navbar-nav c-theme-nav">
+                                <d2d:Field>
+                                  <d2d:Content>
+                                    <li class="c-active">
+                                        <a href="javascript:;" class="c-link dropdown-toggle">Home
+                                            <span class="c-arrow c-toggler"> </span>
+                                        </a>
+
+                                    </li>
+                                    <d2d:Template d2d:for="http://ucds.cs.vu.nl/d2d/ard/MenuRendering#MenuItem">
+                                      <li class="c-menu-type-classic">
+                                        <a href="[d2d:field d2d:index=2 /]" class="c-link dropdown-toggle main-menu-item"><d2d:Field d2d:index="1"><d2d:Content>Organisation</d2d:Content></d2d:Field>
+                                          <span class="c-arrow c-toggler"> </span>
+                                        </a>
+                                        <d2d:Field d2d:index="6">
+                                          <d2d:Content>
+                                            <d2d:Template d2d:for="http://ucds.cs.vu.nl/d2d/ard/MenuRendering#SubMenu">
+                                              <ul class="dropdown-menu c-menu-type-classic c-pull-left">
+                                                <d2d:Field>
+                                                  <d2d:Content>
+                                                    <d2d:Template d2d:for="http://ucds.cs.vu.nl/d2d/ard/MenuRendering#SubMenuItem">
+                                                      <li class="dropdown-submenu">
+                                                        <a href="[d2d:field d2d:index=2 /]" class="main-menu-item"><d2d:Field d2d:index="1"><d2d:Content>About User Centric Data Science</d2d:Content></d2d:Field>
+                                                            <span class="c-arrow c-toggler"> </span>
+                                                        </a>
+                                                        <d2d:Field d2d:index="6" />
+                                                      </li>
+                                                    </d2d:Template>
+                                                    <li class="dropdown-submenu">
+                                                        <a href="#">People
+                                                            <span class="c-arrow c-toggler"> </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="dropdown-submenu">
+                                                        <a href="javascript:;">Partners
+                                                            <span class="c-arrow c-toggler"> </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="dropdown-submenu">
+                                                        <a href="#">Contact
+                                                            <span class="c-arrow c-toggler"> </span>
+                                                        </a>
+                                                    </li>
+                                                  </d2d:Content>
+                                                </d2d:Field>
+                                              </ul>
+                                            </d2d:Template>
+                                          </d2d:Content>
+                                        </d2d:Field>
+                                      </li>
+                                    </d2d:Template>
+                                    <li class="c-menu-type-classic">
+                                        <a href="javascript:;" class="c-link dropdown-toggle">Research
+                                            <span class="c-arrow c-toggler"> </span>
+                                        </a>
+                                        <ul class="dropdown-menu c-menu-type-classic c-pull-left">
+                                            <li class="dropdown-submenu">
+                                                <a href="javascript:;">Projects
+                                                    <span class="c-arrow c-toggler"> </span>
+                                                </a>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a href="#">Publications
+                                                    <span class="c-arrow c-toggler"> </span>
+                                                </a>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a href="javascript:;">Conferences
+                                                    <span class="c-arrow c-toggler"> </span>
+                                                </a>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a href="#">Software and Demo's
+                                                    <span class="c-arrow c-toggler"> </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="c-menu-type-classic">
+                                        <a href="javascript:;" class="c-link dropdown-toggle">Education
+                                            <span class="c-arrow c-toggler"> </span>
+                                        </a>
+                                        <ul class="dropdown-menu c-menu-type-classic c-pull-left">
+                                            <li class="dropdown-submenu">
+                                                <a href="javascript:;">Courses
+                                                    <span class="c-arrow c-toggler"> </span>
+                                                </a>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a href="#">Student Projects
+                                                    <span class="c-arrow c-toggler"> </span>
+                                                </a>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a href="javascript:;">Student Profiles
+                                                    <span class="c-arrow c-toggler"> </span>
+                                                </a>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a href="#">Project Reports
+                                                    <span class="c-arrow c-toggler"> </span>
+                                                </a>
+                                            </li>
+                                            <li class="dropdown-submenu">
+                                                <a href="#">Internships
+                                                    <span class="c-arrow c-toggler"> </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+
+
+    <!--
+                                    <li class="c-cart-toggler-wrapper">
+                                        <a href="#" class="c-btn-icon c-cart-toggler">
+                                            <i class="icon-handbag c-cart-icon"> </i>
+                                            <span class="c-cart-number c-theme-bg">2</span>
+                                        </a>
+                                    </li>
+                                    <li class="c-quick-sidebar-toggler-wrapper">
+                                        <a href="#" class="c-quick-sidebar-toggler">
+                                            <span class="c-line"> </span>
+                                            <span class="c-line"> </span>
+                                            <span class="c-line"> </span>
+                                        </a>
+                                    </li>
+    -->
+                                  </d2d:Content>
+                                </d2d:Field>
+
+                                <li class="c-search-toggler-wrapper">
+                                    <a href="#" class="c-btn-icon c-search-toggler">
+                                        <i class="fa fa-search"> </i>
+                                    </a>
+                                </li>
+
+                              </ul>
+                            </d2d:Template>
+                            </d2d:Content>
+                          </nav>
+                          <!-- END: MEGA MENU -->
+                          <!-- END: LAYOUT/HEADERS/MEGA-MENU -->
+                          <!-- END: HOR NAV -->
+                        </d2d:Field>
+                    </div>
+                    <!-- BEGIN: LAYOUT/HEADERS/QUICK-CART -->
+                    <!-- BEGIN: CART MENU - - >
+                    <div class="c-cart-menu">
+                        <div class="c-cart-menu-title">
+                            <p class="c-cart-menu-float-l c-font-sbold">2 item(s)</p>
+                            <p class="c-cart-menu-float-r c-theme-font c-font-sbold">$79.00</p>
+                        </div>
+                        <ul class="c-cart-menu-items">
+                            <li>
+                                <div class="c-cart-menu-close">
+                                    <a href="#" class="c-theme-link">x</a>
+                                </div>
+                                <img src="assets/base/img/content/shop2/24.jpg" />
+                                <div class="c-cart-menu-content">
+                                    <p>1 x
+                                        <span class="c-item-price c-theme-font">$30</span>
+                                    </p>
+                                    <a href="shop-product-details-2.html" class="c-item-name c-font-sbold">Winter Coat</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="c-cart-menu-close">
+                                    <a href="#" class="c-theme-link">x</a>
+                                </div>
+                                <img src="assets/base/img/content/shop2/12.jpg" />
+                                <div class="c-cart-menu-content">
+                                    <p>1 x
+                                        <span class="c-item-price c-theme-font">$30</span>
+                                    </p>
+                                    <a href="shop-product-details.html" class="c-item-name c-font-sbold">Sports Wear</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="c-cart-menu-footer">
+                            <a href="shop-cart.html" class="btn btn-md c-btn c-btn-square c-btn-grey-3 c-font-white c-font-bold c-center c-font-uppercase">View Cart</a>
+                            <a href="shop-checkout.html" class="btn btn-md c-btn c-btn-square c-theme-btn c-font-white c-font-bold c-center c-font-uppercase">Checkout</a>
+                        </div>
+                    </div>
+                    < ! - - END: CART MENU -->
+                    <!-- END: LAYOUT/HEADERS/QUICK-CART -->
+                </div>
+            </div>
+        </header>
+        <!-- END: HEADER -->
+        <!-- END: LAYOUT/HEADERS/HEADER-1 -->
+        <!-- BEGIN: CONTENT/USER/FORGET-PASSWORD-FORM -->
+        <div class="modal fade c-content-login-form" id="forget-password-form" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content c-square">
+                    <div class="modal-header c-no-border">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&#120;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h3 class="c-font-24 c-font-sbold">Password Recovery</h3>
+                        <p>To recover your password please fill in your email address</p>
+                        <form>
+                            <div class="form-group">
+                                <label for="forget-email" class="hide">Email</label>
+                                <input type="email" class="form-control input-lg c-square" id="forget-email" placeholder="Email" /> </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn c-theme-btn btn-md c-btn-uppercase c-btn-bold c-btn-square c-btn-login">Submit</button>
+                                <a href="javascript:;" class="c-btn-forgot" data-toggle="modal" data-target="#login-form" data-dismiss="modal">Back To Login</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer c-no-border">
+                        <span class="c-text-account">Don't Have An Account Yet ?</span>
+                        <a href="javascript:;" data-toggle="modal" data-target="#signup-form" data-dismiss="modal" class="btn c-btn-dark-1 btn c-btn-uppercase c-btn-bold c-btn-slim c-btn-border-2x c-btn-square c-btn-signup">Signup!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END: CONTENT/USER/FORGET-PASSWORD-FORM -->
+        <!-- BEGIN: CONTENT/USER/SIGNUP-FORM -->
+        <div class="modal fade c-content-login-form" id="signup-form" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content c-square">
+                    <div class="modal-header c-no-border">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&#120;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h3 class="c-font-24 c-font-sbold">Create An Account</h3>
+                        <p>Please fill in below form to create an account with us</p>
+                        <form>
+                            <div class="form-group">
+                                <label for="signup-email" class="hide">Email</label>
+                                <input type="email" class="form-control input-lg c-square" id="signup-email" placeholder="Email" /> </div>
+                            <div class="form-group">
+                                <label for="signup-username" class="hide">Username</label>
+                                <input type="email" class="form-control input-lg c-square" id="signup-username" placeholder="Username" /> </div>
+                            <div class="form-group">
+                                <label for="signup-fullname" class="hide">Fullname</label>
+                                <input type="email" class="form-control input-lg c-square" id="signup-fullname" placeholder="Fullname" /> </div>
+                            <div class="form-group">
+                                <label for="signup-country" class="hide">Country</label>
+                                <select class="form-control input-lg c-square" id="signup-country">
+                                    <option value="1">Country</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn c-theme-btn btn-md c-btn-uppercase c-btn-bold c-btn-square c-btn-login">Signup</button>
+                                <a href="javascript:;" class="c-btn-forgot" data-toggle="modal" data-target="#login-form" data-dismiss="modal">Back To Login</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END: CONTENT/USER/SIGNUP-FORM -->
+        <!-- BEGIN: CONTENT/USER/LOGIN-FORM -->
+        <div class="modal fade c-content-login-form" id="login-form" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content c-square">
+                    <div class="modal-header c-no-border">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&#120;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h3 class="c-font-24 c-font-sbold">Good Afternoon!</h3>
+                        <p>Let's make today a great day!</p>
+                        <form>
+                            <div class="form-group">
+                                <label for="login-email" class="hide">Email</label>
+                                <input type="email" class="form-control input-lg c-square" id="login-email" placeholder="Email" /> </div>
+                            <div class="form-group">
+                                <label for="login-password" class="hide">Password</label>
+                                <input type="password" class="form-control input-lg c-square" id="login-password" placeholder="Password" /> </div>
+                            <div class="form-group">
+                                <div class="c-checkbox">
+                                    <input type="checkbox" id="login-rememberme" class="c-check" />
+                                    <label for="login-rememberme" class="c-font-thin c-font-17">
+                                        <span> </span>
+                                        <span class="check"> </span>
+                                        <span class="box"> </span>
+                                        Remember Me
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn c-theme-btn btn-md c-btn-uppercase c-btn-bold c-btn-square c-btn-login">Login</button>
+                                <a href="javascript:;" data-toggle="modal" data-target="#forget-password-form" data-dismiss="modal" class="c-btn-forgot">Forgot Your Password ?</a>
+                            </div>
+                            <div class="clearfix">
+                                <div class="c-content-divider c-divider-sm c-icon-bg c-bg-grey c-margin-b-20">
+                                    <span>or signup with</span>
+                                </div>
+                                <ul class="c-content-list-adjusted">
+                                    <li>
+                                        <a class="btn btn-block c-btn-square btn-social btn-twitter">
+                                            <i class="fa fa-twitter"> </i> Twitter </a>
+                                    </li>
+                                    <li>
+                                        <a class="btn btn-block c-btn-square btn-social btn-facebook">
+                                            <i class="fa fa-facebook"> </i> Facebook </a>
+                                    </li>
+                                    <li>
+                                        <a class="btn btn-block c-btn-square btn-social btn-google">
+                                            <i class="fa fa-google"> </i> Google </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer c-no-border">
+                        <span class="c-text-account">Don't Have An Account Yet ?</span>
+                        <a href="javascript:;" data-toggle="modal" data-target="#signup-form" data-dismiss="modal" class="btn c-btn-dark-1 btn c-btn-uppercase c-btn-bold c-btn-slim c-btn-border-2x c-btn-square c-btn-signup">Signup!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END: CONTENT/USER/LOGIN-FORM -->
+        <!-- BEGIN: LAYOUT/SIDEBARS/QUICK-SIDEBAR -->
+
+        <!-- END: LAYOUT/SIDEBARS/QUICK-SIDEBAR -->
+        <!-- BEGIN: PAGE CONTAINER -->
+        <div class="c-layout-page">
+            <!-- BEGIN: PAGE CONTENT -->
+
+            <d2d:Field d2d:index="2">
+              <d2d:Content>
+
+                <d2d:Template d2d:for="http://ucds.cs.vu.nl/d2d/ard/HomeSections#TopBanner">
+                  <!-- BEGIN: LAYOUT/SLIDERS/REVO-SLIDER-4 -->
+                  <section class="c-layout-revo-slider c-layout-revo-slider-4" dir="ltr">
+                    <div class="tp-banner-container c-theme">
+                        <div class="tp-banner rev_slider" data-version="5.0">
+                          <ul>
+                            <d2d:Field d2d:index="4">
+                              <d2d:Content>
+                                <d2d:Template d2d:for="http://ucds.cs.vu.nl/d2d/ard/BannerRendering#Black">
+                                  <!--BEGIN: SLIDE -->
+                                  <li data-transition="fade" data-slotamount="1" data-masterspeed="1000">
+                                      <img alt="" src="[d2d:Field d2d:index=3][d2d:Content]assets/base/img/content/vu/intertain1.jpg[/d2d:Content][/d2d:Field]" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" />
+                                      <div class="tp-caption customin customout" data-x="center" data-y="center" data-hoffset="" data-voffset="-50" data-speed="500" data-start="1000" data-transform_idle="o:1;" data-transform_in="rX:0.5;scaleX:0.75;scaleY:0.75;o:0;s:500;e:Back.easeInOut;"
+                                      data-transform_out="rX:0.5;scaleX:0.75;scaleY:0.75;o:0;s:500;e:Back.easeInOut;" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600">
+                                          <d2d:Field d2d:index="1"><h3 class="c-main-title-circle c-font-48 c-font-bold c-font-center c-font-uppercase c-font-black c-block"><d2d:Content>VU Web &amp; Media has it's own multimedia research lab</d2d:Content></h3></d2d:Field>
+                                      </div>
+                                      <div class="tp-caption lft" data-x="center" data-y="center" data-voffset="110" data-speed="900" data-start="2000" data-transform_idle="o:1;" data-transform_in="x:100;y:100;rX:120;scaleX:0.75;scaleY:0.75;o:0;s:500;e:Back.easeInOut;"
+                                      data-transform_out="x:100;y:100;rX:120;scaleX:0.75;scaleY:0.75;o:0;s:500;e:Back.easeInOut;">
+                                          <d2d:Field d2d:index="5"><a href="[d2d:Field d2d:index=4 /]" class="c-action-btn btn btn-lg c-btn-square c-theme-btn c-btn-bold c-btn-uppercase"><d2d:Content>Learn More</d2d:Content></a></d2d:Field>
+                                      </div>
+                                  </li>
+                                  <!--END -->
+                                </d2d:Template>
+                                <d2d:Template d2d:for="http://ucds.cs.vu.nl/d2d/ard/BannerRendering#White">
+                                  <!--BEGIN: SLIDE -->
+                                  <li data-transition="fade" data-slotamount="1" data-masterspeed="1000">
+                                      <img alt="" src="[d2d:Field d2d:index=3][d2d:Content]assets/base/img/content/vu/intertain1.jpg[/d2d:Content][/d2d:Field]" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" />
+                                      <div class="tp-caption customin customout" data-x="center" data-y="center" data-hoffset="" data-voffset="-50" data-speed="500" data-start="1000" data-transform_idle="o:1;" data-transform_in="rX:0.5;scaleX:0.75;scaleY:0.75;o:0;s:500;e:Back.easeInOut;"
+                                      data-transform_out="rX:0.5;scaleX:0.75;scaleY:0.75;o:0;s:500;e:Back.easeInOut;" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="600">
+                                          <d2d:Field d2d:index="1"><h3 class="c-main-title-circle c-font-48 c-font-bold c-font-center c-font-uppercase c-font-white c-block"><d2d:Content>VU Web &amp; Media has it's own multimedia research lab</d2d:Content></h3></d2d:Field>
+                                      </div>
+                                      <div class="tp-caption lft" data-x="center" data-y="center" data-voffset="110" data-speed="900" data-start="2000" data-transform_idle="o:1;" data-transform_in="x:100;y:100;rX:120;scaleX:0.75;scaleY:0.75;o:0;s:900;e:Back.easeInOut;"
+                                      data-transform_out="x:100;y:100;rX:120;scaleX:0.75;scaleY:0.75;o:0;s:500;e:Back.easeInOut;">
+                                          <d2d:Field d2d:index="5"><a href="[d2d:Field d2d:index=4 /]" class="c-action-btn btn btn-lg c-btn-square c-theme-btn c-btn-bold c-btn-uppercase"><d2d:Content>Learn More</d2d:Content></a></d2d:Field>
+                                      </div>
+                                  </li>
+                                  <!--END -->
+                                </d2d:Template>
+                              </d2d:Content>
+                            </d2d:Field>
+                          </ul>
+                        </div>
+                    </div>
+                  </section>
+                  <!-- END: LAYOUT/SLIDERS/REVO-SLIDER-4 -->
+                </d2d:Template>
+
+                <d2d:Template d2d:for="http://ucds.cs.vu.nl/d2d/ard/HomeSections#NewsOverview">
+                  <!-- BEGIN: CONTENT/FEATURES/FEATURES-1 -->
+                  <div class="c-content-box c-size-md c-bg-white" id="[d2d:Field d2d:index=1 /]">
+                    <div class="container">
+                      <div class="row">
+                       <div class="c-content-title-1 wow animate fadeInDown">
+                            <d2d:Field d2d:index="1"><h3 class="c-font-uppercase c-center c-font-bold"><d2d:Content>Projects We Do</d2d:Content></h3></d2d:Field>
+                            <div class="c-line-center"> </div>
+                        </div>
+
+
+                        <d2d:Field d2d:index="3">
+                          <d2d:Segment d2d:matchRule="1">
+                            <div class="col-sm-4">
+                              <div class="c-content-feature-1 wow animate fadeInUp">
+                                <d2d:Content>
+                                  <d2d:Template d2d:for="http://ucds.cs.vu.nl/d2d/ard/NewsArticleRendering#HomePage">
+                                    <div class="img-responsive" style="Background-image: url([d2d:Field d2d:index=4][d2d:Content]assets/base/img/content/vu/news1.jpg[/d2d:Content][/d2d:Field]); height: 200px; background-size: cover; background-repeat: no-repeat; background-position: 50% 50%;" >&#160;</div>
+                                    <d2d:Field d2d:index="1"><h3 class="c-font-uppercase c-font-bold"><d2d:Content>News article 1</d2d:Content></h3></d2d:Field>
+                                    <d2d:Field d2d:index="2"><p class="c-font-thin"><d2d:Content>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tempor nulla quam, at tempor elit gravida vitae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras placerat lorem vel elit venenatis, facilisis fringilla enim pulvinar. Integer porttitor tortor quis tempor consequat. Sed volutpat rhoncus ante, dapibus lacinia augue malesuada feugiat. Nulla id condimentum nunc, nec facilisis lectus. Nunc lorem orci, euismod eu tristique non, finibus ac urna. Quisque rhoncus id erat sed dapibus. Donec id feugiat sapien. Proin bibendum a lectus at mattis.</d2d:Content></p></d2d:Field>
+                                  </d2d:Template>
+                                </d2d:Content>
+                              </div>
+                            </div>
+                          </d2d:Segment>
+
+                          <d2d:Segment d2d:matchRule="2">
+                            <div class="col-sm-4">
+                              <div class="c-content-feature-1 wow animate fadeInUp" data-wow-delay="0.2s">
+                                <d2d:Content>
+                                  <img  alt="" src="assets/base/img/content/vu/news2.jpg" class="img-responsive" />
+                                  <h3 class="c-font-uppercase c-font-bold">News article 2</h3>
+                                  <p class="c-font-thin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tempor nulla quam, at tempor elit gravida vitae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras placerat lorem vel elit venenatis, facilisis fringilla enim pulvinar. Integer porttitor tortor quis tempor consequat. Sed volutpat rhoncus ante, dapibus lacinia augue malesuada feugiat. Nulla id condimentum nunc, nec facilisis lectus.</p>
+                                </d2d:Content>
+                              </div>
+                            </div>
+                          </d2d:Segment>
+
+                          <d2d:Segment d2d:matchRule="*">
+                            <div class="col-sm-4 c-card">
+                              <div class="c-content-feature-1 wow animate fadeInUp" data-wow-delay="0.4s">
+                                <d2d:Content>
+                                  <div class="c-content-title-1 c-title-md">
+                                    <h3 class="c-title c-font-uppercase c-font-bold">Latest Tweets</h3>
+                                    <div class="c-line-left hide"> </div>
+                                  </div>
+                                  <div class="c-twitter">
+                                    <a class="twitter-timeline" href="https://twitter.com/anouk_anca/lists/wm" data-tweet-limit="3" data-chrome="noheader nofooter noscrollbar noborders transparent"> Loading tweets by VU Web &amp; Media... </a>
+                                  </div>
+                                </d2d:Content>
+                              </div>
+                            </div>
+                          </d2d:Segment>
+
+                        </d2d:Field>
+
+<!--
+                        <div class="col-sm-4">
+                            <div class="c-content-feature-1 wow animate fadeInUp" data-wow-delay="0.2s">
+                                <img  alt="" src="assets/base/img/content/vu/news2.jpg" class="img-responsive" />
+                                <h3 class="c-font-uppercase c-font-bold">News article 2</h3>
+                                <p class="c-font-thin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tempor nulla quam, at tempor elit gravida vitae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras placerat lorem vel elit venenatis, facilisis fringilla enim pulvinar. Integer porttitor tortor quis tempor consequat. Sed volutpat rhoncus ante, dapibus lacinia augue malesuada feugiat. Nulla id condimentum nunc, nec facilisis lectus.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 c-card">
+                            <div class="c-content-feature-1 wow animate fadeInUp" data-wow-delay="0.4s">
+                                <img  alt="" src="assets/base/img/content/vu/news3.jpg" class="img-responsive" />
+                                <h3 class="c-font-uppercase c-font-bold">News article 3</h3>
+                                <p class="c-font-thin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tempor nulla quam, at tempor elit gravida vitae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras placerat lorem vel elit venenatis, facilisis fringilla enim pulvinar. Integer porttitor tortor quis tempor consequat. Sed volutpat rhoncus ante, dapibus lacinia augue malesuada feugiat. Nulla id condimentum nunc, nec facilisis lectus. Nunc lorem orci, euismod eu tristique non, finibus ac urna. Quisque rhoncus id erat sed dapibus. Donec id feugiat sapien.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 c-card">
+                          <div class="c-content-feature-1 wow animate fadeInUp" data-wow-delay="0.6s">
+                            <div class="c-content-title-1 c-title-md">
+                              <h3 class="c-title c-font-uppercase c-font-bold">Latest Tweets</h3>
+                              <div class="c-line-left hide"> </div>
+                            </div>
+                            <div class="c-twitter">
+                              <a class="twitter-timeline" href="https://twitter.com/anouk_anca/lists/wm" data-tweet-limit="3" data-chrome="noheader nofooter noscrollbar noborders transparent"> Loading tweets by VU Web &amp; Media... </a>
+                            </div>
+                          </div>
+                        </div>
+-->
+
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END: CONTENT/FEATURES/FEATURES-1 -->
+                </d2d:Template>
+
+
+                <d2d:Template d2d:for="http://ucds.cs.vu.nl/d2d/ard/HomeSections#ProjectsOverview">
+                  <!-- BEGIN: CONTENT/TILES/TILE-3 -->
+                  <div class="c-content-box c-size-md c-bg-white" id="[d2d:Field d2d:index=1 /]">
+                    <div class="c-content-tile-grid c-bs-grid-reset-space" data-auto-height="true">
+                        <div class="c-content-title-1 wow animate fadeInDown">
+                            <d2d:Field d2d:index="1"><h3 class="c-font-uppercase c-center c-font-bold"><d2d:Content>Projects We Do</d2d:Content></h3></d2d:Field>
+                            <div class="c-line-center"> </div>
+                        </div>
+                        <div class="row wow animate fadeInUp">
+                          <d2d:Field d2d:index="3">
+                            <d2d:Content>
+                              <d2d:Template d2d:for="http://ucds.cs.vu.nl/d2d/ard/ResearchProjectRendering#HomePage" d2d:matchRule="1, 5">
+                                <div class="col-md-6">
+                                  <div class="c-content-tile-1 c-bg-green">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="c-tile-content c-content-v-center" data-height="height">
+                                                <div class="c-wrapper">
+                                                    <div class="c-body c-center">
+                                                        <d2d:Field><h3 class="c-tile-title c-font-25 c-line-height-34 c-font-uppercase c-font-bold c-font-white"><d2d:Content>Crowd Truth</d2d:Content></h3></d2d:Field>
+                                                        <d2d:Field><p class="c-tile-body c-font-white"><d2d:Content>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tempor nulla quam, at tempor elit gravida vitae.</d2d:Content></p></d2d:Field>
+                                                        <a href="[d2d:Field d2d:index=7 /]" class="btn btn-sm c-btn-white c-btn-uppercase c-btn-bold c-btn-border-1x c-btn-square">More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="c-tile-content c-arrow-right c-arrow-green c-content-overlay">
+                                                <div class="c-overlay-wrapper">
+                                                    <div class="c-overlay-content">
+                                                        <a href="[d2d:Field d2d:index=7 /]">
+                                                            <i class="icon-link"> </i>
+                                                        </a>
+                                                        <a href="[d2d:Field d2d:index=5 /]" data-lightbox="fancybox" data-fancybox-group="gallery-4">
+                                                            <i class="icon-magnifier"> </i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="c-image c-overlay-object" data-height="height" style="background-image: url([d2d:Field d2d:index=5][d2d:Content]assets/base/img/content/vu/project1.jpg[/d2d:Content][/d2d:Field])"> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </d2d:Template>
+                              <d2d:Template d2d:for="http://ucds.cs.vu.nl/d2d/ard/ResearchProjectRendering#HomePage" d2d:matchRule="2, 6">
+                                <div class="col-md-6">
+                                  <div class="c-content-tile-1 c-bg-brown-2">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="c-tile-content c-content-v-center" data-height="height">
+                                                <div class="c-wrapper">
+                                                    <div class="c-body c-center">
+                                                        <d2d:Field><h3 class="c-tile-title c-font-25 c-line-height-34 c-font-uppercase c-font-bold c-font-white"><d2d:Content>Dutch Ships and Sailors</d2d:Content></h3></d2d:Field>
+                                                        <d2d:Field><p class="c-tile-body c-font-white"><d2d:Content>Lorem ipsum consectetuer elit sit amet, sit adipiscing amet, coectetuer adipiscing elit sit ame.</d2d:Content></p></d2d:Field>
+                                                        <a href="[d2d:Field d2d:index=7 /]" class="btn btn-sm c-btn-white c-btn-uppercase c-btn-bold c-btn-border-1x c-btn-square">More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="c-tile-content c-arrow-right c-arrow-brown-2 c-content-overlay">
+                                                <div class="c-overlay-wrapper">
+                                                    <div class="c-overlay-content">
+                                                        <a href="[d2d:Field d2d:index=7 /]">
+                                                            <i class="icon-link"> </i>
+                                                        </a>
+                                                        <a href="[d2d:Field d2d:index=5 /]" data-lightbox="fancybox" data-fancybox-group="gallery-4">
+                                                            <i class="icon-magnifier"> </i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="c-image c-overlay-object" data-height="height" style="background-image: url([d2d:Field d2d:index=5][d2d:Content]assets/base/img/content/vu/project2.jpg[/d2d:Content][/d2d:Field])"> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </d2d:Template>
+                              <d2d:Template d2d:for="http://ucds.cs.vu.nl/d2d/ard/ResearchProjectRendering#HomePage" d2d:matchRule="3, 7">
+                              <div class="col-md-6">
+                                <div class="c-content-tile-1 c-bg-red-2">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="c-tile-content c-arrow-left c-arrow-red-2 c-content-overlay">
+                                                <div class="c-overlay-wrapper">
+                                                    <div class="c-overlay-content">
+                                                        <a href="[d2d:Field d2d:index=7 /]">
+                                                            <i class="icon-link"> </i>
+                                                        </a>
+                                                        <a href="[d2d:Field d2d:index=5 /]" data-lightbox="fancybox" data-fancybox-group="gallery-4">
+                                                            <i class="icon-magnifier"> </i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="c-image c-overlay-object" data-height="height" style="background-image: url([d2d:Field d2d:index=5][d2d:Content]assets/base/img/content/vu/project3.jpg[/d2d:Content][/d2d:Field])"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="c-tile-content c-content-v-center" data-height="height">
+                                                <div class="c-wrapper">
+                                                    <div class="c-body c-center">
+                                                        <d2d:Field><h3 class="c-tile-title c-font-25 c-line-height-34 c-font-uppercase c-font-bold c-font-white"><d2d:Content>DIVE</d2d:Content></h3></d2d:Field>
+                                                        <d2d:Field><p class="c-tile-body c-font-white"><d2d:Content>Lorem ipsum consectetuer elit sit amet, sit adipiscing amet, coectetuer adipiscing elit sit ame.</d2d:Content></p></d2d:Field>
+                                                        <a href="[d2d:Field d2d:index=7 /]" class="btn btn-sm c-btn-white c-btn-uppercase c-btn-bold c-btn-border-1x c-btn-square">More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </d2d:Template>
+                              <d2d:Template d2d:for="http://ucds.cs.vu.nl/d2d/ard/ResearchProjectRendering#HomePage" d2d:matchRule="4, 8">
+                                <div class="col-md-6">
+                                  <div class="c-content-tile-1 c-bg-blue-3">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="c-tile-content c-arrow-left c-arrow-blue-3 c-content-overlay">
+                                                <div class="c-overlay-wrapper">
+                                                    <div class="c-overlay-content">
+                                                        <a href="[d2d:Field d2d:index=7 /]">
+                                                            <i class="icon-link"> </i>
+                                                        </a>
+                                                        <a href="[d2d:Field d2d:index=5 /]" data-lightbox="fancybox" data-fancybox-group="gallery-4">
+                                                            <i class="icon-magnifier"> </i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="c-image c-overlay-object" data-height="height" style="background-image: url([d2d:Field d2d:index=5][d2d:Content]assets/base/img/content/vu/project4.jpg[/d2d:Content][/d2d:Field])"> </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="c-tile-content c-content-v-center" data-height="height">
+                                                <div class="c-wrapper">
+                                                    <div class="c-body c-center">
+                                                        <d2d:Field><h3 class="c-tile-title c-font-25 c-line-height-34 c-font-uppercase c-font-bold c-font-white"><d2d:Content>BiographyNet</d2d:Content></h3></d2d:Field>
+                                                        <d2d:Field><p class="c-tile-body c-font-white"><d2d:Content>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, nonummy nibh euismod tincidunt.</d2d:Content></p></d2d:Field>
+                                                        <a href="[d2d:Field d2d:index=7 /]" class="btn btn-sm c-btn-white c-btn-uppercase c-btn-bold c-btn-border-1x c-btn-square">More</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </d2d:Template>
+                            </d2d:Content>
+                          </d2d:Field>
+                        </div>
+                    </div>
+                  </div>
+                  <!-- END: CONTENT/TILES/TILE-3 -->
+                </d2d:Template>
+
+
+                <d2d:Template d2d:for="http://ucds.cs.vu.nl/d2d/ard/HomeSections#PublicationsOverview">
+                  <!-- BEGIN: CONTENT/MISC/WHY-CHOOSE-US-1 -->
+                  <div class="c-content-box c-size-lg c-bg-grey-1" id="[d2d:Field d2d:index=1 /]">
+                    <div class="container">
+                        <div class="">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="c-content-feature-5">
+                                        <div class="c-content-title-1 wow amimate fadeInDown">
+                                            <d2d:Field d2d:index="1"><h3 class="c-left c-font-dark c-font-uppercase c-font-bold"><d2d:Content>Recent <br/>Papers</d2d:Content></h3></d2d:Field>
+                                            <div class="c-line-left c-bg-blue-3 c-theme-bg"> </div>
+                                        </div>
+                                        <d2d:Field><div class="c-text wow animate fadeInLeft" style="width: 100%;"><d2d:Content>These are our most recent publications!</d2d:Content></div></d2d:Field>
+                                        <button type="submit" class="btn c-btn-uppercase btn-md c-btn-bold c-btn-square c-theme-btn wow animate fadeIn" style="margin-top: 15px; margin-bottom: 25px;">More Papers</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                  <div class="c-content-accordion-1 c-theme wow animate fadeInRight">
+                                    <div class="panel-group" id="accordion" role="tablist">
+                                      <d2d:Field d2d:index="3">
+                                        <d2d:Content>
+                                          <d2d:Template d2d:for="http://ucds.cs.vu.nl/d2d/ard/PublicationRendering#HomePage" d2d:matchRule="1">
+                                            <div class="panel">
+                                                <div class="panel-heading" role="tab" id="headingOne">
+                                                  <d2d:Field>
+                                                    <h4 class="panel-title">
+                                                        <a class="c-font-bold c-font-uppercase c-font-19" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><d2d:Content>Data 2 Documents: Modular and distributive content management in RDF</d2d:Content></a>
+                                                    </h4>
+                                                  </d2d:Field>
+                                                </div>
+                                                <div id="collapseOne" class="publication-panel panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                                    <div class="panel-body c-font-18">
+                                                      <d2d:Field d2d:index="6"><img class="c-photo img-responsive wow animate swing" alt="" src="[d2d:Content]assets/base/img/content/vu/d2d.jpg[/d2d:Content]" style="width: 40%; float: left; margin-right: 12px; margin-bottom: 5px; border: #888888 1px solid;" /></d2d:Field>
+                                                      <d2d:Field d2d:index="4"><d2d:Content>Content Management Systems haven’t gained much from the Linked Data uptake, and sharing content between different websites and systems is hard. On the other side, using Linked Data in web documents is not as trivial as managing regular web content using a CMS. To address these issues, we present a method for creating human readable web documents out of machine readable web data, focussing on modularity and re-use. A vocabulary is introduced to structure the knowledge involved in these tasks in a modular and distributable fashion. The vocabulary has a strong relation with semantic elements in HTML5 and allows for a declarative form of content management expressed in RDF. We explain and demonstrate the vocabulary using concrete examples with RDF data from various sources and present a user study in two sessions involving (semantic) web experts and computer science students.</d2d:Content></d2d:Field>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                          </d2d:Template>
+                                          <d2d:Template d2d:for="http://ucds.cs.vu.nl/d2d/ard/PublicationRendering#HomePage" d2d:matchRule="2">
+                                            <div class="panel">
+                                                <div class="panel-heading" role="tab" id="headingTwo">
+                                                  <d2d:Field>
+                                                    <h4 class="panel-title">
+                                                        <a class="collapsed c-font-uppercase c-font-bold c-font-19" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><d2d:Content>Modern Design Trends</d2d:Content></a>
+                                                    </h4>
+                                                  </d2d:Field>
+                                                </div>
+                                                <div id="collapseTwo" class="publication-panel panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                                  <div class="panel-body c-font-18">
+                                                    <d2d:Field d2d:index="6"><img class="c-photo img-responsive wow animate swing" alt="" src="[d2d:Content]assets/base/img/content/vu/d2d.jpg[/d2d:Content]" style="width: 40%; float: left; margin-right: 12px; margin-bottom: 5px; border: #888888 1px solid;" /></d2d:Field>
+                                                    <d2d:Field d2d:index="4"><d2d:Content>Content Management Systems haven’t gained much from the Linked Data uptake, and sharing content between different websites and systems is hard. On the other side, using Linked Data in web documents is not as trivial as managing regular web content using a CMS. To address these issues, we present a method for creating human readable web documents out of machine readable web data, focussing on modularity and re-use. A vocabulary is introduced to structure the knowledge involved in these tasks in a modular and distributable fashion. The vocabulary has a strong relation with semantic elements in HTML5 and allows for a declarative form of content management expressed in RDF. We explain and demonstrate the vocabulary using concrete examples with RDF data from various sources and present a user study in two sessions involving (semantic) web experts and computer science students.</d2d:Content></d2d:Field>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                          </d2d:Template>
+                                          <d2d:Template d2d:for="http://ucds.cs.vu.nl/d2d/ard/PublicationRendering#HomePage" d2d:matchRule="3">
+                                            <div class="panel">
+                                                <div class="panel-heading" role="tab" id="headingThree">
+                                                  <d2d:Field>
+                                                    <h4 class="panel-title">
+                                                        <a class="collapsed c-font-uppercase c-font-bold c-font-19" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><d2d:Content>Beatifully Crafted Code</d2d:Content></a>
+                                                    </h4>
+                                                  </d2d:Field>
+                                                </div>
+                                                <div id="collapseThree" class="publication-panel panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                                  <div class="panel-body c-font-18">
+                                                    <d2d:Field d2d:index="6"><img class="c-photo img-responsive wow animate swing" alt="" src="[d2d:Content]assets/base/img/content/vu/d2d.jpg[/d2d:Content]" style="width: 40%; float: left; margin-right: 12px; margin-bottom: 5px; border: #888888 1px solid;" /></d2d:Field>
+                                                    <d2d:Field d2d:index="4"><d2d:Content>Content Management Systems haven’t gained much from the Linked Data uptake, and sharing content between different websites and systems is hard. On the other side, using Linked Data in web documents is not as trivial as managing regular web content using a CMS. To address these issues, we present a method for creating human readable web documents out of machine readable web data, focussing on modularity and re-use. A vocabulary is introduced to structure the knowledge involved in these tasks in a modular and distributable fashion. The vocabulary has a strong relation with semantic elements in HTML5 and allows for a declarative form of content management expressed in RDF. We explain and demonstrate the vocabulary using concrete examples with RDF data from various sources and present a user study in two sessions involving (semantic) web experts and computer science students.</d2d:Content></d2d:Field>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                          </d2d:Template>
+                                        </d2d:Content>
+                                      </d2d:Field>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <!-- END: CONTENT/MISC/WHY-CHOOSE-US-1 -->
+                </d2d:Template>
+
+
+
+
+                <!-- BEGIN: CONTENT/ISOTOPE/GALLERY-1 - - >
+                <div class="c-content-box c-size-md c-bg-img-center" style="background-image: url(assets/base/img/content/backgrounds/bg-82.jpg)">
+                    <div class="container">
+                        <div class="c-content-title-1">
+                            <h3 class="c-center c-font-uppercase c-font-bold c-font-white">Our Photography</h3>
+                            <div class="c-line-center c-theme-bg"> </div>
+                        </div>
+                        <div class="c-content-isotope-gallery c-opt-1">
+                            <div class="c-content-isotope-item wow animate zoomIn" data-wow-delay="0">
+                                <div class="c-content-isotope-image-container">
+                                    <img class="c-content-isotope-image" src="assets/base/img/content/stock/13.jpg" />
+                                    <div class="c-content-isotope-overlay c-ilightbox-image-1" href="assets/base/img/content/stock/13.jpg" data-options="thumbnail:'assets/base/img/content/stock/13.jpg'" data-caption="<h4>The River</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum nibh pharetra ligula rhoncus, nec iaculis nulla semper.</p>">
+                                        <div class="c-content-isotope-overlay-icon">
+                                            <i class="fa fa-plus c-font-white"> </i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c-content-isotope-item c-item-size-double wow animate zoomIn" data-wow-delay="0.1s">
+                                <div class="c-content-isotope-image-container">
+                                    <img class="c-content-isotope-image" src="assets/base/img/content/stock/81.jpg" />
+                                    <div class="c-content-isotope-overlay c-ilightbox-image-1" href="assets/base/img/content/stock/81.jpg" data-options="thumbnail:'assets/base/img/content/stock/81.jpg'" data-caption="<h4>Speedy City</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum nibh pharetra ligula rhoncus, nec iaculis nulla semper.</p>">
+                                        <div class="c-content-isotope-overlay-icon">
+                                            <i class="fa fa-plus c-font-white"> </i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c-content-isotope-item">
+                                <div class="c-content-isotope-image-container wow animate zoomIn" data-wow-delay="0.2s">
+                                    <img class="c-content-isotope-image" src="assets/base/img/content/stock/63.jpg" />
+                                    <div class="c-content-isotope-overlay c-ilightbox-image-1" href="assets/base/img/content/stock/63.jpg" data-options="thumbnail:'assets/base/img/content/stock/63.jpg'" data-caption="<h4>The Workstation</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum nibh pharetra ligula rhoncus, nec iaculis nulla semper.</p>">
+                                        <div class="c-content-isotope-overlay-icon">
+                                            <i class="fa fa-plus c-font-white"> </i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c-content-isotope-item">
+                                <div class="c-content-isotope-image-container wow animate zoomIn" data-wow-delay="0.3s">
+                                    <img class="c-content-isotope-image" src="assets/base/img/content/stock/48.jpg" />
+                                    <div class="c-content-isotope-overlay c-ilightbox-image-1" href="assets/base/img/content/stock/48.jpg" data-options="thumbnail:'assets/base/img/content/stock/48.jpg'" data-caption="<h4>Exploring the Ice</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum nibh pharetra ligula rhoncus, nec iaculis nulla semper.</p>">
+                                        <div class="c-content-isotope-overlay-icon">
+                                            <i class="fa fa-plus c-font-white"> </i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c-content-isotope-item">
+                                <div class="c-content-isotope-image-container wow animate zoomIn" data-wow-delay="0.4s">
+                                    <img class="c-content-isotope-image" src="assets/base/img/content/stock/33.jpg" />
+                                    <div class="c-content-isotope-overlay c-ilightbox-image-1" href="assets/base/img/content/stock/33.jpg" data-options="thumbnail:'assets/base/img/content/stock/33.jpg'" data-caption="<h4>Music is the way of life</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum nibh pharetra ligula rhoncus, nec iaculis nulla semper.</p>">
+                                        <div class="c-content-isotope-overlay-icon">
+                                            <i class="fa fa-plus c-font-white"> </i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c-content-isotope-item c-item-size-double wow animate zoomIn" data-wow-delay="0.5s">
+                                <div class="c-content-isotope-image-container">
+                                    <img class="c-content-isotope-image" src="assets/base/img/content/stock4/36.jpg" />
+                                    <div class="c-content-isotope-overlay c-ilightbox-image-1" href="assets/base/img/content/stock/36.jpg" data-options="thumbnail:'assets/base/img/content/stock4/36.jpg'" data-caption="<h4>Reflection</h4><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dictum nibh pharetra ligula rhoncus, nec iaculis nulla semper.</p>">
+                                        <div class="c-content-isotope-overlay-icon">
+                                            <i class="fa fa-plus c-font-white"> </i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                < ! - - END: CONTENT/ISOTOPE/GALLERY-1 -->
+
+
+
+                <!-- BEGIN: CONTENT/TABS/TAB-1 -->
+                <div class="c-content-box c-size-md c-no-bottom-padding c-overflow-hide" id="[d2d:Field d2d:index=1 /]">
+                    <div class="c-container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="c-content-title-1">
+                                    <h3 class="c-font-34 c-font-center c-font-bold c-font-uppercase c-margin-b-30"> Most recent trip report </h3>
+                                    <div class="c-line-center c-theme-bg"> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="c-content-tab-2 c-theme c-opt-1">
+                                    <div class="c-tab-content">
+                                        <div class="c-bg-img-center1" style="background-image: url(assets/base/img/content/backgrounds/bg-62.jpg)">
+                                            <div class="container">
+                                                <div class="tab-content">
+                                                    <div class="tab-pane fade in active" id="c-tab2-opt1-1">
+                                                        <div class="c-tab-pane">
+                                                            <img class="img-responsive" style="max-width: 380px;" src="assets/base/img/content/vu/uni-bologna.jpg" alt="" />
+                                                            <h4 class="c-font-30 c-font-thin c-font-uppercase c-font-bold">EKAW 2016, Bologna</h4>
+                                                            <p class="c-font-17 c-margin-b-20 c-margin-t-20 c-font-thin ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tempor nulla quam, at tempor elit gravida vitae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras placerat lorem vel elit venenatis, facilisis fringilla enim pulvinar. Integer porttitor tortor quis tempor consequat. Sed volutpat rhoncus ante, dapibus lacinia augue malesuada feugiat. Nulla id condimentum nunc, nec facilisis lectus. Nunc lorem orci, euismod eu tristique non, finibus ac urna. Quisque rhoncus id erat sed dapibus. Donec id feugiat sapien. Proin bibendum a lectus at mattis. Duis mattis posuere tempus. Maecenas condimentum mi id ornare viverra. Ut placerat nisi quis euismod vehicula. Cras sollicitudin fringilla metus et iaculis. In mattis ligula vitae felis ultrices egestas. Nullam feugiat sapien sit amet purus efficitur tincidunt.</p>
+                                                            <button class="btn btn-sm c-theme-btn c-btn-square c-btn-bold">READ MORE</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: CONTENT/TABS/TAB-1 -->
+
+
+                <!-- BEGIN: CONTENT/PEOPLE -->
+                <d2d:Template d2d:for="http://ucds.cs.vu.nl/d2d/ard/HomeSections#PeopleOverview">
+                  <div class="c-content-box c-size-md c-bg-grey-1" id="[d2d:Field d2d:index=1 /]">
+                    <div class="container">
+                        <div class="c-content-blog-post-card-1-slider" data-slider="owl">
+                            <div class="c-content-title-1">
+                              <d2d:Field d2d:index="1">
+                                <h3 class="c-center c-font-uppercase c-font-bold"><d2d:Content>People</d2d:Content></h3>
+                                <div class="c-line-center c-theme-bg"> </div>
+                              </d2d:Field>
+                              <d2d:Field d2d:index="2">
+                                <p class="c-center c-font-uppercase1"><d2d:Content>The UCDS team consists of enthusiastic and talented people</d2d:Content></p>
+                              </d2d:Field>
+                            </div>
+                            <div class="owl-carousel owl-theme c-theme c-owl-nav-center" data-items="3" data-slide-speed="8000" data-rtl="false">
+                              <d2d:Field d2d:index="3">
+                                <d2d:Content>
+                                  <d2d:Template d2d:for="http://ucds.cs.vu.nl/d2d/ard/FoafRendering#QuoteBox">
+                                    <div class="item">
+                                        <div class="c-content-testimonial-3 c-option-default">
+                                            <d2d:Field d2d:index="3"><div class="c-content"><d2d:Content>I am collaborating with the IBM Watson team in NY on crowdsourcing ground truth data for the adaptation of the Watson system in medical domain. I am involved in several research projects focussing on semantic search, recommendation systems and event-driven access to multimedia collections online.</d2d:Content></div></d2d:Field>
+                                            <div class="c-person">
+                                                <img src="[d2d:Field d2d:index=2 /]" class="img-responsive" />
+                                                <div class="c-person-detail c-font-uppercase">
+                                                    <d2d:Field d2d:index="1"><h4 class="c-name"><d2d:Content>Lora Aroyo</d2d:Content></h4></d2d:Field>
+                                                    <d2d:Field d2d:index="5"><p class="c-position c-font-bold c-theme-font"><d2d:Content>Professor</d2d:Content></p></d2d:Field>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </d2d:Template>
+                                  <div class="item">
+                                      <div class="c-content-testimonial-3 c-option-default">
+                                          <div class="c-content">My research focuses on crowdsourcing in a linked cultural heritage environment. I implemented the Accurator nichesourcing platform as part of my PhD project. Doing research at the Rijksmuseum Amsterdam, British Museum and the Netherlands Institute for Sound and Vision provided valuable insights in the requirements of institutions regarding Linked Data and crowdsourcing.</div>
+                                          <div class="c-person">
+                                              <img src="http://ucds.cs.vu.nl/images/people/chris.jpg" class="img-responsive" />
+                                              <div class="c-person-detail c-font-uppercase">
+                                                  <h4 class="c-name">Chris Dijkshoorn</h4>
+                                                  <p class="c-position c-font-bold c-theme-font">PhD Student</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="item">
+                                      <div class="c-content-testimonial-3 c-option-default">
+                                          <div class="c-content">I am interested in understanding how specific knowledge about experimental processes in a given research area (for example in microbiology, food physics or consumer perception) can support researchers in carefully designing and executing their primary process of planning and making observations.</div>
+                                          <div class="c-person">
+                                              <img src="http://ucds.cs.vu.nl/images/people/dena.jpg" class="img-responsive" />
+                                              <div class="c-person-detail c-font-uppercase">
+                                                  <h4 class="c-name">Dena Tahvildari</h4>
+                                                  <p class="c-position c-font-bold c-theme-font">PhD Student</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="item">
+                                      <div class="c-content-testimonial-3 c-option-default">
+                                          <div class="c-content">I am working on the semantic web, social systems, controlled natural languages, artificial intelligence, computational linguistics, and bioinformatics.</div>
+                                          <div class="c-person">
+                                              <img src="http://ucds.cs.vu.nl/images/people/tobias.jpg" class="img-responsive" />
+                                              <div class="c-person-detail c-font-uppercase">
+                                                  <h4 class="c-name">Tobias Kuhn</h4>
+                                                  <p class="c-position c-font-bold c-theme-font">Assistant Professor</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="item">
+                                      <div class="c-content-testimonial-3 c-option-default">
+                                          <div class="c-content">In my research, I combine (Semantic) Web technologies with Human-Computer Interaction, Knowledge Representation and Information Extraction to tackle research challenges in various domains. These include Cultural Heritage, Digital Humanities and ICT for Development (ICT4D).</div>
+                                          <div class="c-person">
+                                              <img src="http://ucds.cs.vu.nl/images/people/victor.jpg" class="img-responsive" />
+                                              <div class="c-person-detail c-font-uppercase">
+                                                  <h4 class="c-name">Victor de Boer</h4>
+                                                  <p class="c-position c-font-bold c-theme-font">Assistant Professor</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="item">
+                                      <div class="c-content-testimonial-3 c-option-default">
+                                          <div class="c-content">I am working at the CrowdTruth project, a collaboration with IBM Research New York and the IBM Netherlands Centre for Advanced Studies. My research interests are Crowdsourcing, Natural Language Processing, and Linked Open Data.</div>
+                                          <div class="c-person">
+                                              <img src="http://ucds.cs.vu.nl/images/people/anca.jpg" class="img-responsive" />
+                                              <div class="c-person-detail c-font-uppercase">
+                                                  <h4 class="c-name">Anca Dumitrache</h4>
+                                                  <p class="c-position c-font-bold c-theme-font">PhD Student</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                </d2d:Content>
+                              </d2d:Field>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </d2d:Template>
+                <!-- END: CONTENT/PEOPLE -->
+
+
+
+    <!-- index_CUT-OUT.html -->
+
+
+
+                <!-- END: PAGE CONTENT -->
+
+            </d2d:Content>
+          </d2d:Field>
+
+        </div>
+        <!-- END: PAGE CONTAINER -->
+        <!-- BEGIN: LAYOUT/FOOTERS/FOOTER-6 -->
+        <a name="footer"> </a>
+        <footer class="c-layout-footer c-layout-footer-6 c-bg-grey-1">
+            <div class="container">
+                <div class="c-prefooter c-bg-white">
+<!--
+                    <div class="c-head">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="c-left">
+                                    <div class="socicon">
+                                        <a href="#" class="socicon-btn socicon-btn-circle socicon-solid c-bg-grey-1 c-font-grey-2 c-theme-on-hover socicon-facebook tooltips" data-original-title="Facebook" data-container="body"> </a>
+                                        <a href="#" class="socicon-btn socicon-btn-circle socicon-solid c-bg-grey-1 c-font-grey-2 c-theme-on-hover socicon-twitter tooltips" data-original-title="Twitter" data-container="body"> </a>
+                                        <a href="#" class="socicon-btn socicon-btn-circle socicon-solid c-bg-grey-1 c-font-grey-2 c-theme-on-hover socicon-youtube tooltips" data-original-title="Youtube" data-container="body"> </a>
+                                        <a href="#" class="socicon-btn socicon-btn-circle socicon-solid c-bg-grey-1 c-font-grey-2 c-theme-on-hover socicon-tumblr tooltips" data-original-title="Tumblr" data-container="body"> </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="c-right">
+                                    <h3 class="c-title c-font-uppercase c-font-bold">Download Mobile App</h3>
+                                    <div class="c-icons">
+                                        <a href="#" class="c-font-30 c-font-green-1 socicon-btn c-bg-grey-1-hover socicon-android tooltips" data-original-title="Android" data-container="body"> </a>
+                                        <a href="#" class="c-font-30 c-font-grey-3 socicon-btn c-bg-grey-1-hover socicon-apple tooltips" data-original-title="Apple" data-container="body"> </a>
+                                        <a href="#" class="c-font-30 c-font-blue-3 socicon-btn c-bg-grey-1-hover socicon-windows tooltips" data-original-title="Windows" data-container="body"> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-line"> </div>
+-->
+                    <div class="c-body">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+
+                                <div class="c-content-title-1 c-title-md">
+                                    <h3 class="c-title c-font-uppercase c-font-bold">Sitemap</h3>
+                                    <div class="c-line-left hide"> </div>
+                                </div>
+
+                                <ul class="c-links c-theme-ul">
+                                    <li>
+                                        <strong><a href="#">Home</a></strong>
+                                    </li>
+
+                                </ul>
+<!--
+                                <ul class="c-links c-theme-ul">
+                                    <li>
+                                        <strong><a href="#">Organisation</a></strong>
+                                    </li>
+                                    <li>
+                                        <a href="#">About Web &amp; Media</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">People</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Partners</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contact</a>
+                                    </li>
+                                </ul>
+
+
+
+
+
+                                <ul class="c-links c-theme-ul">
+                                    <li>
+                                        <strong><a href="#">Research</a></strong>
+                                    </li>
+                                    <li>
+                                        <a href="#">Projects</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Publications</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Conferences</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Software and Demo's</a>
+                                    </li>
+                                </ul>
+
+
+
+
+                                <ul class="c-links c-theme-ul">
+                                    <li>
+                                        <strong><a href="#">Education</a></strong>
+                                    </li>
+                                    <li>
+                                        <a href="#">Courses</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Student Projects</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Student Profiles</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Project Reports</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Internships</a>
+                                    </li>
+                                </ul>
+-->
+
+                            </div>
+                            <div class="col-md-5 col-sm-6 col-xs-12">
+                                <div class="c-content-title-1 c-title-md">
+                                    <h3 class="c-title c-font-uppercase c-font-bold">Latest Tweets</h3>
+                                    <div class="c-line-left hide"> </div>
+                                </div>
+                                <div class="c-twitter">
+                                    <a class="twitter-timeline" href="https://twitter.com/anca_dmtrch/lists/wm" data-tweet-limit="3" data-chrome="noheader nofooter noscrollbar noborders transparent"> Loading tweets... </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-12 col-xs-12">
+                                <div class="c-content-title-1 c-title-md">
+                                    <h3 class="c-title c-font-uppercase c-font-bold">Contact Us</h3>
+                                    <div class="c-line-left hide"> </div>
+                                </div>
+                                <p class="c-address c-font-16"><strong>User Centric Data Science @ VU</strong><br/>
+                                    <br/>POSTAL ADDRESS:
+                                    <br/>De Boelelaan 1105
+                                    <br/>1081 HV Amsterdam<br/>
+                                    <br/>VISITING ADDRESS:
+                                    <br/>De Boelelaan 1081
+                                    <br/>1081 HV Amsterdam<br/>
+                                    <br/>T (central): +31 20 59 89898
+                                    <br/>F (central): +31 20 59 89899<br/>
+                                    <br/>Secretary: Mojca Lovrenčak
+                                    <br/>T +31 20 59 87782
+                                    <br/><a href="mailto:m.lovrencak@vu.nl"><span class="c-theme-color">m.lovrencak@vu.nl</span></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-line"> </div>
+                    <div class="c-foot">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="c-content-title-1 c-title-md">
+                                    <h3 class="c-font-uppercase c-font-bold">User Centric Data Science
+                                        <span class="c-theme-font"> @ VU University Amsterdam</span>
+                                    </h3>
+                                    <div class="c-line-left hide"> </div>
+                                </div>
+                                <p class="c-text c-font-16 c-font-regular">User Centric Data Science is about how users interact with systems and consume and produce data. The User Centric Data Science group is part of the department of Computer Science, Faculty of Sciences, VU University Amsterdam</p>
+                            </div>
+
+<!--
+                            <div class="col-md-5">
+                                <div class="c-content-title-1 c-title-md">
+                                    <h3 class="c-font-uppercase c-font-bold">Subscribe to our newsletter</h3>
+                                    <div class="c-line-left hide"> </div>
+                                </div>
+                                <div class="c-line-left hide"> </div>
+                                <form action="#">
+                                    <div class="input-group input-group-lg c-square">
+                                        <input type="text" class="form-control c-square c-font-grey-3 c-border-grey c-theme" placeholder="Your Email Here" />
+                                        <span class="input-group-btn">
+                                            <button class="btn c-theme-btn c-theme-border c-btn-square c-btn-uppercase c-font-16" type="button">Subscribe</button>
+                                        </span>
+                                    </div>
+                                </form>
+                            </div>
+-->
+
+
+                            <div class="col-md-5">
+                                <div class="c-right">
+                                    <div class="socicon">
+                                        <a href="https://www.facebook.com/pg/VUScience/about/" class="socicon-btn socicon-btn-circle socicon-solid c-bg-grey-1 c-font-grey-2 c-theme-on-hover socicon-facebook tooltips" data-original-title="Facebook" data-container="body"> </a>
+                                        <a href="https://twitter.com/anca_dmtrch/lists/wm" class="socicon-btn socicon-btn-circle socicon-solid c-bg-grey-1 c-font-grey-2 c-theme-on-hover socicon-twitter tooltips" data-original-title="Twitter" data-container="body"> </a>
+                                        <a href="https://www.youtube.com/channel/UCPMV-lDIgTmaDCW8z-NVijA" class="socicon-btn socicon-btn-circle socicon-solid c-bg-grey-1 c-font-grey-2 c-theme-on-hover socicon-youtube tooltips" data-original-title="Youtube" data-container="body"> </a>
+                                        <!-- <a href="#" class="socicon-btn socicon-btn-circle socicon-solid c-bg-grey-1 c-font-grey-2 c-theme-on-hover socicon-tumblr tooltips" data-original-title="Tumblr" data-container="body"> </a> -->
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="c-postfooter c-bg-dark-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 c-col">
+                          <p class="c-copyright c-font-grey">
+                            <d2d:Field d2d:index="3"><d2d:Content>&#169; UCDS @ VU </d2d:Content>&#160;</d2d:Field>
+                            <span class="c-font-grey-3">
+                              <d2d:Field d2d:index="4"><d2d:Content>All Rights Reserved.</d2d:Content></d2d:Field>
+                            </span>
+                          </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- END: LAYOUT/FOOTERS/FOOTER-6 -->
+        <!-- BEGIN: LAYOUT/FOOTERS/GO2TOP -->
+        <div class="c-layout-go2top">
+            <i class="icon-arrow-up"> </i>
+        </div>
+        <!-- END: LAYOUT/FOOTERS/GO2TOP -->
+        <!-- BEGIN: LAYOUT/BASE/BOTTOM -->
+
+
+      </d2d:Template>
+      </d2d:Content>
+
+      <!-- BEGIN: CORE PLUGINS -->
+      <script src="assets/plugins/jquery.min.js" type="text/javascript">//script</script>
+      <script src="assets/plugins/jquery-migrate.min.js" type="text/javascript">//script</script>
+      <script src="assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript">//script</script>
+      <script src="assets/plugins/jquery.easing.min.js" type="text/javascript">//script</script>
+      <script src="assets/plugins/reveal-animate/wow.js" type="text/javascript">//script</script>
+      <script src="assets/base/js/scripts/reveal-animate/reveal-animate.js" type="text/javascript">//script</script>
+      <!-- END: CORE PLUGINS -->
+      <!-- BEGIN: LAYOUT PLUGINS -->
+      <script src="assets/plugins/revo-slider/js/jquery.themepunch.tools.min.js" type="text/javascript">//script</script>
+      <script src="assets/plugins/revo-slider/js/jquery.themepunch.revolution.min.js" type="text/javascript">//script</script>
+      <script src="assets/plugins/revo-slider/js/extensions/revolution.extension.slideanims.min.js" type="text/javascript">//script</script>
+      <script src="assets/plugins/revo-slider/js/extensions/revolution.extension.layeranimation.min.js" type="text/javascript">//script</script>
+      <script src="assets/plugins/revo-slider/js/extensions/revolution.extension.navigation.min.js" type="text/javascript">//script</script>
+      <script src="assets/plugins/revo-slider/js/extensions/revolution.extension.video.min.js" type="text/javascript">//script</script>
+      <script src="assets/plugins/cubeportfolio/js/jquery.cubeportfolio.min.js" type="text/javascript">//script</script>
+      <script src="assets/plugins/owl-carousel/owl.carousel.min.js" type="text/javascript">//script</script>
+      <script src="assets/plugins/counterup/jquery.waypoints.min.js" type="text/javascript">//script</script>
+      <script src="assets/plugins/counterup/jquery.counterup.min.js" type="text/javascript">//script</script>
+      <script src="assets/plugins/fancybox/jquery.fancybox.pack.js" type="text/javascript">//script</script>
+      <script src="assets/plugins/smooth-scroll/jquery.smooth-scroll.js" type="text/javascript">//script</script>
+      <script src="assets/plugins/slider-for-bootstrap/js/bootstrap-slider.js" type="text/javascript">//script</script>
+      <!-- END: LAYOUT PLUGINS -->
+      <!-- BEGIN: THEME SCRIPTS -->
+      <script src="assets/base/js/components.js" type="text/javascript">//script</script>
+      <script src="assets/base/js/components-shop.js" type="text/javascript">//script</script>
+      <script src="assets/base/js/app.js" type="text/javascript">//script</script>
+      <!-- END: THEME SCRIPTS -->
+      <!-- BEGIN: PAGE SCRIPTS -->
+      <script src="assets/base/js/scripts/revo-slider/slider-4.js" type="text/javascript">//script</script>
+      <script src="assets/plugins/isotope/isotope.pkgd.min.js" type="text/javascript">//script</script>
+      <script src="assets/plugins/isotope/imagesloaded.pkgd.min.js" type="text/javascript">//script</script>
+      <script src="assets/plugins/isotope/packery-mode.pkgd.min.js" type="text/javascript">//script</script>
+      <script src="assets/plugins/ilightbox/js/jquery.requestAnimationFrame.js" type="text/javascript">//script</script>
+      <script src="assets/plugins/ilightbox/js/jquery.mousewheel.js" type="text/javascript">//script</script>
+      <script src="assets/plugins/ilightbox/js/ilightbox.packed.js" type="text/javascript">//script</script>
+      <script src="assets/base/js/scripts/pages/isotope-gallery.js" type="text/javascript">//script</script>
+      <!-- END: PAGE SCRIPTS -->
+      <!-- END: LAYOUT/BASE/BOTTOM -->
+
+      <!-- MAIN SCRIPT -->
+      <script src="assets/base/js/main.js" type="text/javascript">//script</script>
+    </body>
+
+</html>

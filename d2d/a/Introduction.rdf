@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d2d/"
+         xmlns:_ad="http://example.d2dsite.net/d2d/ad/BasicArticle#"
+>
+
+  <_ad:BasicArticle rdf:about=""> <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
+
+    <_ad:header rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+        Introduction
+    </_ad:header>
+
+    <_ad:subheader>
+        Example d2d web documents
+    </_ad:subheader>
+
+    <_ad:content>
+      <![CDATA[
+        <p>This Web site provides several examples of using the Data 2 Documents vocabulary (d2d) for the creation of rich Web documents based on Linked Data. Data 2 Documents is a vocabulary for doing Web Content Management in RDF. Due to the intrinsic characteristics of RDF and Linked Data, traditional boundaries in Web Content Management disappear. There is essentially no difference between managing content on a single Web site and managing content between different sites, domains or physical servers. As a result of its grounding in RDF, it also facilitates the publication of existing Linked Data. The examples on this site include the use of Linked data from external sources using multiple access techniques such as dereferencing and SPARQL. This article is placed multiple times at this page to illustrate the re-use of articles with different layouts. All files of these examples can be found at: <a href="http://example.d2dsite.net/browser/" target="_blank">http://example.d2dsite.net/browser/</a>. </p>
+      ]]>
+    </_ad:content>
+
+    <_ad:nested>
+
+    </_ad:nested>
+
+    <_ad:footer>
+      <![CDATA[Please choose an option in the main menu.]]>
+    </_ad:footer>
+
+  </_ad:BasicArticle>
+
+</rdf:RDF>
+
+
+
+
+
+
+

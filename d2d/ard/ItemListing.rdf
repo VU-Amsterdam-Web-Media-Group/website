@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d2d/"
+>
+
+  <d2d:ArticleRenderDef rdf:about="#Basic1Col">
+    <rdfs:label>D2D Rendering Defintion for a selection of items.</rdfs:label>
+    <d2d:renders rdf:resource="/d2d/ad/Rss1Feed#Rss1Channel" />
+    <d2d:renders rdf:resource="/d2d/ad/Rss1Feed#Rss1Feed" />
+    <d2d:renders rdf:resource="/d2d/ad/PersonsOnBirthDate#PersonsOnBirthDate" /> -->
+
+    <d2d:hasTemplate>
+      <![CDATA[
+        <d2d:Template xmlns:d2d="http://rdfns.org/d2d/">
+          <section>
+            <d2d:Field />
+          </section>
+        </d2d:Template>
+      ]]>
+    </d2d:hasTemplate>
+  </d2d:ArticleRenderDef>
+
+</rdf:RDF>
+
+

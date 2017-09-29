@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d2d/"
+>
+
+  <d2d:ArticleRenderDef rdf:about="#This">
+    <rdfs:label>D2D Rendering Defintion for a Sparql-Resultset-Row Artwork</rdfs:label>
+    <d2d:renders rdf:resource="/d2d/ad/RSRArtWork#RSRArtWork" />
+
+    <d2d:hasTemplate>
+<![CDATA[
+  <root xmlns:d2d="http://rdfns.org/d2d/">
+    <d2d:Template d2d:for="http://example.d2dsite.net/d2d/ard/RSRArtWorkRendering#This">
+      <d2d:Field>
+        <article class="rightcolumnimage" style="background-image: url([d2d:Content /]);">
+          <div class="rightcolumnimagetext">
+            <d2d:Field>
+              <h4>
+                <d2d:Content /> <d2d:Field d2d:index="4"><span>(<d2d:Content />)</span></d2d:Field>
+              </h4>
+            </d2d:Field>
+            <d2d:Field>
+              <p>
+                <d2d:Content />
+              </p>
+            </d2d:Field>
+          </div>
+        </article>
+      </d2d:Field>
+    </d2d:Template> 
+  </root>
+]]>
+    </d2d:hasTemplate>
+
+
+  </d2d:ArticleRenderDef>
+ 
+</rdf:RDF>

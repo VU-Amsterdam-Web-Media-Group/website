@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d2d/"
+         xmlns:_ad="http://ucds.cs.vu.nl/d2d/ad/MainPage#"
+>
+
+  <!-- Setting rdf:about to empty string results in the file
+       uri. However, one can not ommit the rdf:about argument!! -->
+  <d2d:Document rdf:about=""
+                rdfs:label="UCDS @ VU"
+                d2d:title="UCDS @ VU">
+
+    <d2d:renderedBy>
+      <d2d:DocRenderDef>
+        <d2d:hasTemplate rdf:resource="/template_home.xhtml" />
+      </d2d:DocRenderDef>
+    </d2d:renderedBy>
+
+    <d2d:prefRenderDef rdf:resource="/d2d/ard/MainPageRendering#This" />
+    <d2d:prefRenderDef rdf:resource="/d2d/ard/MenuRendering#Menu" />
+
+
+    <d2d:hasArticle>
+      <_ad:MainPage>
+
+        <_ad:header>
+          UCDS @ VU
+        </_ad:header>
+
+        <_ad:subheader>
+          User Centric Data Science @ VU University Amsterdam
+        </_ad:subheader>
+
+        <_ad:hasMenu rdf:resource="/Menu" />
+
+        <_ad:banner rdf:resource="/d2d/a/BannerHome" />
+
+
+        <_ad:maincolumn rdf:parseType="Collection">
+
+          <d2d:Placement>
+            <d2d:places rdf:resource="/d2d/a/banners/BannerList" />
+            <d2d:prefRenderDef rdf:resource="/d2d/ard/HomeSections#TopBanner" />
+          </d2d:Placement>
+
+          <d2d:Placement>
+            <d2d:places rdf:resource="/d2d/a/aspects/AspectList" />
+            <d2d:prefRenderDef rdf:resource="/d2d/ard/HomeSections#NewsOverview" />
+          </d2d:Placement>
+
+          <d2d:Placement>
+            <d2d:places rdf:resource="/d2d/a/projects/ProjectList" />
+            <d2d:prefRenderDef rdf:resource="/d2d/ard/HomeSections#ProjectsOverview" />
+          </d2d:Placement>
+
+          <d2d:Placement>
+            <d2d:places rdf:resource="/d2d/a/news/NewsList" />
+            <d2d:prefRenderDef rdf:resource="/d2d/ard/HomeSections#NewsOverview" />
+          </d2d:Placement>
+
+          <d2d:Placement>
+            <d2d:places rdf:resource="/d2d/a/people/PeopleList" />
+            <d2d:prefRenderDef rdf:resource="/d2d/ard/HomeSections#PeopleOverview" />
+          </d2d:Placement>
+
+          <d2d:Placement>
+            <d2d:places rdf:resource="/d2d/a/publications/PublicationList" />
+            <d2d:prefRenderDef rdf:resource="/d2d/ard/HomeSections#PublicationsOverview" />
+          </d2d:Placement>
+
+        </_ad:maincolumn>
+
+        <_ad:copyright>
+          &#169; UCDS @ VU
+        </_ad:copyright>
+
+        <_ad:footer>
+          Department of Computer Science, VU University Amsterdam, Netherlands
+        </_ad:footer>
+
+
+      </_ad:MainPage>
+    </d2d:hasArticle>
+
+  </d2d:Document>
+
+</rdf:RDF>

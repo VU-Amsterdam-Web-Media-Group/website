@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d2d/"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+>
+
+  <d2d:ArticleDefinition rdf:about="#BasicArticle">
+    <rdfs:label>D2D Article Defintion for a Basic Article with 5 fields of which 1 for nested articles.</rdfs:label>
+    <d2d:hasFieldSpec rdf:parseType="Collection">
+
+      <d2d:FieldSpecification d2d:isOptional="1">
+        <d2d:hasFieldType rdf:resource="http://rdfns.org/d2d/H4" />
+        <d2d:mustSatisfy rdf:resource="#header" />
+      </d2d:FieldSpecification>
+
+      <d2d:FieldSpecification d2d:isOptional="1">
+        <d2d:hasFieldType rdf:resource="http://rdfns.org/d2d/H5" />
+        <d2d:mustSatisfy rdf:resource="#subheader" />  <!-- Shorthand version for a single triple specification -->
+      </d2d:FieldSpecification>
+
+      <d2d:FieldSpecification d2d:isOptional="1">
+        <d2d:hasFieldType rdf:resource="http://rdfns.org/d2d/Div" />
+        <d2d:mustSatisfy rdf:resource="#content" />
+      </d2d:FieldSpecification>
+
+      <d2d:FieldSpecification d2d:isOptional="1">
+        <d2d:hasFieldType rdf:resource="http://rdfns.org/d2d/Article" />
+        <d2d:mustSatisfy>
+          <d2d:TripleSpecification>
+            <d2d:hasPredicate rdf:resource="#nested" />
+            <d2d:mustSatisfy>
+              <d2d:TripleSpecification>
+                <d2d:hasPredicate rdf:resource="http://rdfns.org/d2d/places" />
+                <d2d:hasRole rdf:resource="http://rdfns.org/d2d/Content" />
+              </d2d:TripleSpecification>
+            </d2d:mustSatisfy>
+            <d2d:mustSatisfy>
+              <d2d:TripleSpecification d2d:isOptional="1">
+                <d2d:hasPredicate rdf:resource="http://rdfns.org/d2d/prefRenderDef" />
+                <d2d:hasRole rdf:resource="http://rdfns.org/d2d/PrefRenderDef" />        <!-- NB: If the d2d advised prefRenderDef (or prefArticleDef) predicates are uses, the role does not need to be expressed. If no (other) role is expressed, it should be added automatically. -->
+              </d2d:TripleSpecification>
+            </d2d:mustSatisfy>
+          </d2d:TripleSpecification>
+        </d2d:mustSatisfy>
+      </d2d:FieldSpecification>
+
+      <d2d:FieldSpecification d2d:isOptional="1">
+        <d2d:hasFieldType rdf:resource="http://rdfns.org/d2d/I" />
+        <d2d:mustSatisfy rdf:resource="#footer" />
+      </d2d:FieldSpecification>
+
+    </d2d:hasFieldSpec>
+  </d2d:ArticleDefinition>
+
+</rdf:RDF>

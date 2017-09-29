@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d2d/"
+         xmlns:_ad="http://ucds.cs.vu.nl/d2d/ad/ItemList#"
+>
+
+  <_ad:ItemList rdf:about="" _ad:maxItems="10"> <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
+
+    <_ad:header>
+      People
+    </_ad:header>
+
+    <_ad:subHeader>
+      The UCDS team consists of enthusiastic and talented people
+    </_ad:subHeader>
+
+    <_ad:hasItemSet>
+      <_ad:ItemSet> <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
+        <_ad:hasItem rdf:parseType="Collection">
+
+          <rdf:Description rdf:about="/d2d/a/people/LoraAroyo" />
+          <rdf:Description rdf:about="/d2d/a/people/XanderWilcke" />
+          <rdf:Description rdf:about="http://www.tkuhn.org/foaf.rdf" />
+          <rdf:Description rdf:about="/d2d/a/people/DenaTahvildari" />
+          <rdf:Description rdf:about="/d2d/a/people/JanTop" />
+          <rdf:Description rdf:about="/d2d/a/people/ChrisDijkshoorn" />
+          <rdf:Description rdf:about="/d2d/a/people/RonaldSiebes" />
+          <rdf:Description rdf:about="/d2d/a/people/AncaDumitrache" />
+          <rdf:Description rdf:about="/d2d/a/people/VictorDeBoer" />
+          <rdf:Description rdf:about="https://niels.online/foaf" />
+
+        </_ad:hasItem>
+      </_ad:ItemSet>
+    </_ad:hasItemSet>
+
+    <d2d:prefRenderDef rdf:resource="/d2d/ard/FoafRendering#QuoteBox" />
+  </_ad:ItemList>
+
+</rdf:RDF>

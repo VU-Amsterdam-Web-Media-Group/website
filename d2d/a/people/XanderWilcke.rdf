@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns="http://xmlns.com/foaf/0.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:cert="http://www.w3.org/ns/auth/cert#"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:schema="http://schema.org/"
+>
+
+  <PersonalProfileDocument rdf:about="">
+    <rdfs:label>FOAF Description</rdfs:label>
+    <primaryTopic rdf:resource="#me"/>
+  </PersonalProfileDocument>
+
+  <Person rdf:about="#me">
+    <!-- Basic info -->
+    <name>Xander Wilcke</name>
+    <title>MSc</title>
+    <givenName>Xander</givenName>
+    <familyName>Wilcke</familyName>
+    <homepage rdf:resource="https://nl.linkedin.com/in/xander-wilcke-92ba3844"/>
+    <workplaceHomepage rdf:resource="http://ucds.cs.vu.nl"/>
+    <img rdf:resource="http://ucds.cs.vu.nl/images/people/wxwilcke.jpg"/>
+    <mbox rdf:resource="mailto:w.x.wilcke@vu.nl"/>
+    <status>
+		Knowledge graphs hold a wealth of structured knowledge about our world. To
+		unlock their pull potential, we must complement their powerful deductive
+		reasoning capabilities with that of inductive reasoning. In my research, I
+		try to contribute to this endeavour by investigating the applicability of
+		deep learning on knowledge graphs and the usefulness thereof for knowledge
+		consumers.
+    </status>
+    <schema:jobTitle>PhD Candidate</schema:jobTitle>
+  </Person>
+</rdf:RDF>

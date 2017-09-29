@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d2d/"
+         xmlns:_ad="http://example.d2dsite.net/d2d/ad/Banner#"
+>
+
+  <_ad:Banner rdf:about="">  <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
+
+    <_ad:title>
+        Rijksmuseum
+    </_ad:title>
+
+    <_ad:text>
+        The Rijksmuseum (English: Imperial Museum) is a Dutch national museum dedicated to arts and history in Amsterdam.
+    </_ad:text>
+
+    <_ad:image rdf:resource="/images/Rijksmuseum.jpg" />
+
+  </_ad:Banner>
+
+</rdf:RDF>

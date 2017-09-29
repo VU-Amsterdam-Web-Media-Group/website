@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d2d/"
+         xmlns:_ad="http://ucds.cs.vu.nl/d2d/ad/NewsArticle#"
+         xmlns:_md="http://ucds.cs.vu.nl/d2d/ad/MenuDefinition#"
+>
+
+  <_ad:NewsArticle rdf:about="">  <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
+
+    <_ad:title>
+      <![CDATA[
+        New version of SWI Prolog released
+      ]]>
+    </_ad:title>
+
+    <_ad:abstract>
+      <![CDATA[
+      The new stable release version 7.6.0-rc has been uploaded. Please test and report issues to the mailinglist or GitHub. Some of the highlights for version 7.6 are support for mode-directed tabling, initiated by Fabrizio Riguzzi;
+      speedup for delimited continuations and fix of the interface, which notably boosts tabling and support for multi-argument indexing, sponsored by Kyndi. For more information and a full list of changes please visit the <a href="http://www.swi-prolog.org/news/archive">SWI Prolog news page</a>.
+      ]]>
+    </_ad:abstract>
+
+    <_ad:text>
+      <![CDATA[
+        SWI-Prolog offers a comprehensive free Prolog environment. Since its start in 1987, SWI-Prolog development has been driven by the needs of real world applications. SWI-Prolog is widely used in research and education as well as commercial applications. Join over a million users who have downloaded SWI-Prolog.
+      ]]>
+    </_ad:text>
+
+    <_ad:image rdf:resource="/images/swiprolog.png" />
+
+    <_ad:link>
+      <_md:MenuItem>
+        <_md:caption>About Web &amp; Media</_md:caption>
+        <_md:hyperlink rdf:resource="/about" />
+      </_md:MenuItem>
+    </_ad:link>
+
+  </_ad:NewsArticle>
+
+</rdf:RDF>

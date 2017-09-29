@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d2d/"
+         xmlns:_ad="http://example.d2dsite.net/d2d/ad/BasicArticle#"
+>
+
+  <_ad:BasicArticle rdf:about=""> <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
+
+    <_ad:header rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+        Hello World description
+    </_ad:header>
+
+    <_ad:subheader>
+        Complete file listing
+    </_ad:subheader>
+
+    <_ad:content>
+      <![CDATA[
+<p>
+Below is a listing of the file 'helloworld.rdf' that contains the d2d:Document resource and the root article for the document. The <code>rdf:about</code> property is set to the empty string, which results in the document URL being used as URI for the document resource. The root article of the document (<code>&lt;mad:MyArticle&gt;</code>) is a blank node, since it is only used for this document. However, a reference to an external resource could also be used. Because in this case the article node is an instance of the article definition, the rendering engine can determine its type automatically. According to its definition, which is listed below the document, the root article contains five 'fields' of which one can be used for nested articles. The nested article is an external resource, i.e. the DBpedia URI for Tim Berners-Lee. The rendering engine knows how to process this resource due to the <i>preferred</i> article definition that is indicated at the top of the document. That article definition specifies the types of resources that it fits; in this case resources of type <a href="http://dbpedia.org/ontology/Person" target="_blank">http://dbpedia.org/ontology/Person</a>. It is also possible to indicate preferred definitions on lower levels in the document hierarchy, in order to process resources of the same type differently at several places in the document.
+</p>
+<div><b><a href="http://example.d2dsite.net/browser/#elf_l1_Lw" target="_blank">/helloworld.rdf</a></b></div>
+<pre>
+&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d&#50;d/"
+         xmlns:mad="http://example.d2dsite.net/d2d/ad/MyArticle#" &gt;
+
+ &lt;d2d:Document rdf:about="" d2d:title="Data 2 Documents - Hello World!"
+                            d2d:charset="utf-8"
+                            d2d:generator="Data 2 Documents"
+                            d2d:keywords="d2d RDF Linked Data Document"
+                            d2d:hasStyle="/css/hello_world.css" &gt;
+
+  &lt;d2d:prefArticleDef rdf:resource="/d2d/ad/PersonProfile#PersonProfile" /&gt;
+             
+  &lt;d2d:hasArticle&gt;
+   &lt;mad:MyArticle&gt;  &lt;!-- 'mad' is short for My Article Definition --&gt;
+
+    &lt;mad:header rdf:datatype="http://www.w3.org/2001/XMLSchema#string"&gt;
+      Hello World!
+    &lt;/mad:header&gt;
+
+    &lt;mad:subheader&gt;
+      A basic d2d web document example
+    &lt;/mad:subheader&gt;
+
+    &lt;mad:content&gt;
+      This example consists of one 'document' containing two 'articles'; One article 
+      created specifically for this example (this text), and one article that 
+      consists of a DBpedia resource that is used as such. It uses two 'Article 
+      Definitions' that define the composition of the articles. The DBpedia based 
+      article is a nested article and as such is part of this artile, being one of 
+      its fields.
+    &lt;/mad:content&gt;
+
+    &lt;d2d:hasArticle rdf:resource="http://dbpedia.org/resource/Tim_Berners-Lee" /&gt;
+
+    &lt;mad:footer&gt;
+      &lt;![CDATA[
+        This example was created by Niels Ockeloen on April 30&lt;sup&gt;th&lt;/sup&gt; 
+        2016 and is described &lt;a href="http://example.d2dsite.net/helloworldinfo" 
+        target="_blank"&gt;here&lt;/a&gt;.
+      ]]&gt;
+    &lt;/mad:footer&gt;
+
+   &lt;/mad:MyArticle&gt;
+  &lt;/d2d:hasArticle&gt;
+
+ &lt;/d2d:Document&gt;
+&lt;/rdf:RDF&gt;
+</pre>
+
+<p>
+Below is a listing of the article definition for the root article (MyArticle.rdf). It contains five 'Field Specifications' that define which property of the article resource is to be used to gather content for the field. It also specifies the type of field, e.g. a paragraph of text or a nested article. These field types correspond with the HTML5 semantics. Though not included in this basic example, it is also possible to specify more elaborated property paths and specify constrains such as object or data type, the required absence of a certain property, or alternative triple specifications.
+</p>
+<div><b><a href="http://example.d2dsite.net/browser/#elf_l1_ZDJkL2Fk" target="_blank">/d2d/ad/MyArticle.rdf</a></b></div>
+<pre>
+&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d&#50;d/"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#" &gt;
+
+ &lt;d2d:ArticleDefinition rdf:about="#MyArticle"&gt;
+  &lt;rdfs:label&gt;Basic d2d Article definition for 5 fields.&lt;/rdfs:label&gt;
+  &lt;d2d:hasFieldSpec rdf:parseType="Collection"&gt;
+
+   &lt;d2d:FieldSpecification&gt;
+    &lt;d2d:hasFieldType rdf:resource="http://rdfns.org/d2d/H4" /&gt; 
+    &lt;d2d:mustSatisfy rdf:resource="#header" /&gt; &lt;!--Shorthand triple spec--&gt;
+   &lt;/d2d:FieldSpecification&gt;
+
+   &lt;d2d:FieldSpecification d2d:isOptional="1"&gt;
+    &lt;d2d:hasFieldType rdf:resource="http://rdfns.org/d2d/H5" /&gt;
+    &lt;d2d:mustSatisfy rdf:resource="#subheader" /&gt;
+   &lt;/d2d:FieldSpecification&gt;
+
+   &lt;d2d:FieldSpecification&gt;
+    &lt;d2d:hasFieldType rdf:resource="http://rdfns.org/d2d/Div" /&gt;
+    &lt;d2d:mustSatisfy rdf:resource="#content" /&gt;
+   &lt;/d2d:FieldSpecification&gt;
+
+   &lt;d2d:FieldSpecification d2d:isOptional="1"&gt;
+    &lt;d2d:hasFieldType rdf:resource="http://rdfns.org/d2d/Article" /&gt;
+    &lt;d2d:mustSatisfy rdf:resource="http://rdfns.org/d2d/hasArticle" /&gt;
+   &lt;/d2d:FieldSpecification&gt;
+
+   &lt;d2d:FieldSpecification d2d:isOptional="1"&gt;
+    &lt;d2d:hasFieldType rdf:resource="http://rdfns.org/d2d/I" /&gt;
+    &lt;d2d:mustSatisfy rdf:resource="#footer" /&gt;
+   &lt;/d2d:FieldSpecification&gt;
+
+  &lt;/d2d:hasFieldSpec&gt;
+ &lt;/d2d:ArticleDefinition&gt;
+
+&lt;/rdf:RDF&gt;
+</pre>
+
+<p>
+The article definition for the nested article is listed below. It is constructed in a similar fashion, using DBpedia property IRIs. Apart from the required property, options are specified such as the required language, whether a field is optional, if a label or link should be used/created in case of a resource property and the maximum number of values that is desired in case multiple values are specified. Furthermore, alternatives are specified for cases where multiple predicate names are used interchangeably within DBpedia, as is the case for birth dates.
+</p>
+<div><b><a href="http://example.d2dsite.net/browser/#elf_l1_ZDJkL2Fk" target="_blank">/d2d/ad/PersonProfile.rdf</a></b></div>
+<pre>
+&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d&#50;d/"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#" &gt;
+
+ &lt;d2d:ArticleDefinition rdf:about="#PersonProfile" d2d:skipOnError="1"&gt;
+  &lt;d2d:fitsClass rdf:resource="http://dbpedia.org/ontology/Person" /&gt;
+  &lt;rdfs:label&gt;D2D Article Defintion for a Person Profile.&lt;/rdfs:label&gt;
+  &lt;d2d:hasFieldSpec rdf:parseType="Collection"&gt;
+
+   &lt;d2d:FieldSpecification d2d:isOptional="1" d2d:limit="1" 
+                           d2d:useLabel="0" d2d:createLink="0"&gt;
+    &lt;d2d:hasFieldType rdf:resource="http://rdfns.org/d2d/A" /&gt;
+    &lt;d2d:mustSatisfy rdf:resource="http://xmlns.com/foaf/0.1/isPrimaryTopicOf" /&gt;
+   &lt;/d2d:FieldSpecification&gt;
+
+   &lt;d2d:FieldSpecification d2d:limit="1" d2d:language="en"&gt;
+    &lt;d2d:hasFieldType rdf:resource="http://rdfns.org/d2d/H4" /&gt;
+    &lt;d2d:mustSatisfy rdf:resource="http://dbpedia.org/property/name" /&gt;
+    &lt;!-- Alternative (in shorthand notation) --&gt;
+    &lt;d2d:hasAlternative rdf:resource="http://dbpedia.org/property/fullName" /&gt;
+   &lt;/d2d:FieldSpecification&gt;
+
+   &lt;d2d:FieldSpecification d2d:limit="1" d2d:isOptional="1"&gt;
+    &lt;d2d:hasFieldType rdf:resource="http://rdfns.org/d2d/P" /&gt;
+    &lt;d2d:mustSatisfy rdf:resource="http://dbpedia.org/ontology/birthDate" /&gt;
+    &lt;d2d:hasAlternative rdf:resource="http://dbpedia.org/property/birthDate" /&gt;
+    &lt;d2d:hasAlternative rdf:resource="http://dbpedia.org/property/dateOfBirth" /&gt;
+   &lt;/d2d:FieldSpecification&gt;
+
+   &lt;d2d:FieldSpecification d2d:isOptional="1" d2d:language="en" 
+                           d2d:useLabel="1" d2d:createLink="1" d2d:limit="1"&gt;
+    &lt;d2d:hasFieldType rdf:resource="http://rdfns.org/d2d/P" /&gt; 
+    &lt;d2d:mustSatisfy&gt;
+     &lt;d2d:TripleSpecification&gt;
+      &lt;d2d:hasPredicate rdf:resource="http://dbpedia.org/property/birthPlace" /&gt;
+      &lt;d2d:hasRole rdf:resource="http://rdfns.org/d2d/Content" /&gt;
+      &lt;d2d:mustSatisfy&gt;
+       &lt;d2d:TripleSpecification&gt;
+        &lt;d2d:hasPredicate rdf:resource="http://dbpedia.org/property/countryCode" /&gt;
+        &lt;d2d:hasRole rdf:resource="http://rdfns.org/d2d/Exclusion" /&gt;
+       &lt;/d2d:TripleSpecification&gt;
+      &lt;/d2d:mustSatisfy&gt;
+     &lt;/d2d:TripleSpecification&gt;
+    &lt;/d2d:mustSatisfy&gt;
+   &lt;/d2d:FieldSpecification&gt;
+
+   &lt;d2d:FieldSpecification d2d:limit="1" d2d:isOptional="1"&gt;
+    &lt;d2d:hasFieldType rdf:resource="http://rdfns.org/d2d/P" /&gt;
+    &lt;d2d:mustSatisfy rdf:resource="http://dbpedia.org/ontology/deathDate" /&gt;
+    &lt;d2d:hasAlternative rdf:resource="http://dbpedia.org/property/deathDate" /&gt;
+    &lt;d2d:hasAlternative rdf:resource="http://dbpedia.org/property/dateOfDeath" /&gt;
+   &lt;/d2d:FieldSpecification&gt;
+
+   &lt;d2d:FieldSpecification d2d:isOptional="1" d2d:language="en"&gt;
+    &lt;d2d:hasFieldType rdf:resource="http://rdfns.org/d2d/P" /&gt; 
+    &lt;d2d:mustSatisfy&gt;
+     &lt;d2d:TripleSpecification&gt;
+      &lt;d2d:hasPredicate rdf:resource="http://dbpedia.org/property/deathPlace" /&gt;
+      &lt;d2d:hasRole rdf:resource="http://rdfns.org/d2d/Content" /&gt;
+      &lt;d2d:hasObjectType rdf:resource="http://dbpedia.org/ontology/Settlement" /&gt;
+     &lt;/d2d:TripleSpecification&gt;
+    &lt;/d2d:mustSatisfy&gt;
+   &lt;/d2d:FieldSpecification&gt;
+
+   &lt;d2d:FieldSpecification d2d:isOptional="1" d2d:limit="1" d2d:language="en"&gt;
+    &lt;d2d:hasFieldType rdf:resource="http://rdfns.org/d2d/P" /&gt;
+    &lt;d2d:mustSatisfy rdf:resource="http://dbpedia.org/property/almaMater" /&gt;
+   &lt;/d2d:FieldSpecification&gt;
+
+   &lt;d2d:FieldSpecification d2d:isOptional="1" d2d:limit="1"&gt;
+    &lt;d2d:hasFieldType rdf:resource="http://rdfns.org/d2d/Img" /&gt;
+    &lt;d2d:mustSatisfy rdf:resource="http://dbpedia.org/ontology/thumbnail" /&gt;
+   &lt;/d2d:FieldSpecification&gt;
+
+   &lt;d2d:FieldSpecification d2d:isOptional="1" d2d:language="en"&gt;
+    &lt;d2d:hasFieldType rdf:resource="http://rdfns.org/d2d/P" /&gt;
+    &lt;d2d:mustSatisfy rdf:resource="http://dbpedia.org/ontology/abstract" /&gt;
+   &lt;/d2d:FieldSpecification&gt;
+
+  &lt;/d2d:hasFieldSpec&gt;
+ &lt;/d2d:ArticleDefinition&gt;
+
+&lt;/rdf:RDF&gt;
+</pre>
+
+
+<p>
+The three listings above are all that is needed for the Hello World example, of which the latter two, the article definitions, can be re-used for other documents. For example, the PersonProfile definition is also used in <a href="http://example.d2dsite.net/primeministers">this example</a>. The examples here are expressed in XML/RDF to allow for a recognizable document structure, but other RDF serialisation formats such as N3 or Turtle can also be used.
+</p>
+<p>
+All files of this example, as well as the files of other examples, can be found at: <br /><a href="http://example.d2dsite.net/browser/" target="_blank">http://example.d2dsite.net/browser/</a>.
+</p>
+
+
+
+      ]]>
+    </_ad:content>
+
+    <_ad:nested>
+
+    </_ad:nested>
+
+    <_ad:footer>
+      <![CDATA[   ]]>
+    </_ad:footer>
+
+  </_ad:BasicArticle>
+
+</rdf:RDF>

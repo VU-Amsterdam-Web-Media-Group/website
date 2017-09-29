@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d2d/"
+         xmlns:_ad="http://example.d2dsite.net/d2d/ad/BasicArticle#"
+>
+
+  <_ad:BasicArticle rdf:about=""> <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
+
+    <_ad:header rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+        Explanation
+    </_ad:header>
+
+    <_ad:subheader>
+        DBpedia data retrieved using dereferencing selected on category through an inverse triple relation
+    </_ad:subheader>
+
+    <_ad:content>
+      <![CDATA[
+        <p>This example uses external data from DBpedia to generate profiles of Dutch Prime Ministers. The Prime Ministers are selected by dereferencing the DBpedia resource for the categorie 'Prime Ministers of The Netherlands' [1], which is 'placed as article'. Next, the article definition used to process that resource as an article selects all resources from incoming triples with the DC Terms 'subject' predicate [2], which are then processed as nested articles using the Person Profile article definition that was also used in the Hello World example.</p>
+      ]]>
+    </_ad:content>
+
+    <_ad:nested>
+
+    </_ad:nested>
+
+    <_ad:footer>
+      <![CDATA[
+        [1] <a href="http://dbpedia.org/resource/Category:Prime_Ministers_of_the_Netherlands" target="_blank">dbc:Prime_Ministers_of_the_Netherlands</a><br />
+        [2] <a href="http://purl.org/dc/terms/subject" target="_blank">dct:subject</a><br />
+      ]]>
+    </_ad:footer>
+
+  </_ad:BasicArticle>
+
+</rdf:RDF>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d2d/"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+>
+
+      <d2d:ArticleDefinition rdf:about="#RSRArtWork">
+        <rdfs:label>D2D Article Defintion for a (SPARQL) resultset row containing Artwork information.</rdfs:label>
+        <d2d:fitsClass rdf:resource="http://rdfns.org/d2d/SparqlResultset" />
+        <d2d:hasFieldSpec rdf:parseType="Collection">
+        
+          <d2d:FieldSpecification d2d:usesVariable="imageurl">
+            <d2d:hasFieldType rdf:resource="http://rdfns.org/d2d/Img" /> 
+          </d2d:FieldSpecification>
+      
+          <d2d:FieldSpecification d2d:usesVariable="title">
+            <d2d:hasFieldType rdf:resource="http://rdfns.org/d2d/H4" /> 
+          </d2d:FieldSpecification>
+          
+          <d2d:FieldSpecification d2d:usesVariable="description">
+            <d2d:hasFieldType rdf:resource="http://rdfns.org/d2d/P" /> 
+          </d2d:FieldSpecification>          
+      
+          <d2d:FieldSpecification d2d:usesVariable="created">
+            <d2d:hasFieldType rdf:resource="http://rdfns.org/d2d/Span" /> 
+          </d2d:FieldSpecification>          
+      
+
+
+
+
+        </d2d:hasFieldSpec>
+      </d2d:ArticleDefinition>
+
+</rdf:RDF>

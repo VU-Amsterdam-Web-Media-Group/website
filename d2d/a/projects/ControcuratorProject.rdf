@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d2d/"
+         xmlns:_ad="http://ucds.cs.vu.nl/d2d/ad/ResearchProject#"
+>
+
+  <_ad:ResearchProject rdf:about="">  <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
+
+    <_ad:title>
+      <![CDATA[
+        ControCurator
+      ]]>
+    </_ad:title>
+
+    <_ad:punchline>
+      <![CDATA[
+        Crowds and Machines for Modeling and Discovering Controversy
+      ]]>
+    </_ad:punchline>
+
+    <_ad:abstract>
+      <![CDATA[
+ControCurator aims to enable for modern information access systems to discover and understand controversial topics and events by bringing together different types of crowds (niches of experts, lay crowds and engaged social media contributors) and machines in a joint active learning workflow for the creation of adequate training data both realtime and offline.
+      ]]>
+    </_ad:abstract>
+
+    <_ad:text>
+      <![CDATA[
+In ControCurator the Accurator.nl tools and algorithms will be validated in new domains with different niches of experts (media studies scholars and professionals from the media industry), and with different types of media (social media, videos and video transcripts/subtitles) and will be also combined with complementary paid crowdsourcing and machine processing of text.
+      ]]>
+    </_ad:text>
+
+    <_ad:image rdf:resource="/images/controcurator.jpg" />
+
+
+    <_ad:homepage rdf:resource="http://controcurator.org" />
+
+    <_ad:member rdf:parseType="Collection">
+      <rdf:Description rdf:about="/d2d/a/people/LoraAroyo#me" />
+      <rdf:Description rdf:about="http://www.tkuhn.org/foaf.rdf#me" />
+    </_ad:member>
+
+
+    <_ad:menulink rdf:resource="/projects/ControCurator" />
+
+  </_ad:ResearchProject>
+
+</rdf:RDF>

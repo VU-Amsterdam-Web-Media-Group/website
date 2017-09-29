@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d2d/"
+>
+
+  <d2d:ArticleRenderDef rdf:about="#This">
+    <rdfs:label>D2D Rendering Defintion for a Person Profile article.</rdfs:label>
+    <d2d:renders rdf:resource="/d2d/ad/PersonProfile#PersonProfile" />
+
+    <d2d:hasTemplate>
+      <![CDATA[
+          <d2d:Template xmlns:d2d="http://rdfns.org/d2d/">
+            <article style="margin-left: 0px; padding-top: 40px; padding-left: 5px;">
+              <div class="personprofile">
+                <d2d:Field d2d:index="1"><a href="[d2d:Content /]" target="_blank"><h4>[/d2d:Field]<d2d:Field />[d2d:Field d2d:index="1"]</h4></a></d2d:Field>
+                 <span>
+                  <d2d:Field><p>Birth: <d2d:Content /><d2d:Field> (<d2d:Content />)</d2d:Field></p></d2d:Field>
+                  <d2d:Field><p>Death: <d2d:Content /><d2d:Field> (<d2d:Content />)</d2d:Field></p></d2d:Field>
+                  <d2d:Field><p>Alma Mater: <d2d:Content /></p></d2d:Field>
+                  <d2d:Field><img src="[d2d:Content /]" /></d2d:Field>
+                  <d2d:Field><p><d2d:Content /></p></d2d:Field>
+                </span>
+              </div>
+            </article>
+          </d2d:Template>
+      ]]>
+    </d2d:hasTemplate>
+
+
+  </d2d:ArticleRenderDef>
+
+
+  <d2d:ArticleRenderDef rdf:about="#Right1Col">
+    <rdfs:label>D2D Rendering Defintion for a Person Profile article.</rdfs:label>
+    <d2d:renders rdf:resource="/d2d/ad/PersonProfile#PersonProfile" />
+
+    <d2d:hasTemplate>
+      <![CDATA[
+        <d2d:Template xmlns:d2d="http://rdfns.org/d2d/">
+          <article class="personprofile ba-1col">
+            <header>
+                <d2d:Field d2d:index="8"><img src="[d2d:Content /]" /></d2d:Field>
+                <d2d:Field d2d:index="1"><a href="[d2d:Content /]" target="_blank"><h4>[/d2d:Field]<d2d:Field />[d2d:Field d2d:index="1"]</h4></a></d2d:Field>
+            </header>
+            <span>
+              <d2d:Field><h5>Birth: <d2d:Content /><d2d:Field> (<d2d:Content />)</d2d:Field></h5></d2d:Field>
+              <d2d:Field><h5>Death: <d2d:Content /><d2d:Field> (<d2d:Content />)</d2d:Field></h5></d2d:Field>
+              <d2d:Field><h5>Alma Mater: <d2d:Content /></h5></d2d:Field>
+              <d2d:Field><p><d2d:Content>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a rutrum est, id vulputate nunc. Nulla facilisi. Cras quis posuere turpis, in aliquet sem. Vivamus ut orci ac felis tristique vulputate. Fusce ac velit fermentum, euismod est id, mattis ante. Maecenas aliquet sagittis pretium. Duis vel nibh at magna facilisis molestie. Praesent risus nulla, volutpat sit amet elementum id, cursus at turpis. Donec non leo pharetra dui finibus iaculis id et purus. Vestibulum in nisl ut massa fringilla tristique. Vestibulum efficitur eget felis id imperdiet. Quisque placerat luctus augue, vitae tempus felis aliquet sit amet. Suspendisse vel luctus lacus. Sed sed velit at mauris mollis convallis.</d2d:Content></p></d2d:Field>
+            </span>
+          </article>
+        </d2d:Template> 
+      ]]>
+    </d2d:hasTemplate>
+
+
+  </d2d:ArticleRenderDef>
+
+</rdf:RDF>
+
+
+
+

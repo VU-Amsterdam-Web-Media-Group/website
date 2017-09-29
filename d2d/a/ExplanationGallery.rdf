@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d2d/"
+         xmlns:_ad="http://example.d2dsite.net/d2d/ad/BasicArticle#"
+>
+
+  <_ad:BasicArticle rdf:about=""> <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
+
+    <_ad:header rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+        Explanation
+    </_ad:header>
+
+    <_ad:subheader>
+        Rijksmuseum data retrieved using SPARQL combined with DBpedia data retrieved using dereferencing
+    </_ad:subheader>
+
+    <_ad:content>
+      <![CDATA[
+        <p>This example uses external data on the same subject (Dutch painter Jan Steen) from multiple sources using different methods. The description of Jan Steen, including his portrait, is retrieved from DBpedia by dereferencing the DBpedia IRI for Jan Steen [1]. The images of his painting are retrieved using SPARQL from the Rijksmuseum collection endpoint [2].</p>
+      ]]>
+    </_ad:content>
+
+    <_ad:nested>
+
+    </_ad:nested>
+
+    <_ad:footer>
+      <![CDATA[
+        [1] <a href="http://dbpedia.org/resource/Jan_Steen" target="_blank">dbr:Jan_Steen</a><br />
+        [2] <a href="http://rijksmuseum.sealinc.eculture.labs.vu.nl/sparql/" target="_blank">Rijksmuseum SPARQL endpoint</a><br />
+      ]]>
+    </_ad:footer>
+
+  </_ad:BasicArticle>
+
+</rdf:RDF>

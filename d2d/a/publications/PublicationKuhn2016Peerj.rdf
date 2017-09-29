@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d2d/"
+         xmlns:_ad="http://ucds.cs.vu.nl/d2d/ad/Publication#"
+>
+
+  <_ad:Publication rdf:about="">  <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
+
+    <_ad:title>
+      <![CDATA[
+        Decentralized provenance-aware publishing with nanopublications
+      ]]>
+    </_ad:title>
+
+    <_ad:hasKeyword>Data publishing</_ad:hasKeyword>
+    <_ad:hasKeyword>Nanopublications</_ad:hasKeyword>
+    <_ad:hasKeyword>Provenance</_ad:hasKeyword>
+    <_ad:hasKeyword>Linked Data</_ad:hasKeyword>
+    <_ad:hasKeyword>Semantic Web</_ad:hasKeyword>
+
+    <_ad:punchline>
+      <![CDATA[
+        Our approach allows researchers to publish, retrieve, verify, and recombine datasets of nanopublications in a reliable and trustworthy manner.
+      ]]>
+    </_ad:punchline>
+
+    <_ad:abstract>
+      <![CDATA[
+        Publication and archival of scientific results is still commonly considered the responsability of classical publishing companies. Classical forms of publishing, however, which center around printed narrative articles, no longer seem well-suited in the digital age. In particular, there exist currently no efficient, reliable, and agreed-upon methods for publishing scientific datasets, which have become increasingly important for science. In this article, we propose to design scientific data publishing as a web-based bottom-up process, without top-down control of central authorities such as publishing companies. Based on a novel combination of existing concepts and technologies, we present a server network to decentrally store and archive data in the form of nanopublications, an RDF-based format to represent scientific data. We show how this approach allows researchers to publish, retrieve, verify, and recombine datasets of nanopublications in a reliable and trustworthy manner, and we argue that this architecture could be used as a low-level data publication layer to serve the Semantic Web in general. Our evaluation of the current network shows that this system is efficient and reliable.
+      ]]>
+    </_ad:abstract>
+
+    <_ad:linkToFullText>
+
+    </_ad:linkToFullText>
+
+    <_ad:image rdf:resource="/images/Kuhn2016Peerj.png" />
+
+
+
+  </_ad:Publication>
+
+</rdf:RDF>

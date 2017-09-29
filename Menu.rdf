@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d2d/"
+         xmlns:_ad="http://ucds.cs.vu.nl/d2d/ad/MenuDefinition#"
+>
+  <_ad:Menu rdf:about="">  <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
+    <_ad:hasItem rdf:parseType="Collection">
+
+      <_ad:MenuItem>
+        <_ad:caption>Home</_ad:caption>
+        <_ad:hyperlink rdf:resource="/"/>
+      </_ad:MenuItem>
+
+
+
+
+
+<_ad:MenuItem>
+  <_ad:caption>About UCDS @ VU</_ad:caption>
+  <_ad:hyperlink rdf:resource="/"/>
+  <_ad:hasSubMenu>
+    <_ad:Menu>
+      <_ad:hasItem rdf:parseType="Collection">
+
+        <_ad:MenuItem>
+          <_ad:caption>Our Group</_ad:caption>
+          <_ad:hyperlink rdf:resource="/#Our Group"/>
+        </_ad:MenuItem>
+
+        <_ad:MenuItem>
+          <_ad:caption>Projects</_ad:caption>
+          <_ad:hyperlink rdf:resource="/#Current Projects"/>
+          <_ad:hasSubMenu rdf:resource="/d2d/a/projects/ProjectList#Projects" />
+        </_ad:MenuItem>
+
+        <_ad:MenuItem>
+          <_ad:caption>News</_ad:caption>
+          <_ad:hyperlink rdf:resource="/#News"/>
+        </_ad:MenuItem>
+
+        <_ad:MenuItem>
+          <_ad:caption>People</_ad:caption>
+          <_ad:hyperlink rdf:resource="/#People"/>
+        </_ad:MenuItem>
+
+        <_ad:MenuItem>
+          <_ad:caption>Publications</_ad:caption>
+          <_ad:hyperlink rdf:resource="/#Latest Publications"/>
+        </_ad:MenuItem>
+
+
+      </_ad:hasItem>
+    </_ad:Menu>
+  </_ad:hasSubMenu>
+</_ad:MenuItem>
+
+
+
+
+
+
+
+
+<!--
+      <_ad:MenuItem>
+        <_ad:caption>People</_ad:caption>
+        <_ad:hyperlink rdf:resource="/people"/>
+      </_ad:MenuItem>
+
+      <_ad:MenuItem>
+        <_ad:caption>Organisation</_ad:caption>
+        <_ad:hyperlink rdf:resource="/organisation"/>
+        <_ad:hasSubMenu>
+          <_ad:Menu>
+            <_ad:hasItem rdf:parseType="Collection">
+
+              <_ad:MenuItem>
+                <_ad:caption>About Web &amp; Media</_ad:caption>
+                <_ad:hyperlink rdf:resource="/about"/>
+              </_ad:MenuItem>
+
+              <_ad:MenuItem>
+                <_ad:caption>People</_ad:caption>
+                <_ad:hyperlink rdf:resource="/people"/>
+              </_ad:MenuItem>
+
+              <_ad:MenuItem>
+                <_ad:caption>Partners</_ad:caption>
+                <_ad:hyperlink rdf:resource="/partners"/>
+              </_ad:MenuItem>
+
+              <_ad:MenuItem>
+                <_ad:caption>Contact</_ad:caption>
+                <_ad:hyperlink rdf:resource="/contact"/>
+              </_ad:MenuItem>
+
+            </_ad:hasItem>
+          </_ad:Menu>
+        </_ad:hasSubMenu>
+      </_ad:MenuItem>
+
+      <_ad:MenuItem>
+        <_ad:caption>Research</_ad:caption>
+        <_ad:hyperlink rdf:resource="/research"/>
+        <_ad:hasSubMenu>
+          <_ad:Menu>
+            <_ad:hasItem rdf:parseType="Collection">
+
+              <_ad:MenuItem>
+                <_ad:caption>Publications</_ad:caption>
+                <_ad:hyperlink rdf:resource="/publications"/>
+              </_ad:MenuItem>
+
+              <_ad:MenuItem>
+                <_ad:caption>Projects</_ad:caption>
+                <_ad:hyperlink rdf:resource="/projects"/>
+                <_ad:hasSubMenu rdf:resource="/d2d/a/projects/ProjectList#Projects" />
+              </_ad:MenuItem>
+
+              <_ad:MenuItem>
+                <_ad:caption>Conferences</_ad:caption>
+                <_ad:hyperlink rdf:resource="/conferences"/>
+              </_ad:MenuItem>
+
+              <_ad:MenuItem>
+                <_ad:caption>Software &amp; Demo's</_ad:caption>
+                <_ad:hyperlink rdf:resource="/software-demos"/>
+              </_ad:MenuItem>
+
+            </_ad:hasItem>
+          </_ad:Menu>
+        </_ad:hasSubMenu>
+      </_ad:MenuItem>
+
+      <_ad:MenuItem>
+        <_ad:caption>Education</_ad:caption>
+        <_ad:hyperlink rdf:resource="/education"/>
+        <_ad:hasSubMenu>
+          <_ad:Menu>
+            <_ad:hasItem rdf:parseType="Collection">
+
+              <_ad:MenuItem>
+                <_ad:caption>Courses</_ad:caption>
+                <_ad:hyperlink rdf:resource="/courses"/>
+              </_ad:MenuItem>
+
+              <_ad:MenuItem>
+                <_ad:caption>Student Projects</_ad:caption>
+                <_ad:hyperlink rdf:resource="/student-projects"/>
+              </_ad:MenuItem>
+
+              <_ad:MenuItem>
+                <_ad:caption>Student Profiles</_ad:caption>
+                <_ad:hyperlink rdf:resource="/student-profiles"/>
+              </_ad:MenuItem>
+
+              <_ad:MenuItem>
+                <_ad:caption>Project Reports</_ad:caption>
+                <_ad:hyperlink rdf:resource="/project-reports"/>
+              </_ad:MenuItem>
+
+              <_ad:MenuItem>
+                <_ad:caption>Internships</_ad:caption>
+                <_ad:hyperlink rdf:resource="/internships"/>
+              </_ad:MenuItem>
+
+            </_ad:hasItem>
+          </_ad:Menu>
+        </_ad:hasSubMenu>
+      </_ad:MenuItem>
+-->
+
+    </_ad:hasItem>
+  </_ad:Menu>
+
+</rdf:RDF>

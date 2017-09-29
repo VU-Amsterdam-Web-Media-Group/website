@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns="http://xmlns.com/foaf/0.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:cert="http://www.w3.org/ns/auth/cert#"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:schema="http://schema.org/"
+>
+
+  <PersonalProfileDocument rdf:about="">
+    <rdfs:label> FOAF Description</rdfs:label>
+    <primaryTopic rdf:resource="#me"/>
+  </PersonalProfileDocument>
+
+  <Person rdf:about="#me">
+
+    <!-- Basic info -->
+
+    <name></name>
+    <title></title>
+    <givenName></givenName>
+    <familyName></familyName>
+    <homepage rdf:resource=""/>
+    <workplaceHomepage rdf:resource="http://ucds.cs.vu.nl"/>
+
+    <img rdf:resource="http://me.me/me.jpg"/>
+
+<!--
+    <dateOfBirth>1990-12-31</dateOfBirth>
+-->
+
+    <mbox rdf:resource="mailto:"/>
+
+    <status>
+      EXAMPLE TEXT: I work on crowdsourcing in a linked cultural heritage environment. I implemented the Accurator nichesourcing platform as part of my PhD project. Doing research at the Rijksmuseum Amsterdam, British Museum and the Netherlands Institute for Sound and Vision provided valuable insights in the requirements of institutions regarding Linked Data and crowdsourcing.
+    </status>
+
+    <schema:jobTitle>
+      PhD Candidate
+    </schema:jobTitle>
+
+<!--
+    <currentProject>
+      <Project>
+        <rdfs:label>Project Name</rdfs:label>
+        <rdfs:comment xml:lang="en">
+          Project Description
+        </rdfs:comment>
+        <depiction rdf:resource="?.png" />
+        <member rdf:resource="link-to-person" />
+
+        <homepage>
+          <Document rdf:about="link-to-project-homepage">
+            <rdfs:label>Project Page Name</rdfs:label>
+          </Document>
+        </homepage>
+      </Project>
+    </currentProject>
+-->
+
+    <!-- Accounts -->
+
+<!--
+    <holdsAccount>
+      <OnlineAccount>
+        <name>Skype</name>
+        <accountServiceHomepage rdf:resource="https://www.skype.com/"/>
+        <accountName>skype_name</accountName>
+      </OnlineAccount>
+    </holdsAccount>
+
+    <account>
+      <OnlineAccount>
+        <accountName>my_account_name</accountName>
+        <accountServiceHomepage rdf:resource="https://www.facebook.com"/>
+        <name>Facebook</name>
+        <page rdf:resource="https://www.facebook.com/my_fb_url/"/>
+      </OnlineAccount>
+    </account>
+
+    <account>
+      <OnlineAccount>
+        <accountName>my_account_name</accountName>
+        <accountServiceHomepage rdf:resource="https://www.linkedin.com"/>
+        <name>LinkedIn</name>
+        <page rdf:resource="https://www.linkedin.com/in/my_name/"/>
+      </OnlineAccount>
+    </account>
+-->
+
+    <!-- Persons -->
+
+<!--
+    <knows>
+      <Person rdf:about="http://www.cs.vu.nl/~guus/foaf.rdf#me">
+	<name>Guus Schreiber</name>
+      </Person>
+    </knows>
+
+    <knows>
+      <Person rdf:about="http://few.vu.nl/~vbr240/foaf.rdf#me">
+	<name>Victor de Boer</name>
+      </Person>
+    </knows>
+
+    <knows>
+      <Person>
+        <name>Frank van Harmelen</name>
+        <rdfs:seeAlso rdf:resource="http://www.cs.vu.nl/~frankh/foaf.rdf"/>
+      </Person>
+    </knows>
+-->
+
+  </Person>
+
+
+</rdf:RDF>

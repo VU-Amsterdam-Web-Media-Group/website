@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d2d/"
+         xmlns:_ad="http://ucds.cs.vu.nl/d2d/ad/BasicArticle#"
+>
+
+  <_ad:BasicArticle rdf:about=""> <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
+
+    <_ad:nested rdf:parseType="Collection">
+
+      <d2d:Placement>
+        <d2d:places rdf:resource="/d2d/a/banners/UCDS-Banner" />
+        <d2d:prefRenderDef rdf:resource="/d2d/ard/BannerRendering#Black" />
+      </d2d:Placement>
+
+      <d2d:Placement>
+        <d2d:places rdf:resource="/d2d/a/banners/DataScienceBanner" />
+        <d2d:prefRenderDef rdf:resource="/d2d/ard/BannerRendering#Black" />
+      </d2d:Placement>
+
+      <d2d:Placement>
+        <d2d:places rdf:resource="/d2d/a/banners/CrowdTruthBanner" />
+        <d2d:prefRenderDef rdf:resource="/d2d/ard/BannerRendering#White" />
+      </d2d:Placement>
+
+
+    </_ad:nested>
+
+
+  </_ad:BasicArticle>
+
+</rdf:RDF>

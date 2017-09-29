@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d2d/"
+         xmlns:_ad="http://example.d2dsite.net/d2d/ard/SparqlSelect#"
+>
+
+
+  <_ad:SparqlSet rdf:about="" d2d:sparqlEndpoint="http://rijksmuseum.sealinc.eculture.labs.vu.nl/sparql/">
+    <d2d:sparqlQuery>
+      <![CDATA[
+              
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX edm: <http://www.europeana.eu/schemas/edm/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX JanHavickszSteen: <http://purl.org/collections/nl/rma/RM0001.PEOPLE.5102> # Jan Havicksz. Steen
+
+SELECT ?imageurl 
+       (SAMPLE(?titles) AS ?title) 
+       (SAMPLE(?descriptions) AS ?description) 
+       (SAMPLE(?createds) AS ?created) 
+WHERE {
+  ?painting a edm:ProvidedCHO;
+            dc:creator JanHavickszSteen:;
+            edm:type "IMAGE";
+            dc:title ?titles;
+            dc:description ?descriptions;
+            dcterms:created ?createds.
+  ?aggregation edm:aggregatedCHO ?painting; 
+               edm:object ?imageurl.
+  FILTER (lang(?titles) = 'en')
+  FILTER (lang(?descriptions) = 'en')  
+} GROUP BY (?imageurl)
+
+LIMIT 10
+
+      ]]>
+    </d2d:sparqlQuery>
+    <d2d:prefRenderDef rdf:resource="/d2d/ard/RSRArtWorkRendering#This" />
+  </_ad:SparqlSet>
+
+</rdf:RDF>

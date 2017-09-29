@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d2d/"
+         xmlns:_ad="http://example.d2dsite.net/d2d/ad/BasicArticle#"
+>
+
+  <_ad:BasicArticle rdf:about=""> <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
+
+    <_ad:header rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+        Explanation
+    </_ad:header>
+
+    <_ad:subheader>
+        External news items retrieved using RSS
+    </_ad:subheader>
+
+    <_ad:content>
+      <![CDATA[
+        <p>This example uses external news items from Nature, which are retrieved using an RSS 1.0 feed [1]. As RSS 1.0 [2] is based on RDF, it is not only a serialisation format but also true RDF data that can be extracted and treated as such. This example shows the benefits of RDF based content management and the RSS 1.0 format as now, more than 15 years after its introduction, RSS 1.0 feeds integrate seamlessly with Data 2 Documents; because they are based on RDF, they can be processed using d2d article definitions without the need for a separate parser.</p>
+      ]]>
+    </_ad:content>
+
+    <_ad:nested>
+
+    </_ad:nested>
+
+    <_ad:footer>
+      <![CDATA[
+        [1] <a href="http://www.nature.com/nature/current_issue/rss" target="_blank">Nature RSS feed</a><br />
+        [2] <a href="http://web.resource.org/rss/1.0/spec" target="_blank">RSS 1.0 specification</a><br />
+      ]]>
+    </_ad:footer>
+
+  </_ad:BasicArticle>
+
+</rdf:RDF>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d2d/"
+>
+
+  <d2d:ArticleRenderDef rdf:about="#This">
+    <rdfs:label>D2D Rendering Defintion for an RSS feed item.</rdfs:label>
+    <d2d:renders rdf:resource="/d2d/ad/Rss1Feed#Rss1Item" />
+
+    <d2d:hasTemplate>
+      <![CDATA[
+        <root xmlns:d2d="http://rdfns.org/d2d/">
+          <d2d:Template d2d:for="http://example.d2dsite.net/d2d/ard/RssItemRendering#This">
+            <article class="rightcolumnrssarticle">
+              <header>
+                <d2d:Field d2d:index="2"><a href="[d2d:Content /]" target="_blank">[/d2d:Field]<d2d:Field><h4><d2d:Content /></h4></d2d:Field>[d2d:Field d2d:index="2"]</a></d2d:Field>
+              </header>
+              <d2d:Field><p><d2d:Content /></p></d2d:Field>
+              <d2d:Field d2d:index="2"><a class="readmore" href="[d2d:Content /]" target="_blank">Click here to read more</a></d2d:Field>
+              <d2d:Field><footer><d2d:Content /></footer></d2d:Field>
+            </article>
+          </d2d:Template>
+        </root>
+      ]]>
+    </d2d:hasTemplate>
+  </d2d:ArticleRenderDef>
+
+</rdf:RDF>
+
+

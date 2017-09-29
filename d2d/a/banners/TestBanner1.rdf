@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d2d/"
+         xmlns:_ad="http://ucds.cs.vu.nl/d2d/ad/Banner#"
+         xmlns:_md="http://ucds.cs.vu.nl/d2d/ad/MenuDefinition#"
+>
+
+  <_ad:Banner rdf:about="">  <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
+
+    <_ad:title>
+      <![CDATA[
+        Multi finger typing is a great way of making web sites <br /> with strings of text that are waaaay to long!
+      ]]>
+    </_ad:title>
+
+    <_ad:image rdf:resource="/images/vu-vlag-hoofdgebouw-2.png" />
+
+    <_ad:link>
+      <_md:MenuItem>
+        <_md:caption>About Web &amp; Media</_md:caption>
+        <_md:hyperlink rdf:resource="/about" />
+      </_md:MenuItem>
+    </_ad:link>
+
+  </_ad:Banner>
+
+</rdf:RDF>

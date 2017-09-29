@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d2d/"
+         xmlns:_ad="http://ucds.cs.vu.nl/d2d/ad/ResearchProject#"
+>
+
+  <_ad:ResearchProject rdf:about="">  <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
+
+    <_ad:title>
+      <![CDATA[
+        Dutch Ships and Sailors
+      ]]>
+    </_ad:title>
+
+    <_ad:punchline>
+      <![CDATA[
+        Providing an infrastructure for maritime historical datasets, linking correlating data through semantic web technology
+      ]]>
+    </_ad:punchline>
+
+    <_ad:abstract>
+      <![CDATA[
+        As a sea-faring nation, a large portion of Dutch history is found on the water. These maritime activities were crucial in increasing regional and global economic, social and cultural exchange. The maritime sector has also been in the forefront of growing administration and control initiated by ship owners and states. As one of the best historically documented sectors of human activity, many aspects of historical maritime industries have been recorded by shipping companies, governments, newspapers and other institutions.
+      ]]>
+    </_ad:abstract>
+
+    <_ad:text>
+      <![CDATA[
+      <p>In the past few decades, much of the preserved historical source material has been digitized. This has produced large amounts of data, providing information on shipping, recruitment and historical developments. However, the digitized historical source material, is still scattered across many databases and archives. Information that deals with the same shipping movements and crew composition is spread over several historical sources and hence over several databases. By linking the different available databases, the data can complement and amplify each other, and new research possibilities open up.</p>
+      <p style="text-align: left;"><a href="http://dutchshipsandsailors.nl/wp-content/uploads/2013/04/Afbeelding3.png"><img src="http://dutchshipsandsailors.nl/wp-content/uploads/2013/04/Afbeelding3-1024x805.png" width="614" height="483" srcset="http://dutchshipsandsailors.nl/wp-content/uploads/2013/04/Afbeelding3-1024x805.png 1024w, http://dutchshipsandsailors.nl/wp-content/uploads/2013/04/Afbeelding3-300x236.png 300w, http://dutchshipsandsailors.nl/wp-content/uploads/2013/04/Afbeelding3.png 1521w" sizes="(max-width: 614px) 100vw, 614px" /></a><br />
+      <i>Dutch Ships and Sailors</i> aims to provide an infrastructure for maritime historical datasets, linking correlating data through semantic web technology. It brings together datasets related to recruitment and shipping in the East-India trade (mainly 18<sup>th</sup> century) and in the shipping of the northern provinces of the Netherlands (mainly 19<sup>th</sup> century). For the northern provinces, the database contains data on the personnel recruited, the ships, and other variables (<i>Monsterrollen Noordelijke Nederlanden</i>). For the VOC, the datasets involved contain data on the recruitment of personnel in the Dutch Republic (<i>VOC Opvarenden</i>), the voyages of ships to Asia and back (<i>Dutch-Asiatic Shipping</i>), the mustering of ships and crew composition in Asian waters (<i>Generale Zeemonsterrollen</i>). Both clusters of data, will be linked to the textual historical source of <i>Historische Kranten</i> of the Koninklijke Bibliotheek, which offers news on ‘ship movements’ and (overseas) ‘events’ for both periods.</p>
+      <p>The <i>Dutch Ships and Sailors</i> project provides a tool chain and methodology for converting legacy datasets. The infrastructure includes common vocabularies to normalize and enrich existing data. Links are established between the datasets and to other relevant datasets. In doing so, <i>Dutch Ships and Sailors</i> builds a (semantic) web-based structure that aims to function as a future platform and infrastructure for maritime historical datasets.</p>
+      <p>More information can be found in the project proposal of <a href="http://dutchshipsandsailors.nl/wp-content/uploads/2013/04/13-08-10-Proposal-version-for-website.pdf" target="_blank">Dutch Ships and Sailors (Clarin IV)</a> (website version), the <a href="http://dutchshipsandsailors.nl/wp-content/uploads/2013/04/13-02-18-DSS-Presentatie-ClarinIV-aangepast-kleiner.pdf" target="_blank">Clarin IV Kick Off Meeting</a> project presentation and this <a href="http://dutchshipsandsailors.nl/wp-content/uploads/2013/04/Presentatie-dssiswc2014-141023072700-conversion-gate02.ppt">project presentation</a> by Victor de Boer.</p>
+      ]]>
+    </_ad:text>
+
+    <_ad:image rdf:resource="/images/projects/dutchshipsandsailors.jpg" />
+
+    <_ad:homepage rdf:resource="http://dutchshipsandsailors.nl" />
+
+    <_ad:member rdf:parseType="Collection">
+      <rdf:Description rdf:about="/d2d/a/people/VictorDeBoer#me" />
+    </_ad:member>
+
+
+    <_ad:menulink rdf:resource="/projects/DutchShipsAndSailors" />
+
+
+  </_ad:ResearchProject>
+
+</rdf:RDF>

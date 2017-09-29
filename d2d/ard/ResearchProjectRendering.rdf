@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d2d/"
+>
+
+  <d2d:ArticleRenderDef rdf:about="#HomePage">
+    <rdfs:label>D2D Article Rendering Defintion for the News Article article definition</rdfs:label>
+    <d2d:renders rdf:resource="/d2d/ad/ResearchProject#ResearchProject" />
+    <d2d:hasTemplate rdf:resource="/template_home.xhtml" />
+  </d2d:ArticleRenderDef>
+
+
+  <d2d:ArticleRenderDef rdf:about="#ProjectPage">
+    <rdfs:label>D2D Article Rendering Defintion for the News Article article definition</rdfs:label>
+    <d2d:renders rdf:resource="/d2d/ad/ResearchProject#ResearchProject" />
+    <d2d:hasTemplate>
+      <![CDATA[
+      <d2d:Template xmlns:d2d="http://rdfns.org/d2d/">
+
+
+      <div class="c-content-box c-size-md c-bg-white" id="[d2d:Field d2d:index=1 /]">
+        <div class="container">
+          <div class="row">
+           <div class="c-content-title-1 wow animate fadeInDown">
+                <d2d:Field d2d:index="1"><h3 class="c-font-uppercase c-center c-font-bold"><d2d:Content>Project Name</d2d:Content></h3></d2d:Field>
+                <div class="c-line-center"> </div>
+            </div>
+
+
+
+
+                <div class="col-sm-12">
+                  <div class="c-content-feature-1 wow animate fadeInUp">
+
+
+                        <div class="img-responsive" style="text-align: center;"><img src="[d2d:Field d2d:index=5 /]" style="max-width: 100%;" /></div>
+                        <d2d:Field d2d:index="1"><h3 class="c-font-uppercase c-font-bold"><d2d:Content>News article 1</d2d:Content></h3></d2d:Field>
+                        <d2d:Field d2d:index="6"><br /><p class="c-font-thin">Project homepage: <d2d:Content>CONTENT</d2d:Content></p></d2d:Field>
+                        <d2d:Field d2d:index="2"><br /><p class="c-font-thin"><i><d2d:Content>CONTENT</d2d:Content></i></p></d2d:Field>
+                        <d2d:Field d2d:index="3"><p class="c-font-thin"><strong><d2d:Content>CONTENT</d2d:Content></strong></p></d2d:Field>
+                        <d2d:Field d2d:index="4"><br /><p class="c-font-thin"><d2d:Content>CONTENT</d2d:Content></p></d2d:Field>
+
+
+                  </div>
+                </div>
+
+
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+
+
+
+      </d2d:Template>
+      ]]>
+    </d2d:hasTemplate>
+  </d2d:ArticleRenderDef>
+
+
+</rdf:RDF>

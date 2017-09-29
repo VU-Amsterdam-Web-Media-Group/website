@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d2d/"
+>
+
+  <d2d:ArticleDefinition rdf:about="#Banner">
+    <rdfs:label>Article definition for the main page top banner</rdfs:label>
+    <d2d:hasFieldSpec rdf:parseType="Collection">
+
+      <d2d:FieldSpecification>
+        <d2d:hasFieldType rdf:resource="http://rdfns.org/d2d/H3" />
+        <d2d:mustSatisfy rdf:resource="#title" />
+      </d2d:FieldSpecification>
+
+      <d2d:FieldSpecification d2d:isOptional="1">
+        <d2d:hasFieldType rdf:resource="http://rdfns.org/d2d/P" />
+        <d2d:mustSatisfy rdf:resource="#text" />
+      </d2d:FieldSpecification>
+
+      <d2d:FieldSpecification>
+        <d2d:hasFieldType rdf:resource="http://rdfns.org/d2d/Img" />
+        <d2d:mustSatisfy rdf:resource="#image" />
+      </d2d:FieldSpecification>
+
+      <d2d:FieldSpecification d2d:isOptional="1" d2d:limit="1" d2d:useLabel="0" d2d:createLink="0">
+        <d2d:hasFieldType rdf:resource="http://rdfns.org/d2d/A" />
+        <d2d:mustSatisfy>
+          <d2d:TripleSpecification>
+            <d2d:hasPredicate rdf:resource="#link" />
+            <d2d:mustSatisfy>
+              <d2d:TripleSpecification>
+                <d2d:hasPredicate rdf:resource="http://ucds.cs.vu.nl/d2d/ad/MenuDefinition#hyperlink" />
+                <d2d:hasRole rdf:resource="http://rdfns.org/d2d/Content" />
+              </d2d:TripleSpecification>
+            </d2d:mustSatisfy>
+          </d2d:TripleSpecification>
+        </d2d:mustSatisfy>
+      </d2d:FieldSpecification>
+
+      <d2d:FieldSpecification d2d:isOptional="1" d2d:limit="1">
+        <d2d:hasFieldType rdf:resource="http://rdfns.org/d2d/Span" />
+        <d2d:mustSatisfy>
+          <d2d:TripleSpecification>
+            <d2d:hasPredicate rdf:resource="#link" />
+            <d2d:mustSatisfy>
+              <d2d:TripleSpecification>
+                <d2d:hasPredicate rdf:resource="http://ucds.cs.vu.nl/d2d/ad/MenuDefinition#caption" />
+                <d2d:hasRole rdf:resource="http://rdfns.org/d2d/Content" />
+              </d2d:TripleSpecification>
+            </d2d:mustSatisfy>
+          </d2d:TripleSpecification>
+        </d2d:mustSatisfy>
+      </d2d:FieldSpecification>
+
+
+
+
+    </d2d:hasFieldSpec>
+  </d2d:ArticleDefinition>
+
+</rdf:RDF>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d2d/"
+         xmlns:_ad="http://example.d2dsite.net/d2d/ad/BasicArticle#"
+>
+
+  <_ad:BasicArticle rdf:about=""> <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
+
+    <_ad:header rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+        Serialisation Formats
+    </_ad:header>
+
+    <_ad:subheader>
+        Data 2 Documents supports multiple RDF serialisations
+    </_ad:subheader>
+
+    <_ad:content>
+      <![CDATA[
+       <p>
+         The examples on this site are listed as RDF/XML, because it allows for a more recognisable document structure. This allows editors to add and edit content even when the true technical details are not fully understood, in a copy-paste-compare fashion. However, the d2d reference implementation also supports other RDF serialisation formats such as N-Triples, Turtle Terse RDF Triple Language, Notation3 and JSON-LD. 
+       </p>
+       <p>
+         <a href="http://example.d2dsite.net/helloworldinfoturtle">Klik here</a> to view the Hello World explanation with listings in the Turtle serialisation format.
+       </p>
+      ]]>
+    </_ad:content>
+
+  </_ad:BasicArticle>
+
+</rdf:RDF>

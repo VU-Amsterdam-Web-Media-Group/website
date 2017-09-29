@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d2d/"
+>
+
+  <d2d:ArticleRenderDef rdf:about="#Menu">
+    <rdfs:label>D2D Article Rendering Defintion for the Main Menu definition</rdfs:label>
+    <d2d:renders rdf:resource="/d2d/ad/MenuDefinition#Menu" />
+    <d2d:hasTemplate rdf:resource="http://ucds.cs.vu.nl/template_home.xhtml" />
+  </d2d:ArticleRenderDef>
+
+  <d2d:ArticleRenderDef rdf:about="#MenuItem">
+    <rdfs:label>D2D Article Rendering Defintion for the Main Menu Item definition</rdfs:label>
+    <d2d:renders rdf:resource="/d2d/ad/MenuDefinition#MenuItem" />
+    <d2d:hasTemplate rdf:resource="http://ucds.cs.vu.nl/template_home.xhtml" />
+  </d2d:ArticleRenderDef>
+
+  <d2d:ArticleRenderDef rdf:about="#SubMenu">
+    <rdfs:label>D2D Article Rendering Defintion for the Main Menu definition</rdfs:label>
+    <d2d:renders rdf:resource="/d2d/ad/MenuDefinition#SubMenu" />
+    <d2d:hasTemplate rdf:resource="http://ucds.cs.vu.nl/template_home.xhtml" />
+  </d2d:ArticleRenderDef>
+
+  <d2d:ArticleRenderDef rdf:about="#SubMenuItem">
+    <rdfs:label>D2D Article Rendering Defintion for the Main Menu Item definition</rdfs:label>
+    <d2d:renders rdf:resource="/d2d/ad/MenuDefinition#MenuItem" />
+    <d2d:hasTemplate rdf:resource="http://ucds.cs.vu.nl/template_home.xhtml" />
+  </d2d:ArticleRenderDef>
+
+
+
+</rdf:RDF>

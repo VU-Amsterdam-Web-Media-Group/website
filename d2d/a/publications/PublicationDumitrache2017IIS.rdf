@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d2d/"
+         xmlns:_ad="http://ucds.cs.vu.nl/d2d/ad/Publication#"
+>
+
+  <_ad:Publication rdf:about="">  <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
+
+    <_ad:title>
+      <![CDATA[
+        A Crowdsourcing Ground Truth for Medical Relation Extraction
+      ]]>
+    </_ad:title>
+
+    <_ad:hasKeyword>Ground truth</_ad:hasKeyword>
+    <_ad:hasKeyword>relation extraction</_ad:hasKeyword>
+    <_ad:hasKeyword>clinical natural language processing</_ad:hasKeyword>
+    <_ad:hasKeyword>natural language ambiguity</_ad:hasKeyword>
+    <_ad:hasKeyword>inter-annotator disagreement</_ad:hasKeyword>
+
+    <_ad:punchline>
+      <![CDATA[
+        ...
+      ]]>
+    </_ad:punchline>
+
+    <_ad:abstract>
+      <![CDATA[
+        Cognitive computing systems require human labeled data for evaluation, and often for training. The standard practice used in gathering this data minimizes disagreement between annotators, and we have found this results in data that fails to account for the ambiguity inherent in language. We have proposed the CrowdTruth method for collecting ground truth through crowdsourcing, that reconsiders the role of people in machine learning based on the observation that disagreement between annotators provides a useful signal for phenomena such as ambiguity in the text. We report on using this method to build an annotated data set for medical relation extraction for the cause and treat relations, and how this data performed in a supervised training experiment. We demonstrate that by modeling ambiguity, labeled data gathered from crowd workers can (1) reach the level of quality of domain experts for this task while reducing the cost, and (2) provide better training data at scale than distant supervision. We further propose and validate new weighted  measures  for  precision, recall,  and  F-measure,  that  account  for  ambiguity in  both  human and machine performance on this task.
+      ]]>
+    </_ad:abstract>
+
+    <_ad:linkToFullText>
+
+    </_ad:linkToFullText>
+
+    <_ad:image rdf:resource="/images/crowdtruthlogo.png" />
+
+
+
+  </_ad:Publication>
+
+</rdf:RDF>

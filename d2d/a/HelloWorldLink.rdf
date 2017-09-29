@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d2d/"
+         xmlns:_ad="http://example.d2dsite.net/d2d/ad/BasicArticle#"
+>
+
+  <_ad:BasicArticle rdf:about=""> <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
+
+    <_ad:header rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+        Hello World!
+    </_ad:header>
+
+    <_ad:subheader>
+        A basic d2d example
+    </_ad:subheader>
+
+    <_ad:content>
+      <![CDATA[
+<p>
+To illustrate the use of the d2d vocabulary, we have included a basic 'Hello World' example. The resulting document can be found here:
+</p>
+<p>
+<b><a href="http://example.d2dsite.net/helloworld" target="_blank">http://example.d2dsite.net/helloworld</a></b>
+</p>
+<p>
+This example consists of one 'document' containing two 'articles'; One article created specifically for the example, and one article that consists of a DBpedia resource that is used as such. It uses two 'Article Definitions' that define the composition of the articles. The DBpedia based article is a nested article and as such is part of the other artile, being one of its fields. This minimal example does not use any 'Rendering Definitions' or templates; if these are not specified, the various content fields are rendered in the tag corresponding with the field type indicated in the article definition, while further styling can be done using CSS. The use of templates for more specialized forms of rendering is discussed at our <a href="http://www.data2documents.org" target="_blank">project website</a>.
+</p>
+      ]]>
+    </_ad:content>
+
+  </_ad:BasicArticle>
+
+</rdf:RDF>

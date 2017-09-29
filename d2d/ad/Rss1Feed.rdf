@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d2d/"
+>
+
+  <d2d:ArticleDefinition rdf:about="#Rss1Channel"> <!-- This is an article definition to process RSS 1 feeds of which the actual URL matches the URI of the channel element within the feed. -->
+    <d2d:fitsClass rdf:resource="http://purl.org/rss/1.0/channel" />
+    <rdfs:label>D2D Article (to be: Section) Defintion to select all items from an RSS 1.0 feed channel</rdfs:label>
+    <d2d:hasFieldSpec rdf:parseType="Collection">
+      <d2d:FieldSpecification>
+        <d2d:hasFieldType rdf:resource="http://rdfns.org/d2d/Article" />
+        <d2d:mustSatisfy rdf:resource="http://purl.org/rss/1.0/items" />
+      </d2d:FieldSpecification>
+    </d2d:hasFieldSpec>
+  </d2d:ArticleDefinition>
+
+  <d2d:ArticleDefinition rdf:about="#Rss1Feed"> <!-- This is an alternative article definition to process RSS 1 feeds in which the channel URI is not equal to the actual URL of the feed. Using this article definition, the actual URL can be specified using #feedURL while the channel URI can be provided using #channelURI.  -->
+    <d2d:fitsClass rdf:resource="#Rss1Feed" />
+    <rdfs:label>D2D Article (to be: Section) Defintion to select all items from an RSS 1.0 feed channel</rdfs:label>
+    <d2d:hasFieldSpec rdf:parseType="Collection">
+      <d2d:FieldSpecification>
+        <d2d:hasFieldType rdf:resource="http://rdfns.org/d2d/Article" />
+        <d2d:mustSatisfy>
+          <d2d:TripleSpecification>
+            <d2d:hasPredicate rdf:resource="#feedURL" />
+            <d2d:mustSatisfy>
+              <d2d:TripleSpecification>
+                <d2d:hasPredicate rdf:resource="http://purl.org/rss/1.0/items" />
+                <d2d:hasRole rdf:resource="http://rdfns.org/d2d/Content" />
+              </d2d:TripleSpecification>
+            </d2d:mustSatisfy>
+            <d2d:hasAlternative>
+              <d2d:TripleSpecification>
+                <d2d:hasPredicate rdf:resource="#channelURI" />
+                <d2d:mustSatisfy>
+                  <d2d:TripleSpecification>
+                    <d2d:hasPredicate rdf:resource="http://purl.org/rss/1.0/items" />
+                    <d2d:hasRole rdf:resource="http://rdfns.org/d2d/Content" />
+
+                <d2d:mustSatisfy>
+                  <d2d:TripleSpecification>
+                    <d2d:hasPredicate  rdf:resource="http://purl.org/dc/elements/1.1/date" />
+                    <d2d:hasRole rdf:resource="http://rdfns.org/d2d/SortBy" />
+                  </d2d:TripleSpecification>
+                </d2d:mustSatisfy>
+
+
+
+                  </d2d:TripleSpecification>
+                </d2d:mustSatisfy>
+              </d2d:TripleSpecification>
+            </d2d:hasAlternative>
+          </d2d:TripleSpecification>
+        </d2d:mustSatisfy>
+      </d2d:FieldSpecification>
+    </d2d:hasFieldSpec>
+  </d2d:ArticleDefinition>
+
+
+  <d2d:ArticleDefinition rdf:about="#Rss1Item" d2d:skipOnError="1"> <!-- This is an article definition to select items and their fields from an RSS 1 feed. -->
+    <d2d:fitsClass rdf:resource="http://purl.org/rss/1.0/item" />
+    <rdfs:label>D2D Article Defintion to select properties of an RSS 1.0 feed item, for use as a D2D Article</rdfs:label>
+    <d2d:hasFieldSpec rdf:parseType="Collection">
+
+      <d2d:FieldSpecification d2d:isOptional="0">
+        <d2d:hasFieldType rdf:resource="http://rdfns.org/d2d/H4" />
+        <d2d:mustSatisfy rdf:resource="http://purl.org/rss/1.0/title" />
+      </d2d:FieldSpecification>
+
+      <d2d:FieldSpecification d2d:isOptional="1">
+        <d2d:hasFieldType rdf:resource="http://rdfns.org/d2d/A" />
+        <d2d:mustSatisfy rdf:resource="http://purl.org/rss/1.0/link" />
+      </d2d:FieldSpecification>
+
+      <d2d:FieldSpecification d2d:isOptional="0">
+        <d2d:hasFieldType rdf:resource="http://rdfns.org/d2d/P" />
+        <d2d:mustSatisfy rdf:resource="http://purl.org/rss/1.0/description" />
+      </d2d:FieldSpecification>
+
+      <d2d:FieldSpecification d2d:isOptional="0">
+        <d2d:hasFieldType rdf:resource="http://rdfns.org/d2d/Div" />
+        <d2d:mustSatisfy rdf:resource="http://purl.org/dc/elements/1.1/date" />
+      </d2d:FieldSpecification>
+
+    </d2d:hasFieldSpec>
+  </d2d:ArticleDefinition>
+
+</rdf:RDF>
+
+
