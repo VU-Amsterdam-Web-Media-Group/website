@@ -3,5 +3,6 @@
 /assets
 /sass
 /d2d/d2d_system
+/_d2d
 *~
 *.DS_Store
