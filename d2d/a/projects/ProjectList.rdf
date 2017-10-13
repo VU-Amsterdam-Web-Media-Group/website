@@ -23,6 +23,8 @@
           <rdf:Description rdf:about="/d2d/a/projects/Observe" />
           <rdf:Description rdf:about="/d2d/a/projects/BigDataEurope" />
           <rdf:Description rdf:about="/d2d/a/projects/TalkOfEurope" />
+          <rdf:Description rdf:about="/d2d/a/projects/Data2Semantics" />
+          <rdf:Description rdf:about="/d2d/a/projects/SEALINCMedia" />
 
         </_ad:hasItem>
       </_ad:ItemSet>
