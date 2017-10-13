@@ -27,7 +27,9 @@
           <rdf:Description rdf:about="/d2d/a/people/ChrisDijkshoorn" />
           <rdf:Description rdf:about="/d2d/a/people/RonaldSiebes" />
           <rdf:Description rdf:about="/d2d/a/people/AncaDumitrache" />
-          <rdf:Description rdf:about="/d2d/a/people/VictorDeBoer" />
+          <rdf:Description rdf:about="/d2d/a/people/CristinaBucur" />
+          <rdf:Description rdf:about="/d2d/a/people/OanaInel" />
+          <rdf:Description rdf:about="http://www.victordeboer.com/foaf.rdf" />
           <rdf:Description rdf:about="https://niels.online/foaf" />
 
         </_ad:hasItem>
