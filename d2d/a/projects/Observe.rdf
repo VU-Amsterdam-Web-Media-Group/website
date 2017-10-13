@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d2d/"
+         xmlns:_ad="http://ucds.cs.vu.nl/d2d/ad/ResearchProject#"
+>
+
+  <_ad:ResearchProject rdf:about="">  <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
+
+    <_ad:title>
+      <![CDATA[
+        OBSERVE
+      ]]>
+    </_ad:title>
+
+    <_ad:punchline>
+	<![CDATA[
+	 This is a project
+      ]]>
+    </_ad:punchline>
+
+    <_ad:abstract>
+	<![CDATA[
+	 OBSERVE explores the use of a recommendation system for audiovisual content displayed in public spaces. Media
+	 companies are faced with the challenge of selecting content that is interesting and relevant to passers-by, yet
+	 re-usable to screen in different locations. Currently, audiovisual content is often pre-programmed in repetitive
+	 loops, ignoring the circumstances and the interests of the users. OBSERVE works on a new approach through 1) the
+	 use of high-quality interactive content, for which it aims to develop guidelines and best practices; and 2) the
+	 development of a context-sensitive content selection system. The role of the VU within OBSERVE will consist in the
+	 design of metadata models to describe context types, audiovisual content, and their relationship, and in assessing
+	 the potential of Linked Open Data to support the recommender and/or to enrich the audiovisual content.
+      ]]>
+    </_ad:abstract>
+
+    <_ad:text>
+      <![CDATA[
+        This is a test project item. It is written only for testing purposes.
+        This is a test project item. It is written only for testing purposes.
+        This is a test project item. It is written only for testing purposes.
+        This is a test project item. It is written only for testing purposes.
+        This is a test project item. It is written only for testing purposes.
+        This is a test project item. It is written only for testing purposes.
+        This is a test project item. It is written only for testing purposes.
+        This is a test project item. It is written only for testing purposes.
+        This is a test project ite
+      ]]>
+    </_ad:text>
+
+    <_ad:image rdf:resource="/images/vu-vlag-hoofdgebouw-2.png" />
+
+
+
+
+
+    <_ad:menulink rdf:resource="/projects/..." />
+
+  </_ad:ResearchProject>
+
+</rdf:RDF>

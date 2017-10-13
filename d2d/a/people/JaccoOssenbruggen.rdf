@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns="http://xmlns.com/foaf/0.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:cert="http://www.w3.org/ns/auth/cert#"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:schema="http://schema.org/"
+>
+
+  <PersonalProfileDocument rdf:about="">
+    <rdfs:label>Jacco van Ossenbruggen's FOAF Description</rdfs:label>
+    <primaryTopic rdf:resource="#me"/>
+  </PersonalProfileDocument>
+
+  <Person rdf:about="#me">
+
+    <!-- Basic info -->
+
+    <name>Jacco van Ossenbruggen</name>
+    <title>Dr.</title>
+    <givenName>Jacco</givenName>
+    <familyName>van Ossenbruggen</familyName>
+    <homepage rdf:resource="https://www.cwi.nl/people/jacco-van-ossenbruggen"/>
+    <workplaceHomepage rdf:resource="http://ucds.cs.vu.nl"/>
+
+    <img rdf:resource="/images/people/jacco.jpg"/>
+
+<!--
+    <dateOfBirth>1990-12-31</dateOfBirth>
+-->
+
+    <mbox rdf:resource="mailto:Jacco.van.Ossenbruggen@cwi.nl"/>
+
+    <status>
+    Jacco van Ossenbruggen is leading the Information Access group at Centrum Wiskunde & Informatica (CWI) in Amsterdam, and affiliated as an associate professor with the User-centric Data Science research group at VU University in Amsterdam. His research interests include assessment of data quality in large, heterogeneous research datasets in the digital humanities, large scale web data integration and linking in cultural heritage and other data rich domains. On a national level, he is currently collaborating with the Dutch National Library in the context of the COMMIT project. On an international level, Jacco and his group participate in the European VRE4EIC project, focusing on assessment of data quality in large, interdisciplinary research infrastructures. Jacco obtained a PhD in computer science from VU University Amsterdam in 2001.
+    </status>
+
+    <schema:jobTitle>
+      Associate Professor
+    </schema:jobTitle>
+
+<!--
+    <currentProject>
+      <Project>
+        <rdfs:label>Project Name</rdfs:label>
+        <rdfs:comment xml:lang="en">
+          Project Description
+        </rdfs:comment>
+        <depiction rdf:resource="?.png" />
+        <member rdf:resource="link-to-person" />
+
+        <homepage>
+          <Document rdf:about="link-to-project-homepage">
+            <rdfs:label>Project Page Name</rdfs:label>
+          </Document>
+        </homepage>
+      </Project>
+    </currentProject>
+-->
+
+    <!-- Accounts -->
+
+<!--
+    <holdsAccount>
+      <OnlineAccount>
+        <name>Skype</name>
+        <accountServiceHomepage rdf:resource="https://www.skype.com/"/>
+        <accountName>skype_name</accountName>
+      </OnlineAccount>
+    </holdsAccount>
+
+    <account>
+      <OnlineAccount>
+        <accountName>my_account_name</accountName>
+        <accountServiceHomepage rdf:resource="https://www.facebook.com"/>
+        <name>Facebook</name>
+        <page rdf:resource="https://www.facebook.com/my_fb_url/"/>
+      </OnlineAccount>
+    </account>
+
+    <account>
+      <OnlineAccount>
+        <accountName>my_account_name</accountName>
+        <accountServiceHomepage rdf:resource="https://www.linkedin.com"/>
+        <name>LinkedIn</name>
+        <page rdf:resource="https://www.linkedin.com/in/my_name/"/>
+      </OnlineAccount>
+    </account>
+-->
+
+    <!-- Persons -->
+
+<!--
+    <knows>
+      <Person rdf:about="http://www.cs.vu.nl/~guus/foaf.rdf#me">
+	<name>Guus Schreiber</name>
+      </Person>
+    </knows>
+
+    <knows>
+      <Person rdf:about="http://few.vu.nl/~vbr240/foaf.rdf#me">
+	<name>Victor de Boer</name>
+      </Person>
+    </knows>
+
+    <knows>
+      <Person>
+        <name>Frank van Harmelen</name>
+        <rdfs:seeAlso rdf:resource="http://www.cs.vu.nl/~frankh/foaf.rdf"/>
+      </Person>
+    </knows>
+-->
+
+  </Person>
+
+
+</rdf:RDF>

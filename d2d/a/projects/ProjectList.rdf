@@ -20,6 +20,9 @@
           <rdf:Description rdf:about="/d2d/a/projects/CrowdTruth" />
           <rdf:Description rdf:about="/d2d/a/projects/BiographyNet" />
           <rdf:Description rdf:about="/d2d/a/projects/DutchShipsAndSailors" />
+          <rdf:Description rdf:about="/d2d/a/projects/Observe" />
+          <rdf:Description rdf:about="/d2d/a/projects/BigDataEurope" />
+          <rdf:Description rdf:about="/d2d/a/projects/TalkOfEurope" />
 
         </_ad:hasItem>
       </_ad:ItemSet>

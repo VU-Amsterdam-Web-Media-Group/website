@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d2d/"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:_ad="http://ucds.cs.vu.nl/d2d/ad/ResearchProject#"
+>
+
+  <_ad:ResearchProject rdf:about="">  <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
+
+    <_ad:title>
+      <![CDATA[
+        Big Data Europe
+      ]]>
+    </_ad:title>
+
+    <_ad:punchline>
+      <![CDATA[
+        Empowering Communities with Data Technologies
+      ]]>
+    </_ad:punchline>
+
+    <_ad:abstract>
+      <![CDATA[
+        The growing digitization and networking process within our society has a large influence on all aspects of everyday life. Large amounts of data are being produced permanently, and when they are analyzed and interlinked they have the potential to create new knowledge and intelligent solutions for both the economy and society as a whole. To facilitate the use of Big Data technologies, the European Union funds an interdisciplinary research and innovation project called “BigDataEurope”. A European consortium, is developing a platform that will simplify the creation and access to Big Data applications and their integration into existing workflows.
+      ]]>
+    </_ad:abstract>
+
+    <_ad:text>
+      <![CDATA[
+
+      ]]>
+    </_ad:text>
+
+    <_ad:image rdf:resource="/images/projects/logo-BigDataEurope.png" />
+
+    <_ad:homepage rdf:resource="https://www.big-data-europe.eu" />
+    
+    <_ad:member rdf:parseType="Collection">
+      <rdf:Description rdf:about="http://www.victordeboer.com/foaf.rdf/me" />
+      <rdf:Description rdf:about="/d2d/a/people/RonaldSiebes#me" />
+      <foaf:Person foaf:name="Paul Groth"/>
+    </_ad:member>
+
+    <_ad:menulink rdf:resource="/projects/BigDataEurope" />
+    
+
+
+  </_ad:ResearchProject>
+
+</rdf:RDF>

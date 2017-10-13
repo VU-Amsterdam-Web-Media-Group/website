@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d2d/"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:_ad="http://ucds.cs.vu.nl/d2d/ad/ResearchProject#"
+>
+
+  <_ad:ResearchProject rdf:about="">  <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
+
+    <_ad:title>
+      <![CDATA[
+        Talk of Europe
+      ]]>
+    </_ad:title>
+
+    <_ad:punchline>
+      <![CDATA[
+        Linking European Parliament Proceedings
+      ]]>
+    </_ad:punchline>
+
+    <_ad:abstract>
+      <![CDATA[
+        The Talk of Europe project (2014-2015) generates Linked Open Data from the plenary debates of the European Parliament.
+      ]]>
+    </_ad:abstract>
+
+    <_ad:text>
+      <![CDATA[
+      <p>covers the complete verbatim proceedings of the plenary sessions held between 1999 and 2014, in all available translations in 21 EU languages. This information is integrated with a database of political affiliations of the Members of Parliament and linked to other Linked Open Datasets, including dbPedia and Geonames. The resulting data of over 25 million triples are available through a user interface and a SPARQL endpoint. They enable queries about the monthly sessions, the agenda of the debates, the spoken words and their translations into other EU languages, integrated with extensive information about the speakers such as affiliations to countries, parties and committees. Talk of Europe is funded by CLARIN and NWO.</p>
+      ]]>
+    </_ad:text>
+
+    <_ad:image rdf:resource="https://dummyimage.com/600x400/52bde0/ffffff%26text=Talk of Europe" />
+
+    <_ad:homepage rdf:resource="http://www.talkofeurope.eu" />
+
+    <_ad:member rdf:parseType="Collection">
+      <foaf:Person foaf:name="Laura Hollink"/>
+      <foaf:Person foaf:name="Astrid van Aggelen"/>
+      <rdf:Description rdf:about="/d2d/a/people/RonaldSiebes#me" />
+    </_ad:member>
+
+    <_ad:menulink rdf:resource="/projects/TalkOfEurope" />
+
+  </_ad:ResearchProject>
+
+</rdf:RDF>

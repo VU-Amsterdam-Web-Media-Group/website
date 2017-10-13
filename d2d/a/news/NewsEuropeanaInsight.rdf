@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d2d/"
+         xmlns:_ad="http://ucds.cs.vu.nl/d2d/ad/NewsArticle#"
+         xmlns:_md="http://ucds.cs.vu.nl/d2d/ad/MenuDefinition#"
+>
+
+  <_ad:NewsArticle rdf:about="">  <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
+
+    <_ad:title>
+      <![CDATA[
+        DIVE+ in Europeana Insight
+      ]]>
+    </_ad:title>
+
+    <_ad:abstract>
+      <![CDATA[
+      <a href="https://pro.europeana.eu/page/issue-7-lodlam">This months’ edition of Europeana Insight </a>features articles from this year’s <a href="http://summit2017.lodlam.net/challenge/">LODLAM Challenge</a> finalists, which include the winner: DIVE+. The online article “<a href="https://pro.europeana.eu/page/issue-7-lodlam">DIVE+: EXPLORING INTEGRATED LINKED MEDIA</a>” discusses the DIVE+ User studies, data enrichment, exploratory interface and impact on the cultural heritage domain.
+      ]]>
+    </_ad:abstract>
+
+    <_ad:text>
+      <![CDATA[
+      The paper was co-authored by Victor de Boer, Oana Inel, Lora Aroyo, Chiel van den Akker, Susane Legene, Carlos Martinez, Werner Helmich, Berber Hagendoorn, Sabrina Sauer, Jaap Blom, Liliana Melgar and Johan Oomen
+      ]]>
+    </_ad:text>
+
+    <_ad:image rdf:resource="/images/projects/diveplus.jpg" />
+
+    <_ad:link>
+      <_md:MenuItem>
+        <_md:caption>About the ABC-Kb project</_md:caption>
+        <_md:hyperlink rdf:resource="https://pro.europeana.eu/page/issue-7-lodlam" />
+      </_md:MenuItem>
+    </_ad:link>
+
+  </_ad:NewsArticle>
+
+</rdf:RDF>
