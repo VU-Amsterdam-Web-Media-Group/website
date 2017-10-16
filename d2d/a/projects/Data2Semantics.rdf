@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d2d/"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:_ad="http://ucds.cs.vu.nl/d2d/ad/ResearchProject#"
+>
+
+  <_ad:ResearchProject rdf:about="">  <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
+
+    <_ad:title>
+      <![CDATA[
+        Data2Semantics
+      ]]>
+    </_ad:title>
+
+    <_ad:punchline>
+      <![CDATA[
+        From Data to Semantics for Scientific Data Publishers
+      ]]>
+    </_ad:punchline>
+
+    <_ad:abstract>
+      <![CDATA[
+        Data2Semantics aims to provide essential semantic infrastructure for bringing e-Science to the next level. A core task for scientific publishers is to speed up scientific progress by improving the availability of scientific knowledge. This holds both for dissemination of results through traditional publications, as well as through the publication of scientific data. The Data2Semantics project focuses on a key problem for data management in e-Science: How to share, publish, access, analyse, interpret and reuse data?
+      ]]>
+    </_ad:abstract>
+
+    <_ad:text>
+      <![CDATA[
+        <p>Data2Semantics is a collaboration between the VU University Amsterdam, the University of Amsterdam, Data Archiving and Networked Services (DANS) of the KNAW, Elsevier Publishing and Synerscope, and is funded under the COMMIT programme of the NL Agency of the Dutch Ministry of Economic Affairs, Agriculture and Innovation.</p>
+
+        <p>The discovery of new knowledge is the heart of scientific progress; the generation, support and maintenance of knowledge form the foundation of the scientific endeavour. e-Science is ultimately about discovering and sharing knowledge in the form of experimental data, theory-rich vocabularies, publications and re-usable services that are meaningful to the working scientist.</p>
+        
+        <p>The complexity and abundance of data resources in an e-Science environment requires support for knowledge and metadata management: data is notoriously hard to share, find, access, interpret and reuse. This project targets scientific data publishers as primary facilitators of the e-Science process.</p>
+        
+        <p>Scientists need tools to better understand the complexity characteristics of their data and its ability to answer scientific questions. They must be able to equip data with meaning and to generate a surrounding semantic context in which data can be meaningfully interpreted. Scientists must be given the means to make their data speak for itself, to move from data to semantics.</p>
+        
+        <p>The targets of this project are to
+        <ul>
+        <li>increase the ease with which scientists can share their datasets with others,</li>
+        <li>increase the ease with which scientists can access, analyse and interpret datasets, and thereby</li>
+        <li>increase the reuse of such datasets.</li>
+        </ul>
+        </p>
+      ]]>
+    </_ad:text>
+
+    <_ad:image rdf:resource="https://dummyimage.com/600x400/52bde0/ffffff%26text=Data2Semantics" />
+
+    <_ad:homepage rdf:resource="http://data2semantics.github.io" />
+
+    <_ad:member rdf:parseType="Collection">
+      <foaf:Person foaf:name="Paul Groth"/>
+      <foaf:Person foaf:name="Michiel Hildebrand"/>
+      <foaf:Person foaf:name="Martine de Vos"/>
+      <rdf:Description rdf:about="/d2d/a/people/GuusSchreiber#me" />
+      <rdf:Description rdf:about="/d2d/a/people/JanWielemaker#me"/>
+    </_ad:member>
+
+    <_ad:menulink rdf:resource="/projects/Data2Semantics" />
+
+  </_ad:ResearchProject>
+
+</rdf:RDF>

@@ -3,6 +3,7 @@
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:d2d="http://rdfns.org/d2d/"
          xmlns:_ad="http://ucds.cs.vu.nl/d2d/ad/ResearchProject#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
 >
 
   <_ad:ResearchProject rdf:about="">  <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
@@ -15,7 +16,7 @@
 
     <_ad:punchline>
 	<![CDATA[
-	 This is a project
+	 Recommending audiovisual content for use in public spaces
       ]]>
     </_ad:punchline>
 
@@ -34,25 +35,23 @@
 
     <_ad:text>
       <![CDATA[
-        This is a test project item. It is written only for testing purposes.
-        This is a test project item. It is written only for testing purposes.
-        This is a test project item. It is written only for testing purposes.
-        This is a test project item. It is written only for testing purposes.
-        This is a test project item. It is written only for testing purposes.
-        This is a test project item. It is written only for testing purposes.
-        This is a test project item. It is written only for testing purposes.
-        This is a test project item. It is written only for testing purposes.
-        This is a test project ite
+	<h2>A Recommender System for Audiovisual Content in Public Spaces</h2>
       ]]>
     </_ad:text>
 
-    <_ad:image rdf:resource="/images/vu-vlag-hoofdgebouw-2.png" />
+	<_ad:image rdf:resource="/images/projects/observe.jpg" />
+
+	<_ad:homepage rdf:resource="https://www.saxion.nl/designentechnologie/site/onderzoek/onderzoeksprojecten/observe/" />
+
+    <_ad:member rdf:parseType="Collection">
+      <rdf:Description rdf:about="http://www.victordeboer.com/foaf.rdf/me" />
+      <rdf:Description rdf:about="/d2d/a/people/RonaldSiebes#me" />
+      <foaf:Person foaf:name="Astrid van Aggelen"/>
+	</_ad:member>
 
 
 
-
-
-    <_ad:menulink rdf:resource="/projects/..." />
+    <_ad:menulink rdf:resource="/projects/Observe" />
 
   </_ad:ResearchProject>
 

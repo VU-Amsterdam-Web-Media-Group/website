@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d2d/"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:_ad="http://ucds.cs.vu.nl/d2d/ad/ResearchProject#"
+>
+
+  <_ad:ResearchProject rdf:about="">  <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
+
+    <_ad:title>
+      <![CDATA[
+        SEALINCMedia
+      ]]>
+    </_ad:title>
+
+    <_ad:punchline>
+      <![CDATA[
+        Enrich your collection by asking the right crowd
+      ]]>
+    </_ad:punchline>
+
+    <_ad:abstract>
+      <![CDATA[
+        Development of solutions to enrich collections using Internet enabled reliable, scalable and cost effective collaborative content curation and to improve accessibility through advanced personalized content recommendation and search functionalities.
+      ]]>
+    </_ad:abstract>
+
+    <_ad:text>
+      <![CDATA[
+
+      ]]>
+    </_ad:text>
+
+    <_ad:image rdf:resource="/images/projects/white-font-black-background-sealincmedia-logo-rgb1.png" />
+
+    <_ad:homepage rdf:resource="https://sealincmedia.wordpress.com" />
+
+    <_ad:member rdf:parseType="Collection">
+      <rdf:Description rdf:about="/d2d/a/people/LoraAroyo#me" />
+      <rdf:Description rdf:about="/d2d/a/people/ChrisDijkshoorn#me" />
+      <rdf:Description rdf:about="/d2d/a/people/JaccoOssenbrugggen#me" />
+      <rdf:Description rdf:about="/d2d/a/people/GuusSchreiber#me" />
+    </_ad:member>
+
+    <_ad:menulink rdf:resource="/projects/SEALINCMedia" />
+
+  </_ad:ResearchProject>
+
+</rdf:RDF>

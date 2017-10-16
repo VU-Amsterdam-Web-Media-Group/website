@@ -5,7 +5,7 @@
          xmlns:_ad="http://ucds.cs.vu.nl/d2d/ad/ItemList#"
 >
 
-  <_ad:ItemList rdf:about="" _ad:maxItems="10"> <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
+  <_ad:ItemList rdf:about="" _ad:maxItems="12"> <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
 
     <_ad:header>
       People
@@ -24,13 +24,13 @@
           <rdf:Description rdf:about="http://www.tkuhn.org/foaf.rdf" />
           <rdf:Description rdf:about="/d2d/a/people/DenaTahvildari" />
           <rdf:Description rdf:about="/d2d/a/people/JanTop" />
+          <rdf:Description rdf:about="https://niels.online/foaf" />   
           <rdf:Description rdf:about="/d2d/a/people/ChrisDijkshoorn" />
           <rdf:Description rdf:about="/d2d/a/people/RonaldSiebes" />
           <rdf:Description rdf:about="/d2d/a/people/AncaDumitrache" />
-          <rdf:Description rdf:about="/d2d/a/people/CristinaBucur" />
-          <rdf:Description rdf:about="/d2d/a/people/OanaInel" />
           <rdf:Description rdf:about="http://www.victordeboer.com/foaf.rdf" />
-          <rdf:Description rdf:about="https://niels.online/foaf" />
+          <rdf:Description rdf:about="/d2d/a/people/CristinaBucur" />
+          <rdf:Description rdf:about="/d2d/a/people/OanaInel" />          
 
         </_ad:hasItem>
       </_ad:ItemSet>
