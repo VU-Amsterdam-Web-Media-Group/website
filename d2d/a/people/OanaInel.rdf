@@ -23,7 +23,7 @@
     <givenName>Oana</givenName>
     <familyName>Inel</familyName>
     <homepage rdf:resource=""/>
-    <workplaceHomepage rdf:resource="http://ucds.cs.vu.nl"/>
+    <workplaceHomepage rdf:resource="https://oana-inel.github.io/index.html"/>
 
     <img rdf:resource="/images/people/oana.jpg"/>
 
@@ -34,7 +34,7 @@
     <mbox rdf:resource="mailto:oana.inel@vu.nl"/>
 
     <status>
-      To be completed
+      My research focuses on understanding events and their semantic representation, the role of events with respect to other types of entities, such as places, people, time expressions, as well as detecting their contextual relevance, salience or novelty. To realize this, I apply a number of computer science technologies, such as NLP, human computation, semantic modeling, machine learning.
     </status>
 
     <schema:jobTitle>
