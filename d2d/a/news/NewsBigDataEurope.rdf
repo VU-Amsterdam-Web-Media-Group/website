@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d2d/"
+         xmlns:_ad="http://ucds.cs.vu.nl/d2d/ad/NewsArticle#"
+         xmlns:_md="http://ucds.cs.vu.nl/d2d/ad/MenuDefinition#"
+>
+
+  <_ad:NewsArticle rdf:about="">  <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
+
+    <_ad:title>
+      <![CDATA[
+        Final Release of the Big Data Europe Integrator Platform (BDI)
+      ]]>
+    </_ad:title>
+
+    <_ad:abstract>
+      <![CDATA[
+        On Thursday 16 November, the BDE Consortium launched the third version of the Big Data Europe Integrator Platform. The technical team has set out what the Big Data Europe Integrator Platform can do, how it does it, and how you can use it to derive more value from your data.
+      ]]>
+    </_ad:abstract>
+
+    <_ad:text>
+      <![CDATA[
+On Thursday 16 November, the BDE Consortium launched the third version of the Big Data Europe Integrator Platform. The technical team has set out what the Big Data Europe Integrator Platform can do, how it does it, and how you can use it to derive more value from your data. This launch webinar includes also the latest achievements made in Semantifying the Big Data Stack.
+<table style="border-collapse: collapse;">
+<tbody>
+<tr style="background-color: #a94f74; color: white;">
+<th style="border: thin solid black; padding: 0.2em;">Topic</th>
+<th style="border: thin solid black; padding: 0.2em;">Speaker</th>
+<th style="border: thin solid black; padding: 0.2em;">Duration</th>
+</tr>
+<tr>
+<td style="border: thin solid black; padding: 0.2em;">
+<ul>
+	<li>Welcome &amp; Introduction</li>
+</ul>
+</td>
+<td style="border: thin solid black; padding: 0.2em;"><strong>Rigo Wenning</strong>, W3C</td>
+<td style="border: thin solid black; padding: 0.2em;">5 min</td>
+</tr>
+<tr>
+<td style="border: thin solid black; padding: 0.2em;">
+<ul>
+	<li>Evolution of the BDI platform</li>
+	<li>Architecture</li>
+	<li>BDE development Environment</li>
+</ul>
+</td>
+<td style="border: thin solid black; padding: 0.2em;"><strong>Hajira Jabeen</strong>, University of Bonn<br>
+ <strong>Ivan Ermilov</strong>, University of Leipzig, InfAI</td>
+<td style="border: thin solid black; padding: 0.2em;">20 min</td>
+</tr>
+<tr>
+<td style="border: thin solid black; padding: 0.2em;">
+<ul>
+	<li>Demo Integrator Platform</li>
+</ul>
+</td>
+<td style="border: thin solid black; padding: 0.2em;"><strong>Jonathan Langens/Aad Versteden</strong>, TenForce</td>
+<td style="border: thin solid black; padding: 0.2em;">10 min</td>
+</tr>
+<tr>
+<td style="border: thin solid black; padding: 0.2em;">
+<ul>
+	<li>Semantic Big Data
+<ul>
+	<li><span style="font-weight: 400;">SANSA</span></li>
+	<li><span style="font-weight: 400;">Semantic Data Lake</span></li>
+</ul>
+</li>
+</ul>
+</td>
+<td style="border: thin solid black; padding: 0.2em;">
+<p><strong>Jens Lehmann</strong>,&nbsp;University of Bonn</p>
+</td>
+<td style="border: thin solid black; padding: 0.2em;">15 min</td>
+</tr>
+<tr>
+<td style="border: thin solid black; padding: 0.2em;">
+<ul>
+	<li>Pilot Implementations</li>
+</ul>
+</td>
+<td style="border: thin solid black; padding: 0.2em;">
+<p><strong>Ronald Siebes</strong>, Vrije Universiteit Amsterdam</p>
+</td>
+<td style="border: thin solid black; padding: 0.2em;">10 min</td>
+</tr>
+<tr>
+<td style="border: thin solid black; padding: 0.2em;">
+<ul>
+	<li>Pilot Demo</li>
+</ul>
+</td>
+<td style="border: thin solid black; padding: 0.2em;"><strong>Luigi Selmi,</strong> Fraunhofer IAIS<strong><br>
+ </strong></td>
+<td style="border: thin solid black; padding: 0.2em;">5 min</td>
+</tr>
+<tr>
+<td style="border: thin solid black; padding: 0.2em;">
+<ul>
+	<li>Q&amp;A</li>
+</ul>
+</td>
+<td style="border: thin solid black; padding: 0.2em;">Moderated by&nbsp;<strong>Simon Scerri, </strong>Fraunhofer IAIS</td>
+<td style="border: thin solid black; padding: 0.2em;">10 min</td>
+</tr>
+</tbody>
+</table>
+      ]]>
+    </_ad:text>
+
+    <_ad:image rdf:resource="/images/projects/logo-BigDataEurope.png" />
+
+    <_ad:link>
+      <_md:MenuItem>
+        <_md:caption>About the Big Data Europe project</_md:caption>
+        <_md:hyperlink rdf:resource="http://www.bigdataeurope.eu" />
+      </_md:MenuItem>
+    </_ad:link>
+
+  </_ad:NewsArticle>
+
+</rdf:RDF>

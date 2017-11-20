@@ -15,6 +15,7 @@
       <_ad:ItemSet> <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
         <_ad:hasItem rdf:parseType="Collection">
 
+            <rdf:Description rdf:about="/d2d/a/news/NewsBigDataEurope" />
           <rdf:Description rdf:about="/d2d/a/news/NewsABCKb" />
           <rdf:Description rdf:about="/d2d/a/news/NewsEuropeanaInsight" />
           <rdf:Description rdf:about="/d2d/a/news/NewsDataScience" />
