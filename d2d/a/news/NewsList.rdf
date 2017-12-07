@@ -8,24 +8,20 @@
   <_ad:ItemList rdf:about="" _ad:maxItems="3"> <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
 
     <_ad:header>
-      News
+      <![CDATA[ <a href="/news/">News</a> ]]>
     </_ad:header>
 
     <_ad:hasItemSet>
-      <_ad:ItemSet> <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
+      <_ad:ItemSet rdf:about="#FullList"> <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
         <_ad:hasItem rdf:parseType="Collection">
 
-            <rdf:Description rdf:about="/d2d/a/news/MTSRBestPaper" />
-            <rdf:Description rdf:about="/d2d/a/news/BigDataEurope" />
-            <rdf:Description rdf:about="/d2d/a/news/DancingAndSemantics" />
+          <rdf:Description rdf:about="/d2d/a/news/MTSRBestPaper" />
+          <rdf:Description rdf:about="/d2d/a/news/BigDataEurope" />
+          <rdf:Description rdf:about="/d2d/a/news/DancingAndSemantics" />
           <rdf:Description rdf:about="/d2d/a/news/ABCKb" />
           <rdf:Description rdf:about="/d2d/a/news/EuropeanaInsight" />
           <rdf:Description rdf:about="/d2d/a/news/DataScience" />
           <rdf:Description rdf:about="/d2d/a/news/SwiProlog" />
-          <rdf:Description rdf:about="/d2d/a/news/TestNews1" />
-          <rdf:Description rdf:about="/d2d/a/news/TestNews2" />
-          <rdf:Description rdf:about="/d2d/a/news/TestNews3" />
-          <rdf:Description rdf:about="/d2d/a/news/TestNews3" />
 
         </_ad:hasItem>
       </_ad:ItemSet>

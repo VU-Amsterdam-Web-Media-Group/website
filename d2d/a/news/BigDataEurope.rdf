@@ -113,12 +113,7 @@ On Thursday 16 November, the BDE Consortium launched the third version of the Bi
 
     <_ad:image rdf:resource="/images/projects/logo-BigDataEurope.png" />
 
-    <_ad:link>
-      <_md:MenuItem>
-        <_md:caption>About the Big Data Europe project</_md:caption>
-        <_md:hyperlink rdf:resource="http://www.bigdataeurope.eu" />
-      </_md:MenuItem>
-    </_ad:link>
+    <_ad:menulink rdf:resource="/news/BigDataEurope" />
 
   </_ad:NewsArticle>
 

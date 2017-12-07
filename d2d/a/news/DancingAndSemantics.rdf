@@ -43,12 +43,7 @@
 
     <_ad:image rdf:resource="http://www.victordeboer.com/wp-content/uploads/2017/10/dancepiration.jpg" />
 
-    <_ad:link>
-      <_md:MenuItem>
-        <_md:caption>About the ABC-Kb project</_md:caption>
-        <_md:hyperlink rdf:resource="http://www.networkinstitute.org/academy-assistants/academy-projects-17/" />
-      </_md:MenuItem>
-    </_ad:link>
+    <_ad:menulink rdf:resource="/news/DancingAndSemantics" />
 
   </_ad:NewsArticle>
 

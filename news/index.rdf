@@ -3,6 +3,7 @@
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:d2d="http://rdfns.org/d2d/"
          xmlns:_ad="http://ucds.cs.vu.nl/d2d/ad/MainPage#"
+         xmlns:_ad2="http://ucds.cs.vu.nl/d2d/ad/ItemList#"
 >
 
   <!-- Setting rdf:about to empty string results in the file
@@ -40,33 +41,21 @@
         <_ad:maincolumn rdf:parseType="Collection">
 
           <d2d:Placement>
-            <d2d:places rdf:resource="/d2d/a/banners/BannerList" />
-            <d2d:prefRenderDef rdf:resource="/d2d/ard/HomeSections#TopBanner" />
-          </d2d:Placement>
+            <d2d:places>
+            
+              <_ad2:ItemList rdf:about=""> <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
 
-          <d2d:Placement>
-            <d2d:places rdf:resource="/d2d/a/news/NewsList" />
+                  <_ad2:header>
+                    News
+                  </_ad2:header>
+
+                  <_ad2:hasItemSet rdf:resource="/d2d/a/news/NewsList#FullList" />
+
+                  <d2d:prefRenderDef rdf:resource="/d2d/ard/NewsArticleRendering#HomePage" />
+                </_ad2:ItemList>
+
+            </d2d:places>
             <d2d:prefRenderDef rdf:resource="/d2d/ard/HomeSections#NewsOverview" />
-          </d2d:Placement>
-
-          <d2d:Placement>
-            <d2d:places rdf:resource="/d2d/a/projects/ProjectList" />
-            <d2d:prefRenderDef rdf:resource="/d2d/ard/HomeSections#ProjectsOverview" />
-          </d2d:Placement>
-
-          <d2d:Placement>
-            <d2d:places rdf:resource="/d2d/a/aspects/AspectList" />
-            <d2d:prefRenderDef rdf:resource="/d2d/ard/HomeSections#NewsOverview" />
-          </d2d:Placement>
-
-          <d2d:Placement>
-            <d2d:places rdf:resource="/d2d/a/people/HomePagePeople" />
-            <d2d:prefRenderDef rdf:resource="/d2d/ard/HomeSections#PeopleOverview" />
-          </d2d:Placement>
-
-          <d2d:Placement>
-            <d2d:places rdf:resource="/d2d/a/publications/PublicationList" />
-            <d2d:prefRenderDef rdf:resource="/d2d/ard/HomeSections#PublicationsOverview" />
           </d2d:Placement>
 
         </_ad:maincolumn>

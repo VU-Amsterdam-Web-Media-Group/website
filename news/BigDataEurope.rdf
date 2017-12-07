@@ -25,7 +25,7 @@
       <_ad:MainPage>
 
         <_ad:header>
-          UCDS @ VU
+          News
         </_ad:header>
 
         <_ad:subheader>
@@ -39,35 +39,12 @@
 
         <_ad:maincolumn rdf:parseType="Collection">
 
-          <d2d:Placement>
-            <d2d:places rdf:resource="/d2d/a/banners/BannerList" />
-            <d2d:prefRenderDef rdf:resource="/d2d/ard/HomeSections#TopBanner" />
-          </d2d:Placement>
 
           <d2d:Placement>
-            <d2d:places rdf:resource="/d2d/a/news/NewsList" />
-            <d2d:prefRenderDef rdf:resource="/d2d/ard/HomeSections#NewsOverview" />
+            <d2d:places rdf:resource="/d2d/a/news/BigDataEurope" />
+            <d2d:prefRenderDef rdf:resource="/d2d/ard/NewsArticleRendering#NewsPage" />
           </d2d:Placement>
 
-          <d2d:Placement>
-            <d2d:places rdf:resource="/d2d/a/projects/ProjectList" />
-            <d2d:prefRenderDef rdf:resource="/d2d/ard/HomeSections#ProjectsOverview" />
-          </d2d:Placement>
-
-          <d2d:Placement>
-            <d2d:places rdf:resource="/d2d/a/aspects/AspectList" />
-            <d2d:prefRenderDef rdf:resource="/d2d/ard/HomeSections#NewsOverview" />
-          </d2d:Placement>
-
-          <d2d:Placement>
-            <d2d:places rdf:resource="/d2d/a/people/HomePagePeople" />
-            <d2d:prefRenderDef rdf:resource="/d2d/ard/HomeSections#PeopleOverview" />
-          </d2d:Placement>
-
-          <d2d:Placement>
-            <d2d:places rdf:resource="/d2d/a/publications/PublicationList" />
-            <d2d:prefRenderDef rdf:resource="/d2d/ard/HomeSections#PublicationsOverview" />
-          </d2d:Placement>
 
         </_ad:maincolumn>
 

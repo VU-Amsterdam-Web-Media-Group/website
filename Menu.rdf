@@ -47,7 +47,7 @@
 
         <_ad:MenuItem>
           <_ad:caption>News</_ad:caption>
-          <_ad:hyperlink rdf:resource="/#News"/>
+          <_ad:hyperlink rdf:resource="/news/"/>
         </_ad:MenuItem>
 
         <_ad:MenuItem>
@@ -57,7 +57,7 @@
 
         <_ad:MenuItem>
           <_ad:caption>Publications</_ad:caption>
-          <_ad:hyperlink rdf:resource="/#Latest Publications"/>
+          <_ad:hyperlink rdf:resource="https://research.vu.nl/en/organisations/business-web-and-media-3/publications/"/>
         </_ad:MenuItem>
 
 
