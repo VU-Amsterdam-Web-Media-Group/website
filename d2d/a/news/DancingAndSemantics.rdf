@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d2d/"
+         xmlns:_ad="http://ucds.cs.vu.nl/d2d/ad/NewsArticle#"
+         xmlns:_md="http://ucds.cs.vu.nl/d2d/ad/MenuDefinition#"
+>
+
+  <_ad:NewsArticle rdf:about="">  <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
+
+    <_ad:title>
+      <![CDATA[
+        Dancing and Semantics
+      ]]>
+    </_ad:title>
+
+    <_ad:abstract>
+      <![CDATA[
+        This post describes the MSc theses of Ana-Liza Tjon-a-Pauw and Josien Jansen on the topic of Dancing and Semantics. They investigated 1) How can we model and represent dance in a sensible manner so that computers can make sense of choreographs and 2) How can we communicate those choreographies to the dancers?
+      ]]>
+    </_ad:abstract>
+
+    <_ad:text>
+      <![CDATA[
+ <p><em>This post describes the MSc theses of Ana-Liza Tjon-a-Pauw and Josien Jansen. </em></p>
+<p>As a semantic web researcher, it is hard to sometimes <em>not</em> see ontologies and triples in aspects of my private life. In this case, through my contacts with dancers and choreographers, I have since a long time been interested in exploring knowledge representation for dance. After a few failed attempts to get a research project funded, I decided to let enthusiastic MSc. students have a go to continue with this exploration. This year, two Information Sciences students, <a href="https://www.linkedin.com/in/josienjansen/">Josien Jansen </a>and <a href="https://www.linkedin.com/in/ana-liza-tjon-a-pauw-935819141/">Ana-Liza Tjon-a-Pauw, </a>were willing to take up this challenge, with great success. With their background as dancers they did not only have the necessary background knowledge at but also access to dancers who could act as study and test subjects.</p>
+<p>The questions of the two projects was therefore: 1) How can we model and represent dance in a sensible manner so that computers can make sense of choreographs and 2) How can we communicate those choreographies to the dancers?</p>
+<figure id="attachment_1974" style="width: 115px" class="wp-caption alignleft"><a href="http://www.victordeboer.com/wp-content/uploads/2017/10/dancepiration.jpg"><img class="wp-image-1974" src="http://www.victordeboer.com/wp-content/uploads/2017/10/dancepiration-173x300.jpg" alt="" width="115" height="199" srcset="http://www.victordeboer.com/wp-content/uploads/2017/10/dancepiration-173x300.jpg 173w, http://www.victordeboer.com/wp-content/uploads/2017/10/dancepiration.jpg 335w" sizes="(max-width: 115px) 100vw, 115px" /></a><figcaption class="wp-caption-text">Screenshot of the mobile choreography assistant prototype</figcaption></figure>
+<p><a href="http://www.victordeboer.com/wp-content/uploads/2017/10/josien_jansen_final_thesis.pdf">Josien&#8217;s thesis</a> addressed this first question. Investigating to what extent choreographers can be supported by semi-automatic analysis of choreographies through the generation of new creative choreography elements. She conducted an online questionnaire among 54 choreographers. The results show that a significant subgroup is willing to use an automatic choreography assistant in their creative process. She further identified requirements for such an assistant, including the semantic levels at which should operate and communicate with the end-users. The requirements are used for a design of a <a href="https://github.com/josienj/MasterThesis">choreography assistant &#8220;Dancepiration&#8221;</a>, which we implemented as a mobile application. The tool allows choreographers to enter (parts of) a choreography and uses multiple strategies for generating creative variations in three dance styles. Josien  evaluated the tool in a user study where we test a) random variations and b) variations based on semantic distance in a dance ontology. The results show that this latter variant is better received by participants. We furthermore identify many differences between the varying dance styles to what extent the assistant supports creativity.</p>
+<figure id="attachment_1976" style="width: 1361px" class="wp-caption aligncenter"><a href="http://www.victordeboer.com/wp-content/uploads/2017/10/dance_experiment-1.jpg"><img class="wp-image-1976 size-full" src="http://www.victordeboer.com/wp-content/uploads/2017/10/dance_experiment-1.jpg" alt="" width="1361" height="388" srcset="http://www.victordeboer.com/wp-content/uploads/2017/10/dance_experiment-1.jpg 1361w, http://www.victordeboer.com/wp-content/uploads/2017/10/dance_experiment-1-300x86.jpg 300w, http://www.victordeboer.com/wp-content/uploads/2017/10/dance_experiment-1-768x219.jpg 768w, http://www.victordeboer.com/wp-content/uploads/2017/10/dance_experiment-1-1024x292.jpg 1024w" sizes="(max-width: 1361px) 100vw, 1361px" /></a><figcaption class="wp-caption-text">Four participants during the 2nd user experiment. From left to right this shows variations presented through textual, 2D animation, 3D animation, and auditory instructions.</figcaption></figure>
+<p>In <a href="http://www.victordeboer.com/wp-content/uploads/2017/10/analizatjonapauw_master_thesis_final.pdf">her thesis</a>, Ana-Liza dove deeper into the human-computer interaction side of the story. Where Josien had classical ballet and modern dance as background and focus, Ana-Liza looked at Dancehall and Hip-Hop dance styles. For her project, Ana-Liza developed four prototypes that could communicate pieces of computer-generated choreography to dancers through Textual Descriptions, 2-D Animations, 3-D Animations, and Audio Descriptions. Each of these presentation methods has its own advantages and disadvantages, so Ana-Liza made an extensive user survey with seven domain experts (dancers). Despite the relatively small group of users, there was a clear preference for the 3-D animations. Based on the results, Ana-Liza also designed an interactive choreography assistant (IDCAT).</p>
+<p>The combined theses formed the basis of a scientific article on dance representation and communication that was accepted for publication in the renowned <a href="http://ace2017.info/">ACE entertainment conference</a>, co-authored by us and co-supervisor Frank Nack.</p>
+<p>You can find more information here:</p>
+<ul>
+<li><a href="http://www.victordeboer.com/wp-content/uploads/2017/10/josien_jansen_final_thesis.pdf">Josien&#8217;s thesis (pdf)</a></li>
+<li>Josien&#8217;s <a href="http://www.victordeboer.com/wp-content/uploads/2017/10/Master-Project-eindpresentatie-1307.pptx">presentation slides (pptx)</a></li>
+<li><a href="https://github.com/josienj/MasterThesis">Josien&#8217;s code on Github</a> (includes android apk)</li>
+<li><a href="http://www.victordeboer.com/wp-content/uploads/2017/10/analizatjonapauw_master_thesis_final.pdf">Ana-Liza&#8217;s thesis (pdf)</a></li>
+<li><a href="http://www.victordeboer.com/wp-content/uploads/2017/10/analizatjonapauw_presentation_master_thesis_final.pdf">Ana-Liza&#8217;s presentation (pdf)</a></li>
+</ul>
+      ]]>
+    </_ad:text>
+
+    <_ad:image rdf:resource="http://www.victordeboer.com/wp-content/uploads/2017/10/dancepiration.jpg" />
+
+    <_ad:link>
+      <_md:MenuItem>
+        <_md:caption>About the ABC-Kb project</_md:caption>
+        <_md:hyperlink rdf:resource="http://www.networkinstitute.org/academy-assistants/academy-projects-17/" />
+      </_md:MenuItem>
+    </_ad:link>
+
+  </_ad:NewsArticle>
+
+</rdf:RDF>

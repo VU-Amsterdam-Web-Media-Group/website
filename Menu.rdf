@@ -31,7 +31,18 @@
         <_ad:MenuItem>
           <_ad:caption>Projects</_ad:caption>
           <_ad:hyperlink rdf:resource="/#Current Projects"/>
-          <_ad:hasSubMenu rdf:resource="/d2d/a/projects/ProjectList#Projects" />
+          <_ad:hasSubMenu rdf:resource="/d2d/a/projects/ProjectList#CurrentProjects" />
+	  <_ad:hasSubMenu>
+	    <_ad:Menu>
+	      <_ad:hasItem rdf:parseType="Collection">
+		<_ad:MenuItem>
+		  <_ad:caption>Past Projects</_ad:caption>
+		  <_ad:hyperlink rdf:resource="/#Past Projects"/>
+		  <_ad:hasSubMenu rdf:resource="/d2d/a/projects/ProjectList#PastProjects" />
+		</_ad:MenuItem>
+	      </_ad:hasItem>
+	    </_ad:Menu>
+	  </_ad:hasSubMenu>
         </_ad:MenuItem>
 
         <_ad:MenuItem>

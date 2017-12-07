@@ -10,4 +10,56 @@
     <d2d:hasTemplate rdf:resource="/template_home.xhtml" />
   </d2d:ArticleRenderDef>
 
+
+  <d2d:ArticleRenderDef rdf:about="#NewsPage">
+    <rdfs:label>D2D Article Rendering Defintion for the News Article article definition</rdfs:label>
+    <d2d:renders rdf:resource="/d2d/ad/NewsArticle#NewsArticle" />
+    <d2d:hasTemplate>
+      <![CDATA[
+      <d2d:Template xmlns:d2d="http://rdfns.org/d2d/">
+
+
+      <div class="c-content-box c-size-md c-bg-white" id="[d2d:Field d2d:index=1 /]">
+        <div class="container">
+          <div class="row">
+           <div class="c-content-title-1 wow animate fadeInDown">
+                <d2d:Field d2d:index="1"><h3 class="c-font-uppercase c-center c-font-bold"><d2d:Content>Project Name</d2d:Content></h3></d2d:Field>
+                <div class="c-line-center"> </div>
+            </div>
+
+
+
+
+                <div class="col-sm-12">
+                  <div class="c-content-feature-1 wow animate fadeInUp">
+
+
+                        <div class="img-responsive" style="text-align: center;"><img src="[d2d:Field d2d:index=4 /]" style="max-width: 100%;" /></div>
+                        <d2d:Field d2d:index="1"><h3 class="c-font-uppercase c-font-bold"><d2d:Content>News article 1</d2d:Content></h3></d2d:Field>
+                        <d2d:Field d2d:index="2"><p class="c-font-thin"><strong><d2d:Content>CONTENT</d2d:Content></strong></p></d2d:Field>
+                        <d2d:Field d2d:index="3"><br /><p class="c-font-thin"><d2d:Content>CONTENT</d2d:Content></p></d2d:Field>
+
+
+                  </div>
+                </div>
+
+
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+
+
+
+      </d2d:Template>
+      ]]>
+    </d2d:hasTemplate>
+  </d2d:ArticleRenderDef>
+
+
+
 </rdf:RDF>

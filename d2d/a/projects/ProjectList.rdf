@@ -8,23 +8,32 @@
   <_ad:ItemList rdf:about="" _ad:maxItems="4"> <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
 
     <_ad:header>
-      Current Projects
+      Projects
     </_ad:header>
 
     <_ad:hasItemSet>
-      <_ad:ItemSet rdf:about="#Projects">
+      <_ad:ItemSet rdf:about="#CurrentProjects">
         <_ad:hasItem rdf:parseType="Collection">
 
           <rdf:Description rdf:about="/d2d/a/projects/ControcuratorProject" />
           <rdf:Description rdf:about="/d2d/a/projects/Dive" />
           <rdf:Description rdf:about="/d2d/a/projects/CrowdTruth" />
           <rdf:Description rdf:about="/d2d/a/projects/BiographyNet" />
-          <rdf:Description rdf:about="/d2d/a/projects/DutchShipsAndSailors" />
           <rdf:Description rdf:about="/d2d/a/projects/Observe" />
           <rdf:Description rdf:about="/d2d/a/projects/BigDataEurope" />
+          <rdf:Description rdf:about="/d2d/a/projects/SEALINCMedia" />
+
+        </_ad:hasItem>
+      </_ad:ItemSet>
+    </_ad:hasItemSet>
+    
+    <_ad:hasItemSet>
+      <_ad:ItemSet rdf:about="#PastProjects">
+        <_ad:hasItem rdf:parseType="Collection">
+
+          <rdf:Description rdf:about="/d2d/a/projects/DutchShipsAndSailors" />
           <rdf:Description rdf:about="/d2d/a/projects/TalkOfEurope" />
           <rdf:Description rdf:about="/d2d/a/projects/Data2Semantics" />
-          <rdf:Description rdf:about="/d2d/a/projects/SEALINCMedia" />
 
         </_ad:hasItem>
       </_ad:ItemSet>
