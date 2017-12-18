@@ -22,15 +22,23 @@
 
     <_ad:text>
       <![CDATA[
-     <a href="http://www.victordeboer.com/wp-content/uploads/2017/12/2017-11-30-09.16.00.jpg"><img class="wp-image-1990 alignright" src="http://www.victordeboer.com/wp-content/uploads/2017/12/2017-11-30-09.16.00.jpg" alt="" width="313" height="202" /></a>Last week, I visited the <a href="http://www.mtsr-conf.org/">11th Metadata and Semantics Research Conference (MTSR2017)</a> in Tallinn, Estonia. This conference brings together computer scientists. information scientists and people from the domain of digital libraries to discuss their work in metadata and semantics. The 2017 edition of the conference draws around 70 people which is a great size for a single-track conference with lively discussions. The paper included interesting tracks on Cultural Heritage and Library (meta)data as well as one on Digital Humanities.
+<p>Last week, I visited the <a href="http://www.mtsr-conf.org/">11th Metadata and Semantics Research Conference (MTSR2017)</a> in Tallinn, Estonia. This conference brings together computer scientists. information scientists and people from the domain of digital libraries to discuss their work in metadata and semantics. The 2017 edition of the conference draws around 70 people which is a great size for a single-track conference with lively discussions. The paper included interesting tracks on Cultural Heritage and Library (meta)data as well as one on Digital Humanities.
+</p>
+<p>
+<center>
+    <img src="http://www.victordeboer.com/wp-content/uploads/2017/12/2017-11-30-09.16.00.jpg" alt="Christmas market in Tallinn" width="70%"/>
+    </center>
+</p>
 
-On the last day I presented our paper "Enriching Media Collections for Event-based Exploration" [<a href="http://www.victordeboer.com/wp-content/uploads/2017/12/enriching-deboer-47-mtsr2017.pdf">draft pdf</a>], co-authored with the people in the <a href="http://clariah.nl">CLARIAH</a> and <a href="http://diveproject.beeldengeluid.nl">DIVE+ team</a> working on data enrichment and APIs: Liliana Melgar, Oana Inel Carlos Martinez Ortiz, Lora Aroyo and Johan Oomen.  The slides for the presentation <a href="https://www.slideshare.net/vdeboer/enriching-media-collections-for-eventbased-exploration">can be found here on slideshare</a>. We were very happy to hear that our paper was presented the MTSR2017 Best Paper Award!
+<p>On the last day I presented our paper "Enriching Media Collections for Event-based Exploration" [<a href="http://www.victordeboer.com/wp-content/uploads/2017/12/enriching-deboer-47-mtsr2017.pdf">draft pdf</a>], co-authored with the people in the <a href="http://clariah.nl">CLARIAH</a> and <a href="http://diveproject.beeldengeluid.nl">DIVE+ team</a> working on data enrichment and APIs: Liliana Melgar, Oana Inel Carlos Martinez Ortiz, Lora Aroyo and Johan Oomen.  The slides for the presentation <a href="https://www.slideshare.net/vdeboer/enriching-media-collections-for-eventbased-exploration">can be found here on slideshare</a>. We were very happy to hear that our paper was presented the MTSR2017 Best Paper Award!
+</p>
 
-<a href="http://www.victordeboer.com/wp-content/uploads/2017/12/2017-12-02-14.50.05-1.jpg"><img class="wp-image-1989 alignright" src="http://www.victordeboer.com/wp-content/uploads/2017/12/2017-12-02-14.50.05-1.jpg" alt="" width="267" height="198" /></a>In the paper, <span class="fontstyle0">we present a methodology to publish, represent, enrich, and link heritage collections so that they can be explored by domain expert users. We present four methods to derive events from media object descriptions. We also present a case study where four datasets with mixed media types are made accessible to scholars and describe the building blocks for event-based </span><span class="fontstyle2"><em>proto-narratives</em> </span><span class="fontstyle0">in the knowledge graph</span>
+<p> In the paper, <span class="fontstyle0">we present a methodology to publish, represent, enrich, and link heritage collections so that they can be explored by domain expert users. We present four methods to derive events from media object descriptions. We also present a case study where four datasets with mixed media types are made accessible to scholars and describe the building blocks for event-based </span><span class="fontstyle2"><em>proto-narratives</em> </span><span class="fontstyle0">in the knowledge graph</span></p>
       ]]>
     </_ad:text>
 
     <_ad:image rdf:resource="http://www.victordeboer.com/wp-content/uploads/2017/12/2017-12-02-14.50.05-1.jpg" />
+
 
     <_ad:menulink rdf:resource="/news/MTSRBestPaper" />
 

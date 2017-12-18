@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d2d/"
+         xmlns:_ad="http://ucds.cs.vu.nl/d2d/ad/NewsArticle#"
+         xmlns:_md="http://ucds.cs.vu.nl/d2d/ad/MenuDefinition#"
+>
+
+  <_ad:NewsArticle rdf:about="">  <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
+
+    <_ad:title>
+      <![CDATA[
+Machine-to-machine communication in rural conditions: Realizing KasadakaNet      ]]>
+    </_ad:title>
+
+    <_ad:abstract>
+      <![CDATA[
+       In his Master Project, <a href="https://www.linkedin.com/in/fahad-ali-a5aa3aa9/">Fahad Ali</a> researched using wifi sneakernets for machine-to-machine communication to enable information sharing between geographically distributed devices. He developed a <a href="https://www.raspberrypi.org/">Raspberry Pi</a>-based device called the <em>Wifi-donkey</em> that can be mounted on a vehicle and facilitates information exchange with nearby devices, using the built-in wifi card of the rPi 3.The solution is based on <a href="https://piratebox.cc/">Piratebox</a> offline file-sharing and communications system built with free software and uses off-the-shelf Linux software components and configuration settings to allow it to discover and connect to nearby Kasadaka devices based using Wifi technologies.
+      ]]>
+    </_ad:abstract>
+
+    <_ad:text>
+      <![CDATA[
+ 
+ <em>[This post describes research by <a href="https://www.linkedin.com/in/fahad-ali-a5aa3aa9/">Fahad Ali</a> and is based on his Msc. thesis] </em>
+
+Contextual constraints (lack of infrastructure, low-literacy etc.) play an important role in <a href="http://www.victordeboer.com/tag/ict4d/">ICT for Development (ICT4D)</a> projects. The <a href="http://www.victordeboer.com/tag/kasadaka/">Kasadaka</a> project offers a technological platform for knowledge sharing applications in rural areas in Sub-Saharan Africa. However, lack of stable internet connections restrict exchange of data between distributed Kasadaka instances, which leads us to research alternative ways of machine-to-machine (m2m) communication.
+
+
+Fahad Ali's research focuses on mobile elements and using wifi sneakernets for this m2m to enable information sharing between geographically distributed devices. He developed a <a href="https://www.raspberrypi.org/">Raspberry Pi</a>-based device called the <em>Wifi-donkey</em> that can be mounted on a vehicle and facilitates information exchange with nearby devices, using the built-in wifi card of the rPi 3.The solution is based on <a href="https://piratebox.cc/">Piratebox</a> offline file-sharing and communications system built with free software and uses off-the-shelf Linux software components and configuration settings to allow it to discover and connect to nearby Kasadaka devices based using Wifi technologies.
+
+<p>
+    <center><img class=" wp-image-2000" src="http://www.victordeboer.com/wp-content/uploads/2017/12/fahadtape.jpg" alt="" width="70%"" /></a>
+    <br/><i>Experimental setup: the wifi-donkey taped to an Amsterdam balcony to test range and bandwith.</i>
+    </center>
+
+</p>
+<p>
+We evaluated the solution by simulating a low resource setting and testing it by performing so-called "pass-bys" in an Amsterdam residential area. In these cases, SPARQL queries are exchanged between host and client devices and we measure amount of RDF triples transferred. This setup matches earlier case requirements as described in <a href="http://www.victordeboer.com/ict4d-2/kasadaka/msc-project-low-bandwith-semantic-web/">Onno Valkering's work</a>.Results show that the system works fairly reliably in the simulated setting. The machine-to-machine communication method can be used in various ICT4D projects that require some sort of data sharing functionality.
+
+You can find out more about Fahad's work through the following resources:
+<ul>
+ 	<li><a href="http://www.victordeboer.com/wp-content/uploads/2017/12/machine-machine-communication-final.pdf">Fahad Ali's Msc Thesis</a> [PDF]</li>
+ 	<li>The codebase for the configuration files on <a href="https://github.com/fahad105/masterproject/">github.com/fahad105/masterproject/</a></li>
+ 	<li>His <a href="https://www.slideshare.net/vdeboer/fahad-alis-slides-for-machine-tomachine-communication-in-rural-conditions-realizing-kasadakanet-1">final presentation slides (embedded below)</a></li>
+</ul>
+</p>
+
+<p>
+    <center>
+    <iframe src="//www.slideshare.net/slideshow/embed_code/key/fNLdIoUfGFlOvs" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/vdeboer/fahad-alis-slides-for-machine-tomachine-communication-in-rural-conditions-realizing-kasadakanet-1" title="Fahad Ali&#x27;s slides for Machine to-machine communication in rural conditions realizing kasadaka-net (1)" target="_blank">Fahad Ali&#x27;s slides for Machine to-machine communication in rural conditions realizing kasadaka-net (1)</a> </strong> from <strong><a href="https://www.slideshare.net/vdeboer" target="_blank">Victor de Boer</a></strong> </div> 
+    </center>
+</p>
+ 
+      ]]>
+    </_ad:text>
+
+    <_ad:image rdf:resource="http://www.victordeboer.com/wp-content/uploads/2017/12/fahadsituation.jpg" />
+
+    <_ad:menulink rdf:resource="/news/StudentProjectFahadAli" />
+
+  </_ad:NewsArticle>
+
+</rdf:RDF>

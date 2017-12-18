@@ -1,0 +1,33 @@
+
+RewriteEngine on
+
+# GENERAL D2D REWRITE RULES
+# =========================
+
+# RewriteCond %{HTTP_HOST} domain\.tld$
+RewriteRule ^browser$ browser/ [R=303,L]
+
+# RewriteCond %{HTTP_HOST} domain\.tld$
+RewriteRule ^browser/$ /d2d/d2d_system/file_browser/index.php [L]
+
+# RewriteCond %{HTTP_HOST} domain\.tld$
+RewriteRule ^browser/(.+) /d2d/d2d_system/file_browser/$1 [L]
+
+# RewriteCond %{HTTP_HOST} domain\.tld$
+# RewriteCond %{REQUEST_URI} !^/$
+RewriteCond %{REQUEST_URI} !^/wm-
+RewriteCond %{REQUEST_URI} !^/wp-content
+RewriteCond %{REQUEST_URI} !^/vu-admin
+RewriteCond %{REQUEST_URI} !^/feed
+RewriteCond %{REQUEST_URI} !^/comments
+RewriteCond %{REQUEST_URI} !^/wp-admin
+RewriteCond %{REQUEST_URI} !^/images
+RewriteCond %{REQUEST_URI} !^/phpmyadmin
+RewriteCond %{REQUEST_URI} !^/test
+RewriteRule !\.(gif|jpg|png|css|php|mp3|htm|pdf|zip|js|html|rdf|ttl|xml|rss|nt|xhtml|otf|eot|svg|ttf|woff|woff2)$ /d2d/d2d_system/d2d_portal.php [L]
+RewriteCond %{HTTP_HOST} ^usercentricdatascience\.cs\.vu\.nl$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.usercentricdatascience\.cs\.vu\.nl$
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^(.*)$ "http\:\/\/ucds\.cs\.vu\.nl\/$1" [R=301,L]
+
