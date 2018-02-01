@@ -46,12 +46,12 @@
               <_ad2:ItemList rdf:about=""> <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
 
                   <_ad2:header>
-                    News
+                    People
                   </_ad2:header>
 
-                  <_ad2:hasItemSet rdf:resource="/d2d/a/news/NewsList#FullList" />
+                  <_ad2:hasItemSet rdf:resource="/d2d/a/people/PeopleList#FullList" />
 
-                  <d2d:prefRenderDef rdf:resource="/d2d/ard/NewsArticleRendering#NewsPage" />
+                  <d2d:prefRenderDef rdf:resource="/d2d/ard/FoafRendering#QuoteBox" />
                 </_ad2:ItemList>
 
             </d2d:places>

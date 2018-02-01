@@ -12,62 +12,63 @@
         <_ad:hyperlink rdf:resource="/"/>
       </_ad:MenuItem>
 
-
-
-
-
-<_ad:MenuItem>
-  <_ad:caption>About UCDS @ VU</_ad:caption>
-  <_ad:hyperlink rdf:resource="/"/>
-  <_ad:hasSubMenu>
-    <_ad:Menu>
-      <_ad:hasItem rdf:parseType="Collection">
-
-        <_ad:MenuItem>
-          <_ad:caption>Our Group</_ad:caption>
-          <_ad:hyperlink rdf:resource="/#Our Group"/>
-        </_ad:MenuItem>
-
-        <_ad:MenuItem>
-          <_ad:caption>Projects</_ad:caption>
-          <_ad:hyperlink rdf:resource="/#Current Projects"/>
-          <_ad:hasSubMenu rdf:resource="/d2d/a/projects/ProjectList#CurrentProjects" />
-	  <_ad:hasSubMenu>
-	    <_ad:Menu>
-	      <_ad:hasItem rdf:parseType="Collection">
-		<_ad:MenuItem>
-		  <_ad:caption>Past Projects</_ad:caption>
-		  <_ad:hyperlink rdf:resource="/#Past Projects"/>
-		  <_ad:hasSubMenu rdf:resource="/d2d/a/projects/ProjectList#PastProjects" />
-		</_ad:MenuItem>
-	      </_ad:hasItem>
-	    </_ad:Menu>
-	  </_ad:hasSubMenu>
-        </_ad:MenuItem>
-
         <_ad:MenuItem>
           <_ad:caption>News</_ad:caption>
           <_ad:hyperlink rdf:resource="/news/"/>
         </_ad:MenuItem>
 
+
+        <_ad:MenuItem>
+          <_ad:caption>Projects</_ad:caption>
+          <_ad:hyperlink rdf:resource="/#Current Projects"/>
+<!--          
+          <_ad:hasSubMenu>
+              <rdf:Description rdf:about="/d2d/a/projects/ProjectList#CurrentProjects">
+	            <_ad:hasItem rdf:parseType="Collection">
+		          <_ad:MenuItem>
+		            <_ad:caption>Past Projects test</_ad:caption>
+		            <_ad:hyperlink rdf:resource="/#Past Projects"/>
+	              
+		          </_ad:MenuItem>
+                </_ad:hasItem>
+                  
+              </rdf:Description>
+          </_ad:hasSubMenu>
+-->
+          
+  	      <_ad:hasSubMenu>      
+	        <_ad:Menu>
+	          <_ad:hasItemSet rdf:parseType="Collection">
+	            <rdf:Description rdf:about="/d2d/a/projects/ProjectList#CurrentProjects" />
+	            <_ad:ItemSet>
+	              <_ad:hasItem rdf:parseType="Collection">
+		            <_ad:MenuItem>
+		              <_ad:caption>Past Projects</_ad:caption>
+		              <_ad:hyperlink rdf:resource="/#Past Projects"/>
+		              <_ad:hasSubMenu rdf:resource="/d2d/a/projects/ProjectList#PastProjects" />
+		            </_ad:MenuItem>
+	              </_ad:hasItem>
+	            </_ad:ItemSet>
+	          </_ad:hasItemSet>
+	        </_ad:Menu>
+	      </_ad:hasSubMenu>
+	    
+        </_ad:MenuItem>
+
         <_ad:MenuItem>
           <_ad:caption>People</_ad:caption>
-          <_ad:hyperlink rdf:resource="/#People"/>
+          <_ad:hyperlink rdf:resource="/people/"/>
+        </_ad:MenuItem>
+
+        <_ad:MenuItem>
+          <_ad:caption>About</_ad:caption>
+          <_ad:hyperlink rdf:resource="/#Our Group"/>
         </_ad:MenuItem>
 
         <_ad:MenuItem>
           <_ad:caption>Publications</_ad:caption>
-          <_ad:hyperlink rdf:resource="https://research.vu.nl/en/organisations/business-web-and-media-3/publications/"/>
+          <_ad:hyperlink rdf:resource="/#Spotlight Publications"/>
         </_ad:MenuItem>
-
-
-      </_ad:hasItem>
-    </_ad:Menu>
-  </_ad:hasSubMenu>
-</_ad:MenuItem>
-
-
-
 
 
 

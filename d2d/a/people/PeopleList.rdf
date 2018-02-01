@@ -16,7 +16,7 @@
     </_ad:subHeader>
 
     <_ad:hasItemSet>
-      <_ad:ItemSet> <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
+      <_ad:ItemSet rdf:about="#FullList"> <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
         <_ad:hasItem rdf:parseType="Collection">
 
           <rdf:Description rdf:about="/d2d/a/people/LoraAroyo" />
@@ -31,7 +31,6 @@
           <rdf:Description rdf:about="/d2d/a/people/OanaInel" />
           <rdf:Description rdf:about="http://www.victordeboer.com/foaf.rdf" />
           <rdf:Description rdf:about="https://niels.online/foaf" />
-
         </_ad:hasItem>
       </_ad:ItemSet>
     </_ad:hasItemSet>
