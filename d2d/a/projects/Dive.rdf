@@ -37,10 +37,8 @@
 
     <_ad:member rdf:parseType="Collection">
       <rdf:Description rdf:about="/d2d/a/people/LoraAroyo#me" />
-      <rdf:Description rdf:about="/d2d/a/people/VictorDeBoer#me" />
-      <!--
+      <rdf:Description rdf:about="http://www.victordeboer.com/foaf.rdf#me" />
       <rdf:Description rdf:about="/d2d/a/people/OanaInel#me" />
-      -->
     </_ad:member>
 
 

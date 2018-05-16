@@ -16,6 +16,7 @@
         
       <_ad:ItemSet rdf:about="#CurrentProjects">
         <_ad:hasItem rdf:parseType="Collection">
+          <rdf:Description rdf:about="/d2d/a/projects/Archimedial" />
           <rdf:Description rdf:about="/d2d/a/projects/ControcuratorProject" />
           <rdf:Description rdf:about="/d2d/a/projects/Dive" />
           <rdf:Description rdf:about="/d2d/a/projects/CrowdTruth" />

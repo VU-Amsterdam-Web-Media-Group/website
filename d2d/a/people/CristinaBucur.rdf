@@ -22,7 +22,7 @@
     <title>Ms.</title>
     <givenName>Cristina</givenName>
     <familyName>Bucur</familyName>
-    <homepage rdf:resource=""/>
+    <homepage rdf:resource="https://www.researchgate.net/profile/Cristina_Iulia_Bucur"/>
     <workplaceHomepage rdf:resource="http://ucds.cs.vu.nl"/>
 
     <img rdf:resource="/images/people/cristina.jpg"/>

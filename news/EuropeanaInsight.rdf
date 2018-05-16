@@ -43,7 +43,7 @@
 
 
           <d2d:Placement>
-            <d2d:places rdf:resource="/d2d/a/news/BigDataEurope" />
+            <d2d:places rdf:resource="/d2d/a/news/EuropeanaInsight" />
             <d2d:prefRenderDef rdf:resource="/d2d/ard/NewsArticleRendering#NewsPage" />
           </d2d:Placement>
 

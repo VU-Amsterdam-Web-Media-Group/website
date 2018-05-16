@@ -20,7 +20,7 @@
 
         <_ad:MenuItem>
           <_ad:caption>Projects</_ad:caption>
-          <_ad:hyperlink rdf:resource="/#Current Projects"/>
+          <_ad:hyperlink rdf:resource="/projects/"/>
 <!--          
           <_ad:hasSubMenu>
               <rdf:Description rdf:about="/d2d/a/projects/ProjectList#CurrentProjects">
@@ -43,8 +43,8 @@
 	            <_ad:ItemSet>
 	              <_ad:hasItem rdf:parseType="Collection">
 		            <_ad:MenuItem>
-		              <_ad:caption>Past Projects</_ad:caption>
-		              <_ad:hyperlink rdf:resource="/#Past Projects"/>
+		              <_ad:caption><![CDATA[<strong>Past Projects</strong>]]></_ad:caption>
+		              <_ad:hyperlink rdf:resource="/projects/pastprojects/"/>
 		              <_ad:hasSubMenu rdf:resource="/d2d/a/projects/ProjectList#PastProjects" />
 		            </_ad:MenuItem>
 	              </_ad:hasItem>

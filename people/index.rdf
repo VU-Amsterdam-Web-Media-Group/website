@@ -43,7 +43,7 @@
           <d2d:Placement>
             <d2d:places>
             
-              <_ad2:ItemList rdf:about=""> <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
+              <_ad2:ItemList>
 
                   <_ad2:header>
                     People
@@ -51,7 +51,7 @@
 
                   <_ad2:hasItemSet rdf:resource="/d2d/a/people/PeopleList#FullList" />
 
-                  <d2d:prefRenderDef rdf:resource="/d2d/ard/FoafRendering#QuoteBox" />
+                  <d2d:prefRenderDef rdf:resource="/d2d/ard/FoafRendering#QuoteBox2" />
                 </_ad2:ItemList>
 
             </d2d:places>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d2d/"
+         xmlns:_ad="http://ucds.cs.vu.nl/d2d/ad/NewsArticle#"
+         xmlns:_md="http://ucds.cs.vu.nl/d2d/ad/MenuDefinition#"
+>
+
+  
+  
+<!-- ------------------------------------------------------------------------------------------------
+  NB!!! DO *NOT* EDIT THIS FILE, BUT MAKE A COPY OF IT FIRST (QUICK MENU -> DUPLICATE) AND RENAME IT
+-------------------------------------------------------------------------------------------------- --> 
+
+
+
+  <_ad:NewsArticle rdf:about="">  <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
+
+    <_ad:title>
+      <![CDATA[
+        News article title goes here (must be short, think news paper style)
+      ]]>
+    </_ad:title>
+
+    <_ad:abstract>
+      <![CDATA[
+        This should be a short description of what the news is about. This text will be shown on the home page and the news overview page. Hence, this text shoeld not be to long; just long enough to sketch wat the complete artile is about.
+      ]]>
+    </_ad:abstract>
+
+    <_ad:text>
+      <![CDATA[
+        This is the full body of the article. Can contain simple HTML markup, but must be renderable on its own.
+      ]]>
+    </_ad:text>
+
+    <_ad:image rdf:resource="https://dummyimage.com/600x400/52bde0/ffffff%26text=ABC-Kb" />
+
+    <_ad:relatedPerson rdf:parseType="Collection">
+      <!-- <rdf:Description rdf:about="/d2d/a/people/LoraAroyo#me" /> -->
+      <!-- <rdf:Description rdf:about="http://www.victordeboer.com/foaf.rdf#me" /> -->
+    </_ad:relatedPerson>
+
+    <_ad:relatedProject rdf:parseType="Collection">
+      <!-- <rdf:Description rdf:about="/d2d/a/projects/Dive" /> -->
+    </_ad:relatedProject>
+
+
+    <_ad:menulink rdf:resource="/news/[NAME OF THIS FILE - WITHOUT .rdf]" />
+
+
+  </_ad:NewsArticle>
+
+</rdf:RDF>

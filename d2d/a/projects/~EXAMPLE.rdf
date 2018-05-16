@@ -4,6 +4,14 @@
          xmlns:d2d="http://rdfns.org/d2d/"
          xmlns:_ad="http://ucds.cs.vu.nl/d2d/ad/ResearchProject#"
 >
+    
+
+  
+<!-- ------------------------------------------------------------------------------------------------
+  NB!!! DO *NOT* EDIT THIS FILE, BUT MAKE A COPY OF IT FIRST (QUICK MENU -> DUPLICATE) AND RENAME IT
+-------------------------------------------------------------------------------------------------- --> 
+
+
 
   <_ad:ResearchProject rdf:about="">  <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
 

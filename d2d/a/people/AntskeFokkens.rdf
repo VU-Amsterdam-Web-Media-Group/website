@@ -34,11 +34,7 @@
     <mbox rdf:resource="mailto:antske.fokkens@vu.nl"/>
 
     <status>
-    My main interest lies in methodological aspects of research in Computational Linguistics, where I mainly look at two domains. My PhD thesis proposed a new methodology for developing linguistic precision grammars. The main idea of the proposal, storing alternative analyses in a metagrammar so that they may be compared at different stages of the development process, can be applied in any theory. I particularly looked at grammars developed as part of the DELPH-IN consortium in which context open-source HPSG-based grammars are developed. The method is also closely related to the LinGO Grammar Matrix.
-    
-    The other domain for which I investigate methodological aspects is the application of NLP to digital humanities. This work is mainly carried out as part of the BiographyNet project. In this project, we (a historian, computer scientist and me) work together to see how we can use NLP and Semantic Web technology to enhance historic research on the Biography Portal of the Netherlands. My research addresses how we can identify information that is useful for historians from text and how we can make sure that historians can assess the reliability of the output of tools of which they do not know the working.
-    The Network Institute projects Time will tell a different story and Political Discourse in the News also address the question of how NLP can be used in historic research and communication science, respectively.
-    As part of investigating methodological issues, I have also worked on issues regarding the system architecture in NewsReader and am coordinating the Enlighten Your Research project Can we Handle the News, where we are pushing the limits of large scale processing and investigate what would be needed to process all the news that is published every day.
+    My main interest lies in methodological aspects of research in Computational Linguistics. 
     
     I am currently working as a researcher at the Computational Lexicology and Terminology Lab and visiting researcher at the User Centric Data Science group at VU University Amsterdam. I am also part of the the Network Institute.
     </status>

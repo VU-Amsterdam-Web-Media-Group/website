@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d2d/"
+         xmlns:_ad="http://ucds.cs.vu.nl/d2d/ad/ResearchProject#"
+>
+
+  <_ad:ResearchProject rdf:about="">  <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
+
+    <_ad:title>
+      <![CDATA[
+        ArchiMediaL
+      ]]>
+    </_ad:title>
+
+    <_ad:punchline>
+      <![CDATA[
+        A better understanding of the understudied areas of architectural history. 
+      ]]>
+    </_ad:punchline>
+
+    <_ad:abstract>
+      <![CDATA[
+<p>ArchiMediaL develops new tools for the automatic recognition of architectures, which are available in inherently different digital media and on the web, in close cooperation between architectural historians and computer scientists. Recent advances in machine learning make it possible to process large amounts of data and thus provide both new and novel information for the fields of architectural history. The aim is to facilitate the automatic development and linking of metadata and image content and to prepare these data for the comparative study of contemporary and historically constructed forms.</p>
+      ]]>
+    </_ad:abstract>
+
+    <_ad:text>
+      <![CDATA[
+<p>ArchiMediaL develops new tools for the automatic recognition of architectures, which are available in inherently different digital media and on the web, in close cooperation between architectural historians and computer scientists. Recent advances in machine learning make it possible to process large amounts of data and thus provide both new and novel information for the fields of architectural history. The aim is to facilitate the automatic development and linking of metadata and image content and to prepare these data for the comparative study of contemporary and historically constructed forms.
+    </p><p>
+    The project aims at a better understanding of the understudied areas of architectural history. To achieve this, digital images must be separated from their existence as individual artifacts and integrated into a global network of visual sources. The project thus expands the scope of hermeneutic analysis with a quantitative reference system in which discipline-specific canons and limits are questioned. For the dialogue between architectural history and urban form, this means a careful consideration of qualitative and quantitative information and the negotiation of new methodological approaches for future studies. </p>
+      ]]>
+    </_ad:text>
+
+    <_ad:image rdf:resource="http://archimedial.eu/wp-content/uploads/2017/09/cropped-frontpage6.jpg" />
+
+
+    <_ad:homepage rdf:resource="http://archimedial.eu" />
+
+    <_ad:member rdf:parseType="Collection">
+      <rdf:Description rdf:about="http://victordeboer.com/foaf.rdf" />
+      <rdf:Description rdf:about="/d2d/a/people/RonaldSiebes#me" />
+    </_ad:member>
+
+
+    <_ad:menulink rdf:resource="/projects/Archimedial" />
+
+
+
+
+  </_ad:ResearchProject>
+
+</rdf:RDF>

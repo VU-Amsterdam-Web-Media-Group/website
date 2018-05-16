@@ -41,9 +41,9 @@
     <_ad:homepage rdf:resource="http://www.biographynet.nl" />
 
     <_ad:member rdf:parseType="Collection">
-      <foaf:Person foaf:name="Antske Fokkens"/>
-      <foaf:Person foaf:name="Serge ter Baake"/>
-      <rdf:Description rdf:about="https://niels.online/me" />
+      <rdf:Description rdf:about="/d2d/a/people/AntskeFokkens#me" />      
+      <rdf:Description rdf:about="/d2d/a/people/SergeTerBraake#me" />
+      <rdf:Description rdf:about="https://niels.online/foaf" />
     </_ad:member>
 
     <_ad:menulink rdf:resource="/projects/BiographyNet" />

@@ -37,7 +37,7 @@
     <_ad:homepage rdf:resource="https://www.big-data-europe.eu" />
     
     <_ad:member rdf:parseType="Collection">
-      <rdf:Description rdf:about="http://www.victordeboer.com/foaf.rdf/me" />
+      <rdf:Description rdf:about="http://www.victordeboer.com/foaf.rdf#me" />
       <rdf:Description rdf:about="/d2d/a/people/RonaldSiebes#me" />
       <foaf:Person foaf:name="Paul Groth"/>
     </_ad:member>

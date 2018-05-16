@@ -3,7 +3,6 @@
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:d2d="http://rdfns.org/d2d/"
          xmlns:_ad="http://ucds.cs.vu.nl/d2d/ad/NewsArticle#"
-         xmlns:_md="http://ucds.cs.vu.nl/d2d/ad/MenuDefinition#"
 >
 
   <_ad:NewsArticle rdf:about="">  <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
@@ -30,14 +29,25 @@
     </center>
 </p>
 
-<p>On the last day I presented our paper "Enriching Media Collections for Event-based Exploration" [<a href="http://www.victordeboer.com/wp-content/uploads/2017/12/enriching-deboer-47-mtsr2017.pdf">draft pdf</a>], co-authored with the people in the <a href="http://clariah.nl">CLARIAH</a> and <a href="http://diveproject.beeldengeluid.nl">DIVE+ team</a> working on data enrichment and APIs: Liliana Melgar, Oana Inel Carlos Martinez Ortiz, Lora Aroyo and Johan Oomen.  The slides for the presentation <a href="https://www.slideshare.net/vdeboer/enriching-media-collections-for-eventbased-exploration">can be found here on slideshare</a>. We were very happy to hear that our paper was presented the MTSR2017 Best Paper Award!
+<p>On the last day I presented our paper "Enriching Media Collections for Event-based Exploration" [<a href="http://www.victordeboer.com/wp-content/uploads/2017/12/enriching-deboer-47-mtsr2017.pdf">draft pdf</a>], co-authored with the people in the <a href="http://clariah.nl">CLARIAH</a> and <a href="http://diveproject.beeldengeluid.nl">DIVE+ team</a> working on data enrichment and APIs: Liliana Melgar, Oana Inel Carlos Martinez Ortiz, Lora Aroyo and Johan Oomen. The slides for the presentation <a href="https://www.slideshare.net/vdeboer/enriching-media-collections-for-eventbased-exploration">can be found here on slideshare</a>. We were very happy to hear that our paper was presented the MTSR2017 Best Paper Award!
 </p>
 
-<p> In the paper, <span class="fontstyle0">we present a methodology to publish, represent, enrich, and link heritage collections so that they can be explored by domain expert users. We present four methods to derive events from media object descriptions. We also present a case study where four datasets with mixed media types are made accessible to scholars and describe the building blocks for event-based </span><span class="fontstyle2"><em>proto-narratives</em> </span><span class="fontstyle0">in the knowledge graph</span></p>
+<p> In the paper, <span class="fontstyle0">we present a methodology to publish, represent, enrich, and link heritage collections so that they can be explored by domain expert users. We present four methods to derive events from media object descriptions. We also present a case study where four datasets with mixed media types are made accessible to scholars and describe the building blocks for event-based </span><span class="fontstyle2"><em>proto-narratives</em> </span><span class="fontstyle0">in the knowledge graph</span></p>
       ]]>
     </_ad:text>
 
     <_ad:image rdf:resource="http://www.victordeboer.com/wp-content/uploads/2017/12/2017-12-02-14.50.05-1.jpg" />
+
+
+    <_ad:relatedPerson rdf:parseType="Collection">
+      <rdf:Description rdf:about="/d2d/a/people/LoraAroyo#me" />
+      <rdf:Description rdf:about="http://www.victordeboer.com/foaf.rdf#me" />
+      <rdf:Description rdf:about="/d2d/a/people/OanaInel#me" />
+    </_ad:relatedPerson>
+
+    <_ad:relatedProject rdf:parseType="Collection">
+      <rdf:Description rdf:about="/d2d/a/projects/Dive" />
+    </_ad:relatedProject>
 
 
     <_ad:menulink rdf:resource="/news/MTSRBestPaper" />

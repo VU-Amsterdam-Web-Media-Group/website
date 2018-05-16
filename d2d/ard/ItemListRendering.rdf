@@ -4,95 +4,57 @@
          xmlns:d2d="http://rdfns.org/d2d/"
 >
 
-  <d2d:ArticleRenderDef rdf:about="#3ColOverview">
+  <d2d:ArticleRenderDef rdf:about="#1ColOverview">
     <rdfs:label>D2D Article Rendering Defintion for the News Article article overview</rdfs:label>
     <d2d:renders rdf:resource="/d2d/ad/ItemList#ItemList" />
     <d2d:hasTemplate>
       <![CDATA[
       <d2d:Template xmlns:d2d="http://rdfns.org/d2d/">
 
-
                   <!-- BEGIN: CONTENT/FEATURES/FEATURES-1 -->
                   <div class="c-content-box c-size-md c-bg-white" id="[d2d:Field d2d:index=1 /]">
                     <div class="container">
                       <div class="row">
                        <div class="c-content-title-1 wow animate fadeInDown">
-                            <d2d:Field d2d:index="1"><h3 class="c-font-uppercase c-center c-font-bold"><a href="/news/"><d2d:Content>News</d2d:Content></a></h3></d2d:Field>
+                            <d2d:Field d2d:index="1"><h3 class="c-font-uppercase c-center c-font-bold"><d2d:Content>News</d2d:Content></h3></d2d:Field>
                             <div class="c-line-center"> </div>
                         </div>
 
-
                         <d2d:Field d2d:index="3">
                           <d2d:Segment d2d:matchRule="1">
-                            <div class="col-sm-4">
+                            <div class="col-md-12">
                               <div class="c-content-feature-1 wow animate fadeInUp">
-                                <d2d:Content>
-                                  <d2d:Template d2d:for="http://ucds.cs.vu.nl/d2d/ard/NewsArticleRendering#HomePage">
-                                    <div class="img-responsive" style="Background-image: url([d2d:Field d2d:index=4][d2d:Content]assets/base/img/content/vu/news1.jpg[/d2d:Content][/d2d:Field]); height: 200px; background-size: cover; background-repeat: no-repeat; background-position: 50% 50%;" >&#160;</div>
-                                    <d2d:Field d2d:index="1"><h3 class="c-font-uppercase c-font-bold"><a href="[d2d:field d2d:index=5 /]"><d2d:Content>News article 1</d2d:Content></a></h3></d2d:Field>
-                                    <d2d:Field d2d:index="2"><p class="c-font-thin"><d2d:Content>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tempor nulla quam, at tempor elit gravida vitae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras placerat lorem vel elit venenatis, facilisis fringilla enim pulvinar. Integer porttitor tortor quis tempor consequat. Sed volutpat rhoncus ante, dapibus lacinia augue malesuada feugiat. Nulla id condimentum nunc, nec facilisis lectus. Nunc lorem orci, euismod eu tristique non, finibus ac urna. Quisque rhoncus id erat sed dapibus. Donec id feugiat sapien. Proin bibendum a lectus at mattis.</d2d:Content></p></d2d:Field>
-                                  </d2d:Template>
-                                </d2d:Content>
+                                <d2d:Content/>
                               </div>
                             </div>
                           </d2d:Segment>
-
                           <d2d:Segment d2d:matchRule="2">
-                            <div class="col-sm-4">
+                            <div class="col-md-12">
                               <div class="c-content-feature-1 wow animate fadeInUp" data-wow-delay="0.2s">
-                                <d2d:Content>
-                                  <img  alt="" src="assets/base/img/content/vu/news2.jpg" class="img-responsive" />
-                                  <h3 class="c-font-uppercase c-font-bold">News article 2</h3>
-                                  <p class="c-font-thin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tempor nulla quam, at tempor elit gravida vitae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras placerat lorem vel elit venenatis, facilisis fringilla enim pulvinar. Integer porttitor tortor quis tempor consequat. Sed volutpat rhoncus ante, dapibus lacinia augue malesuada feugiat. Nulla id condimentum nunc, nec facilisis lectus.</p>
-                                </d2d:Content>
+                                <d2d:Content/>
                               </div>
                             </div>
                           </d2d:Segment>
-
-
-
                           <d2d:Segment d2d:matchRule="4,7,10,13,16,19,22,25,28,31,34,37,40">
-                            <div class="col-sm-4 c-card" style="clear: left;">
+                            <div class="col-md-12 c-card" style="clear: left;">
                               <div class="c-content-feature-1 wow animate fadeInUp" data-wow-delay="0.4s">
-                                <d2d:Content>
-                                  <div class="c-content-title-1 c-title-md">
-                                    <h3 class="c-title c-font-uppercase c-font-bold">Latest Tweets</h3>
-                                    <div class="c-line-left hide"> </div>
-                                  </div>
-                                  <div class="c-twitter">
-                                    <a class="twitter-timeline" href="https://twitter.com/UserCentricDS" data-tweet-limit="3" data-chrome="noheader nofooter noscrollbar noborders transparent"> Loading tweets... </a>
-                                  </div>
-                                </d2d:Content>
+                                <d2d:Content/>
                               </div>
                             </div>
                           </d2d:Segment>
-
-
                           <d2d:Segment d2d:matchRule="*">
-                            <div class="col-sm-4 c-card">
+                            <div class="col-md-12 c-card">
                               <div class="c-content-feature-1 wow animate fadeInUp" data-wow-delay="0.4s">
-                                <d2d:Content>
-                                  <div class="c-content-title-1 c-title-md">
-                                    <h3 class="c-title c-font-uppercase c-font-bold">Latest Tweets</h3>
-                                    <div class="c-line-left hide"> </div>
-                                  </div>
-                                  <div class="c-twitter">
-                                    <a class="twitter-timeline" href="https://twitter.com/UserCentricDS" data-tweet-limit="3" data-chrome="noheader nofooter noscrollbar noborders transparent"> Loading tweets... </a>
-                                  </div>
-                                </d2d:Content>
+                                <d2d:Content/>
                               </div>
                             </div>
                           </d2d:Segment>
-
-
                         </d2d:Field>
-
 
                       </div>
                     </div>
                   </div>
                   <!-- END: CONTENT/FEATURES/FEATURES-1 -->
-
 
       </d2d:Template>
       ]]>
@@ -100,5 +62,61 @@
   </d2d:ArticleRenderDef>
 
 
+  <d2d:ArticleRenderDef rdf:about="#3ColOverview">
+    <rdfs:label>D2D Article Rendering Defintion for the News Article article overview</rdfs:label>
+    <d2d:renders rdf:resource="/d2d/ad/ItemList#ItemList" />
+    <d2d:hasTemplate>
+      <![CDATA[
+      <d2d:Template xmlns:d2d="http://rdfns.org/d2d/">
+
+                  <!-- BEGIN: CONTENT/FEATURES/FEATURES-1 -->
+                  <div class="c-content-box c-size-md c-bg-white" id="[d2d:Field d2d:index=1 /]">
+                    <div class="container">
+                      <div class="row">
+                       <div class="c-content-title-1 wow animate fadeInDown">
+                            <d2d:Field d2d:index="1"><h3 class="c-font-uppercase c-center c-font-bold"><d2d:Content>News</d2d:Content></h3></d2d:Field>
+                            <div class="c-line-center"> </div>
+                        </div>
+
+                        <d2d:Field d2d:index="3">
+                          <d2d:Segment d2d:matchRule="1">
+                            <div class="col-sm-4">
+                              <div class="c-content-feature-1 wow animate fadeInUp">
+                                <d2d:Content/>
+                              </div>
+                            </div>
+                          </d2d:Segment>
+                          <d2d:Segment d2d:matchRule="2">
+                            <div class="col-sm-4">
+                              <div class="c-content-feature-1 wow animate fadeInUp" data-wow-delay="0.2s">
+                                <d2d:Content/>
+                              </div>
+                            </div>
+                          </d2d:Segment>
+                          <d2d:Segment d2d:matchRule="4,7,10,13,16,19,22,25,28,31,34,37,40">
+                            <div class="col-sm-4 c-card" style="clear: left;">
+                              <div class="c-content-feature-1 wow animate fadeInUp" data-wow-delay="0.4s">
+                                <d2d:Content/>
+                              </div>
+                            </div>
+                          </d2d:Segment>
+                          <d2d:Segment d2d:matchRule="*">
+                            <div class="col-sm-4 c-card">
+                              <div class="c-content-feature-1 wow animate fadeInUp" data-wow-delay="0.4s">
+                                <d2d:Content/>
+                              </div>
+                            </div>
+                          </d2d:Segment>
+                        </d2d:Field>
+
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END: CONTENT/FEATURES/FEATURES-1 -->
+
+      </d2d:Template>
+      ]]>
+    </d2d:hasTemplate>
+  </d2d:ArticleRenderDef>
 
 </rdf:RDF>

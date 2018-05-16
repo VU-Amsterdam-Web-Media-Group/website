@@ -19,18 +19,19 @@
       <_ad:ItemSet rdf:about="#FullList"> <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
         <_ad:hasItem rdf:parseType="Collection">
 
-          <rdf:Description rdf:about="/d2d/a/people/LoraAroyo" />
-          <rdf:Description rdf:about="/d2d/a/people/XanderWilcke" />
-          <rdf:Description rdf:about="http://www.tkuhn.org/foaf.rdf" />
-          <rdf:Description rdf:about="/d2d/a/people/DenaTahvildari" />
-          <rdf:Description rdf:about="/d2d/a/people/JanTop" />
-          <rdf:Description rdf:about="/d2d/a/people/ChrisDijkshoorn" />
-          <rdf:Description rdf:about="/d2d/a/people/RonaldSiebes" />
-          <rdf:Description rdf:about="/d2d/a/people/AncaDumitrache" />
-          <rdf:Description rdf:about="/d2d/a/people/CristinaBucur" />
-          <rdf:Description rdf:about="/d2d/a/people/OanaInel" />
-          <rdf:Description rdf:about="http://www.victordeboer.com/foaf.rdf" />
+          <rdf:Description rdf:about="/d2d/a/people/LoraAroyo#me" />
+          <rdf:Description rdf:about="/d2d/a/people/XanderWilcke#me" />
+          <rdf:Description rdf:about="http://www.tkuhn.org/foaf.rdf#me" />
+          <rdf:Description rdf:about="/d2d/a/people/DenaTahvildari#me" />
+          <rdf:Description rdf:about="/d2d/a/people/JanTop#me" />
+          <rdf:Description rdf:about="/d2d/a/people/ChrisDijkshoorn#me" />
+          <rdf:Description rdf:about="/d2d/a/people/RonaldSiebes#me" />
+          <rdf:Description rdf:about="/d2d/a/people/AncaDumitrache#me" />
+          <rdf:Description rdf:about="/d2d/a/people/CristinaBucur#me" />
+          <rdf:Description rdf:about="/d2d/a/people/OanaInel#me" />
+          <rdf:Description rdf:about="http://www.victordeboer.com/foaf.rdf#me" />
           <rdf:Description rdf:about="https://niels.online/foaf" />
+          <rdf:Description rdf:about="/d2d/a/people/ChrisWelty#me" />          
         </_ad:hasItem>
       </_ad:ItemSet>
     </_ad:hasItemSet>

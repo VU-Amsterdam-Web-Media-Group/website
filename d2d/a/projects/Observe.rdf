@@ -44,7 +44,7 @@
 	<_ad:homepage rdf:resource="https://www.saxion.nl/designentechnologie/site/onderzoek/onderzoeksprojecten/observe/" />
 
     <_ad:member rdf:parseType="Collection">
-      <rdf:Description rdf:about="http://www.victordeboer.com/foaf.rdf/me" />
+      <rdf:Description rdf:about="http://www.victordeboer.com/foaf.rdf#me" />
       <rdf:Description rdf:about="/d2d/a/people/RonaldSiebes#me" />
       <foaf:Person foaf:name="Astrid van Aggelen"/>
 	</_ad:member>

@@ -10,7 +10,7 @@
 >
 
   <PersonalProfileDocument rdf:about="">
-    <rdfs:label>FOAF Description</rdfs:label>
+    <rdfs:label>Lora Aroyo's FOAF Description</rdfs:label>
     <primaryTopic rdf:resource="#me"/>
   </PersonalProfileDocument>
 

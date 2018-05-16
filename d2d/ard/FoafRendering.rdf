@@ -11,4 +11,36 @@
   </d2d:ArticleRenderDef>
 
 
+  <d2d:ArticleRenderDef rdf:about="#QuoteBox2">
+    <rdfs:label>D2D Rendering Defintion for a Person Profile article.</rdfs:label>
+    <d2d:renders rdf:resource="/d2d/ad/FoafArticle#Profile" />
+    <d2d:hasTemplate>
+      <![CDATA[
+      <d2d:Template xmlns:d2d="http://rdfns.org/d2d/">
+                                [d2d:Field d2d:index="4"]<a class="item" href="[d2d:Content /]" target="_blank">[/d2d:Field]
+                                    <div class="item">
+                                        <div class="c-content-testimonial-3 c-option-default" style="background-color: #eeeeee; padding: 2px; margin-bottom: 20px;">
+                                            <d2d:Field d2d:index="3"><div class="c-content"><d2d:Content>I am collaborating with the IBM Watson team in NY on crowdsourcing ground truth data for the adaptation of the Watson system in medical domain. I am involved in several research projects focussing on semantic search, recommendation systems and event-driven access to multimedia collections online.</d2d:Content></div></d2d:Field>
+                                            <div class="c-person">
+                                                <img src="[d2d:Field d2d:index=2 /]" class="img-responsive" />
+                                                <div class="c-person-detail c-font-uppercase">
+                                                    <d2d:Field d2d:index="1"><h4 class="c-name"><d2d:Content>Lora Aroyo</d2d:Content></h4></d2d:Field>
+                                                    <d2d:Field d2d:index="5"><p class="c-position c-font-bold c-theme-font"><d2d:Content>Professor</d2d:Content></p></d2d:Field>
+                                                </div>
+                                                <div style="margin-top: 10px;">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                [d2d:Field d2d:index="4"]</a>[/d2d:Field]
+
+
+      </d2d:Template>
+      ]]>
+    </d2d:hasTemplate>
+  </d2d:ArticleRenderDef>
+
+
+
 </rdf:RDF>

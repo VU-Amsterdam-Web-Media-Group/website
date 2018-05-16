@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:d2d="http://rdfns.org/d2d/"
+         xmlns:_ad="http://ucds.cs.vu.nl/d2d/ad/Banner#"
+         xmlns:_md="http://ucds.cs.vu.nl/d2d/ad/MenuDefinition#"
+>
+
+
+  
+<!-- ------------------------------------------------------------------------------------------------
+  NB!!! DO *NOT* EDIT THIS FILE, BUT MAKE A COPY OF IT FIRST (QUICK MENU -> DUPLICATE) AND RENAME IT
+-------------------------------------------------------------------------------------------------- --> 
+
+
+
+
+  <_ad:Banner rdf:about="">  <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
+
+    <_ad:title>
+      <![CDATA[
+        Data Science: A new journal at IOS Press
+      ]]>
+    </_ad:title>
+
+    <_ad:image rdf:resource="/images/datascience-background.jpg" />
+
+    <_ad:link>
+      <_md:MenuItem>
+        <_md:caption>About Data Science</_md:caption>
+        <_md:hyperlink rdf:resource="http://datasciencehub.net/" />
+      </_md:MenuItem>
+    </_ad:link>
+
+  </_ad:Banner>
+
+</rdf:RDF>

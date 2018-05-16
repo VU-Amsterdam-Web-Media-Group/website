@@ -19,7 +19,7 @@
 
     <d2d:prefRenderDef rdf:resource="/d2d/ard/MainPageRendering#This" />
     <d2d:prefRenderDef rdf:resource="/d2d/ard/MenuRendering#Menu" />
-
+    <d2d:prefRenderDef rdf:resource="/d2d/ard/FoafRendering#QuoteBox2" />
 
     <d2d:hasArticle>
       <_ad:MainPage>

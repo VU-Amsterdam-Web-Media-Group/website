@@ -40,7 +40,7 @@
     <_ad:homepage rdf:resource="http://dutchshipsandsailors.nl" />
 
     <_ad:member rdf:parseType="Collection">
-      <rdf:Description rdf:about="/d2d/a/people/VictorDeBoer#me" />
+      <rdf:Description rdf:about="http://www.victordeboer.com/foaf.rdf#me" />
     </_ad:member>
 
 

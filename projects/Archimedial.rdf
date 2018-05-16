@@ -20,14 +20,12 @@
     <d2d:prefRenderDef rdf:resource="/d2d/ard/MainPageRendering#This" />
     <d2d:prefRenderDef rdf:resource="/d2d/ard/MenuRendering#Menu" />
     <d2d:prefRenderDef rdf:resource="/d2d/ard/FoafRendering#QuoteBox2" />
-    <d2d:prefRenderDef rdf:resource="/d2d/ard/ResearchProjectRendering#ProjectOverviewPage" />
-
 
     <d2d:hasArticle>
       <_ad:MainPage>
 
         <_ad:header>
-          News
+          ArchiMediaL Project
         </_ad:header>
 
         <_ad:subheader>
@@ -43,8 +41,8 @@
 
 
           <d2d:Placement>
-            <d2d:places rdf:resource="/d2d/a/news/BigDataEurope" />
-            <d2d:prefRenderDef rdf:resource="/d2d/ard/NewsArticleRendering#NewsPage" />
+            <d2d:places rdf:resource="/d2d/a/projects/Archimedial" />
+            <d2d:prefRenderDef rdf:resource="/d2d/ard/ResearchProjectRendering#ProjectPage" />
           </d2d:Placement>
 
 

@@ -3,7 +3,6 @@
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:d2d="http://rdfns.org/d2d/"
          xmlns:_ad="http://ucds.cs.vu.nl/d2d/ad/NewsArticle#"
-         xmlns:_md="http://ucds.cs.vu.nl/d2d/ad/MenuDefinition#"
 >
 
   <_ad:NewsArticle rdf:about="">  <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
@@ -112,6 +111,17 @@ On Thursday 16 November, the BDE Consortium launched the third version of the Bi
     </_ad:text>
 
     <_ad:image rdf:resource="/images/projects/logo-BigDataEurope.png" />
+
+
+    <_ad:relatedPerson rdf:parseType="Collection">
+      <!-- <rdf:Description rdf:about="/d2d/a/people/LoraAroyo#me" /> -->
+      <rdf:Description rdf:about="/d2d/a/people/RonaldSiebes#me" />
+    </_ad:relatedPerson>
+
+    <_ad:relatedProject rdf:parseType="Collection">
+      <!-- <rdf:Description rdf:about="/d2d/a/projects/Dive" /> -->
+    </_ad:relatedProject>
+
 
     <_ad:menulink rdf:resource="/news/BigDataEurope" />
 

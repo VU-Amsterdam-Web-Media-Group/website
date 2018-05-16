@@ -7,6 +7,7 @@
 >
 
 <d2d:ArticleDefinition rdf:about="#Profile" d2d:skipOnError="1">
+  <d2d:fitsClass rdf:resource="http://xmlns.com/foaf/0.1/Person" />
   <d2d:fitsClass rdf:resource="http://xmlns.com/foaf/0.1/Document" />
   <d2d:fitsClass rdf:resource="http://xmlns.com/foaf/0.1/PersonalProfileDocument" />
   <rdfs:label>D2D Article Defintion for a FOAF Profile.</rdfs:label>
@@ -14,52 +15,57 @@
 
     <d2d:FieldSpecification d2d:limit="1">
       <d2d:hasFieldType rdf:resource="http://rdfns.org/d2d/H3" />
-      <d2d:mustSatisfy>
+      <d2d:mustSatisfy rdf:resource="http://xmlns.com/foaf/0.1/name" />
+      <d2d:hasAlternative>
         <d2d:TripleSpecification>
           <d2d:hasPredicate rdf:resource="http://xmlns.com/foaf/0.1/primaryTopic" />
           <d2d:mustSatisfy rdf:resource="http://xmlns.com/foaf/0.1/name" />
         </d2d:TripleSpecification>
-      </d2d:mustSatisfy>
+      </d2d:hasAlternative>
     </d2d:FieldSpecification>
 
-    <d2d:FieldSpecification d2d:limit="1">
+    <d2d:FieldSpecification d2d:limit="1" d2d:isOptional="1">
       <d2d:hasFieldType rdf:resource="http://rdfns.org/d2d/Img" />
-      <d2d:mustSatisfy>
+      <d2d:mustSatisfy rdf:resource="http://xmlns.com/foaf/0.1/img" />
+      <d2d:hasAlternative>
         <d2d:TripleSpecification>
           <d2d:hasPredicate rdf:resource="http://xmlns.com/foaf/0.1/primaryTopic" />
           <d2d:mustSatisfy rdf:resource="http://xmlns.com/foaf/0.1/img" />
         </d2d:TripleSpecification>
-      </d2d:mustSatisfy>
+      </d2d:hasAlternative>
     </d2d:FieldSpecification>
 
     <d2d:FieldSpecification d2d:limit="1" d2d:isOptional="1">
       <d2d:hasFieldType rdf:resource="http://rdfns.org/d2d/P" />
-      <d2d:mustSatisfy>
+      <d2d:mustSatisfy rdf:resource="http://xmlns.com/foaf/0.1/status" />
+      <d2d:hasAlternative>
         <d2d:TripleSpecification>
           <d2d:hasPredicate rdf:resource="http://xmlns.com/foaf/0.1/primaryTopic" />
           <d2d:mustSatisfy rdf:resource="http://xmlns.com/foaf/0.1/status" />
         </d2d:TripleSpecification>
-      </d2d:mustSatisfy>
+      </d2d:hasAlternative>
     </d2d:FieldSpecification>
 
-    <d2d:FieldSpecification d2d:limit="1" d2d:createLink="0" d2d:useLabel="0">
+    <d2d:FieldSpecification d2d:limit="1" d2d:createLink="0" d2d:useLabel="0" d2d:isOptional="1">
       <d2d:hasFieldType rdf:resource="http://rdfns.org/d2d/A" />
-      <d2d:mustSatisfy>
+      <d2d:mustSatisfy rdf:resource="http://xmlns.com/foaf/0.1/homepage" />
+      <d2d:hasAlternative>
         <d2d:TripleSpecification>
           <d2d:hasPredicate rdf:resource="http://xmlns.com/foaf/0.1/primaryTopic" />
           <d2d:mustSatisfy rdf:resource="http://xmlns.com/foaf/0.1/homepage" />
         </d2d:TripleSpecification>
-      </d2d:mustSatisfy>
+      </d2d:hasAlternative>
     </d2d:FieldSpecification>
 
     <d2d:FieldSpecification d2d:limit="1" d2d:isOptional="1">
       <d2d:hasFieldType rdf:resource="http://rdfns.org/d2d/Span" />
-      <d2d:mustSatisfy>
+      <d2d:mustSatisfy rdf:resource="http://schema.org/jobTitle" />
+      <d2d:hasAlternative>
         <d2d:TripleSpecification>
           <d2d:hasPredicate rdf:resource="http://xmlns.com/foaf/0.1/primaryTopic" />
           <d2d:mustSatisfy rdf:resource="http://schema.org/jobTitle" />
         </d2d:TripleSpecification>
-      </d2d:mustSatisfy>
+      </d2d:hasAlternative>
     </d2d:FieldSpecification>
 
   </d2d:hasFieldSpec>

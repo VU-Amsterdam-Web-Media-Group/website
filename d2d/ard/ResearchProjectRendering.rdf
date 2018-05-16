@@ -5,15 +5,65 @@
 >
 
   <d2d:ArticleRenderDef rdf:about="#HomePage">
-    <rdfs:label>D2D Article Rendering Defintion for the News Article article definition</rdfs:label>
+    <rdfs:label>D2D Article Rendering Defintion for the Research Project Article article definition</rdfs:label>
     <d2d:renders rdf:resource="/d2d/ad/ResearchProject#ResearchProject" />
     <d2d:hasTemplate rdf:resource="/template_home.xhtml" />
   </d2d:ArticleRenderDef>
 
 
-  <d2d:ArticleRenderDef rdf:about="#ProjectPage">
-    <rdfs:label>D2D Article Rendering Defintion for the News Article article definition</rdfs:label>
+  <d2d:ArticleRenderDef rdf:about="#ProjectOverviewPage">
+    <rdfs:label>D2D Article Rendering Defintion for the Research Project Article article definition</rdfs:label>
     <d2d:renders rdf:resource="/d2d/ad/ResearchProject#ResearchProject" />
+    <d2d:hasTemplate>
+      <![CDATA[
+      <d2d:Template xmlns:d2d="http://rdfns.org/d2d/">
+                                [d2d:Field d2d:index="7"]<a class="item" href="[d2d:Content /]">[/d2d:Field]
+                                    <div class="item">
+                                        <div class="c-content-testimonial-3 c-option-default" style="background-color: #eeeeee; padding: 2px; margin-bottom: 20px;">
+
+
+                                            <div class="c-person" style="padding-left: 0;">
+
+
+                                                  <img src="[d2d:Field d2d:index=5 /]" class="img-responsive" style="width: 200px; border-radius: 0%; z-order: 9999; margin-left: 25px; margin-right: 15px;  margin-bottom: 15px; border: #d0d0d0 1px solid;" />
+
+                                                <div class="c-person-detail c-font-uppercase" style="padding-left: 25px; padding-right: 15px;">
+                                                    <d2d:Field d2d:index="1"><h3 class="c-name c-font-bold"><d2d:Content>Project Title</d2d:Content></h3></d2d:Field>
+                                                    <d2d:Field d2d:index="2"><p class="c-position c-theme-font"><d2d:Content>Project Punchline</d2d:Content></p></d2d:Field>
+                                                </div>
+                                                <div style="margin-top: 10px;">
+
+                                                </div>
+
+                                              <d2d:Field d2d:index="3">
+                                                <div class="c-content" style="background-color: #ffffff; color: #3f444a;">
+                                                  <div style="padding: 15px 15px 15px 25px; position: relative;">
+                                                    <d2d:Content>Project Abstract</d2d:Content>
+                                                  </div>
+                                                </div>
+                                              </d2d:Field>
+                                            </div>
+                                        
+
+
+                                        </div>
+                                    </div>
+                                [d2d:Field d2d:index="7"]</a>[/d2d:Field]
+
+
+      </d2d:Template>
+      ]]>
+    </d2d:hasTemplate>
+  </d2d:ArticleRenderDef>
+
+
+
+
+
+
+  <d2d:ArticleRenderDef rdf:about="#ProjectPage">
+    <rdfs:label>D2D Article Rendering Defintion for the Research Project Article article definition</rdfs:label>
+    <d2d:renders rdf:resource="/d2d/ad/ResearchProject#ResearchProject2" />
     <d2d:hasTemplate>
       <![CDATA[
       <d2d:Template xmlns:d2d="http://rdfns.org/d2d/">
@@ -36,10 +86,51 @@
 
                         <div class="img-responsive" style="text-align: center;"><img src="[d2d:Field d2d:index=5 /]" style="max-width: 100%;" /></div>
                         <d2d:Field d2d:index="1"><h3 class="c-font-uppercase c-font-bold"><d2d:Content>News article 1</d2d:Content></h3></d2d:Field>
-                        <d2d:Field d2d:index="6"><br /><p class="c-font-thin">Project homepage: <d2d:Content>CONTENT</d2d:Content></p></d2d:Field>
+                        <d2d:Field d2d:index="6"><br /><p class="c-font-thin"><a href="[d2d:Content /]" target="_blank">Project homepage</a></p></d2d:Field>
                         <d2d:Field d2d:index="2"><br /><p class="c-font-thin"><i><d2d:Content>CONTENT</d2d:Content></i></p></d2d:Field>
                         <d2d:Field d2d:index="3"><p class="c-font-thin"><strong><d2d:Content>CONTENT</d2d:Content></strong></p></d2d:Field>
                         <d2d:Field d2d:index="4"><br /><p class="c-font-thin"><d2d:Content>CONTENT</d2d:Content></p></d2d:Field>
+
+
+
+                        <d2d:Field d2d:index="8">
+                          <h3>People Involved</h3>
+                        
+                          <d2d:Segment d2d:matchRule="1">
+                            <div class="col-sm-4">
+                              <div class="c-content-feature-1 wow animate fadeInUp">
+                                <d2d:Content/>
+                              </div>
+                            </div>
+                          </d2d:Segment>
+
+                          <d2d:Segment d2d:matchRule="2">
+                            <div class="col-sm-4">
+                              <div class="c-content-feature-1 wow animate fadeInUp" data-wow-delay="0.2s">
+                                <d2d:Content/>
+                              </div>
+                            </div>
+                          </d2d:Segment>
+
+                          <d2d:Segment d2d:matchRule="4,7,10,13,16,19,22,25,28,31,34,37,40">
+                            <div class="col-sm-4 c-card" style="clear: left;">
+                              <div class="c-content-feature-1 wow animate fadeInUp" data-wow-delay="0.4s">
+                                <d2d:Content/>
+                              </div>
+                            </div>
+                          </d2d:Segment>
+
+
+                          <d2d:Segment d2d:matchRule="*">
+                            <div class="col-sm-4 c-card">
+                              <div class="c-content-feature-1 wow animate fadeInUp" data-wow-delay="0.4s">
+                                <d2d:Content/>
+                              </div>
+                            </div>
+                          </d2d:Segment>
+
+                        </d2d:Field>
+
 
 
                   </div>

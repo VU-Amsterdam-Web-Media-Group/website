@@ -3,13 +3,14 @@
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:d2d="http://rdfns.org/d2d/"
          xmlns:_ad="http://ucds.cs.vu.nl/d2d/ad/MainPage#"
+         xmlns:_ad2="http://ucds.cs.vu.nl/d2d/ad/ItemList#"
 >
 
   <!-- Setting rdf:about to empty string results in the file
        uri. However, one can not ommit the rdf:about argument!! -->
   <d2d:Document rdf:about=""
-                rdfs:label="UCDS @ VU"
-                d2d:title="UCDS @ VU">
+                rdfs:label="UCDS @ VU - Projects"
+                d2d:title="UCDS @ VU - Projects">
 
     <d2d:renderedBy>
       <d2d:DocRenderDef>
@@ -19,19 +20,16 @@
 
     <d2d:prefRenderDef rdf:resource="/d2d/ard/MainPageRendering#This" />
     <d2d:prefRenderDef rdf:resource="/d2d/ard/MenuRendering#Menu" />
-    <d2d:prefRenderDef rdf:resource="/d2d/ard/FoafRendering#QuoteBox2" />
-    <d2d:prefRenderDef rdf:resource="/d2d/ard/ResearchProjectRendering#ProjectOverviewPage" />
-
 
     <d2d:hasArticle>
       <_ad:MainPage>
 
         <_ad:header>
-          News
+          UCDS @ VU - Projects
         </_ad:header>
 
         <_ad:subheader>
-          User Centric Data Science @ VU University Amsterdam
+          Research Projects at the User Centric Data Science group
         </_ad:subheader>
 
         <_ad:hasMenu rdf:resource="/Menu" />
@@ -41,10 +39,22 @@
 
         <_ad:maincolumn rdf:parseType="Collection">
 
-
           <d2d:Placement>
-            <d2d:places rdf:resource="/d2d/a/news/BigDataEurope" />
-            <d2d:prefRenderDef rdf:resource="/d2d/ard/NewsArticleRendering#NewsPage" />
+            <d2d:places>
+            
+              <_ad2:ItemList>
+
+                  <_ad2:header>
+                    Past Projects
+                  </_ad2:header>
+
+                  <_ad2:hasItemSet rdf:resource="/d2d/a/projects/ProjectList#PastProjects" />
+
+                  <d2d:prefRenderDef rdf:resource="/d2d/ard/ResearchProjectRendering#ProjectOverviewPage" />
+                </_ad2:ItemList>
+
+            </d2d:places>
+            <d2d:prefRenderDef rdf:resource="/d2d/ard/ItemListRendering#1ColOverview" />
           </d2d:Placement>
 
 

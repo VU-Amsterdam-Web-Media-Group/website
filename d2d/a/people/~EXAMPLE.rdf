@@ -9,8 +9,16 @@
          xmlns:schema="http://schema.org/"
 >
 
+
+  
+<!-- ------------------------------------------------------------------------------------------------
+  NB!!! DO *NOT* EDIT THIS FILE, BUT MAKE A COPY OF IT FIRST (QUICK MENU -> DUPLICATE) AND RENAME IT
+-------------------------------------------------------------------------------------------------- --> 
+
+
+
   <PersonalProfileDocument rdf:about="">
-    <rdfs:label>Victor de Boer's FOAF Description</rdfs:label>
+    <rdfs:label> FOAF Description</rdfs:label>
     <primaryTopic rdf:resource="#me"/>
   </PersonalProfileDocument>
 
@@ -18,27 +26,27 @@
 
     <!-- Basic info -->
 
-    <name>Victor de Boer</name>
-    <title>Dr.</title>
-    <givenName>Victor</givenName>
-    <familyName>de Boer</familyName>
-    <homepage rdf:resource="http://www.victordeboer.com"/>
+    <name></name>
+    <title></title>
+    <givenName></givenName>
+    <familyName></familyName>
+    <homepage rdf:resource=""/>
     <workplaceHomepage rdf:resource="http://ucds.cs.vu.nl"/>
 
-    <img rdf:resource="http://ucds.cs.vu.nl/images/people/victor.jpg"/>
+    <img rdf:resource="http://me.me/me.jpg"/>
 
 <!--
     <dateOfBirth>1990-12-31</dateOfBirth>
 -->
 
-    <mbox rdf:resource="mailto:v.de.boer@vu.nl"/>
+    <mbox rdf:resource="mailto:"/>
 
     <status>
-      In my research, I combine (Semantic) Web technologies with Human-Computer Interaction, Knowledge Representation and Information Extraction to tackle research challenges in various domains. These include Cultural Heritage, Digital Humanities and ICT for Development (ICT4D).
+      EXAMPLE TEXT: I work on crowdsourcing in a linked cultural heritage environment. I implemented the Accurator nichesourcing platform as part of my PhD project. Doing research at the Rijksmuseum Amsterdam, British Museum and the Netherlands Institute for Sound and Vision provided valuable insights in the requirements of institutions regarding Linked Data and crowdsourcing.
     </status>
 
     <schema:jobTitle>
-      Assistant Professor
+      PhD Candidate
     </schema:jobTitle>
 
 <!--

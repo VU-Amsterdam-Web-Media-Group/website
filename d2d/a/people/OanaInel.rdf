@@ -22,7 +22,7 @@
     <title>MSc.</title>
     <givenName>Oana</givenName>
     <familyName>Inel</familyName>
-    <homepage rdf:resource=""/>
+    <homepage rdf:resource="https://research.vu.nl/en/persons/oana-inel"/>
     <workplaceHomepage rdf:resource="https://oana-inel.github.io/index.html"/>
 
     <img rdf:resource="/images/people/oana.jpg"/>

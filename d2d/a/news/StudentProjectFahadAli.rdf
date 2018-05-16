@@ -3,7 +3,6 @@
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:d2d="http://rdfns.org/d2d/"
          xmlns:_ad="http://ucds.cs.vu.nl/d2d/ad/NewsArticle#"
-         xmlns:_md="http://ucds.cs.vu.nl/d2d/ad/MenuDefinition#"
 >
 
   <_ad:NewsArticle rdf:about="">  <!-- Setting rdf:about to empty string results in the file uri. However, one can not ommit the rdf:about argument!! -->
@@ -15,7 +14,7 @@ Machine-to-machine communication in rural conditions: Realizing KasadakaNet     
 
     <_ad:abstract>
       <![CDATA[
-       In his Master Project, <a href="https://www.linkedin.com/in/fahad-ali-a5aa3aa9/">Fahad Ali</a> researched using wifi sneakernets for machine-to-machine communication to enable information sharing between geographically distributed devices. He developed a <a href="https://www.raspberrypi.org/">Raspberry Pi</a>-based device called the <em>Wifi-donkey</em> that can be mounted on a vehicle and facilitates information exchange with nearby devices, using the built-in wifi card of the rPi 3.The solution is based on <a href="https://piratebox.cc/">Piratebox</a> offline file-sharing and communications system built with free software and uses off-the-shelf Linux software components and configuration settings to allow it to discover and connect to nearby Kasadaka devices based using Wifi technologies.
+       In his Master Project, <a href="https://www.linkedin.com/in/fahad-ali-a5aa3aa9/">Fahad Ali</a> researched using wifi sneakernets for machine-to-machine communication to enable information sharing between geographically distributed devices. He developed a <a href="https://www.raspberrypi.org/">Raspberry Pi</a>-based device called the <em>Wifi-donkey</em> that can be mounted on a vehicle and facilitates information exchange with nearby devices, using the built-in wifi card of the rPi 3.The solution is based on <a href="https://piratebox.cc/">Piratebox</a> offline file-sharing and communications system built with free software and uses off-the-shelf Linux software components and configuration settings to allow it to discover and connect to nearby Kasadaka devices based using Wifi technologies.
       ]]>
     </_ad:abstract>
 
@@ -24,10 +23,10 @@ Machine-to-machine communication in rural conditions: Realizing KasadakaNet     
  
  <em>[This post describes research by <a href="https://www.linkedin.com/in/fahad-ali-a5aa3aa9/">Fahad Ali</a> and is based on his Msc. thesis] </em>
 
-Contextual constraints (lack of infrastructure, low-literacy etc.) play an important role in <a href="http://www.victordeboer.com/tag/ict4d/">ICT for Development (ICT4D)</a> projects. The <a href="http://www.victordeboer.com/tag/kasadaka/">Kasadaka</a> project offers a technological platform for knowledge sharing applications in rural areas in Sub-Saharan Africa. However, lack of stable internet connections restrict exchange of data between distributed Kasadaka instances, which leads us to research alternative ways of machine-to-machine (m2m) communication.
+Contextual constraints (lack of infrastructure, low-literacy etc.) play an important role in <a href="http://www.victordeboer.com/tag/ict4d/">ICT for Development (ICT4D)</a> projects. The <a href="http://www.victordeboer.com/tag/kasadaka/">Kasadaka</a> project offers a technological platform for knowledge sharing applications in rural areas in Sub-Saharan Africa. However, lack of stable internet connections restrict exchange of data between distributed Kasadaka instances, which leads us to research alternative ways of machine-to-machine (m2m) communication.
 
 
-Fahad Ali's research focuses on mobile elements and using wifi sneakernets for this m2m to enable information sharing between geographically distributed devices. He developed a <a href="https://www.raspberrypi.org/">Raspberry Pi</a>-based device called the <em>Wifi-donkey</em> that can be mounted on a vehicle and facilitates information exchange with nearby devices, using the built-in wifi card of the rPi 3.The solution is based on <a href="https://piratebox.cc/">Piratebox</a> offline file-sharing and communications system built with free software and uses off-the-shelf Linux software components and configuration settings to allow it to discover and connect to nearby Kasadaka devices based using Wifi technologies.
+Fahad Ali's research focuses on mobile elements and using wifi sneakernets for this m2m to enable information sharing between geographically distributed devices. He developed a <a href="https://www.raspberrypi.org/">Raspberry Pi</a>-based device called the <em>Wifi-donkey</em> that can be mounted on a vehicle and facilitates information exchange with nearby devices, using the built-in wifi card of the rPi 3.The solution is based on <a href="https://piratebox.cc/">Piratebox</a> offline file-sharing and communications system built with free software and uses off-the-shelf Linux software components and configuration settings to allow it to discover and connect to nearby Kasadaka devices based using Wifi technologies.
 
 <p>
     <center><img class=" wp-image-2000" src="http://www.victordeboer.com/wp-content/uploads/2017/12/fahadtape.jpg" alt="" width="70%"" /></a>
@@ -40,8 +39,8 @@ We evaluated the solution by simulating a low resource setting and testing it by
 
 You can find out more about Fahad's work through the following resources:
 <ul>
- 	<li><a href="http://www.victordeboer.com/wp-content/uploads/2017/12/machine-machine-communication-final.pdf">Fahad Ali's Msc Thesis</a> [PDF]</li>
- 	<li>The codebase for the configuration files on <a href="https://github.com/fahad105/masterproject/">github.com/fahad105/masterproject/</a></li>
+ 	<li><a href="http://www.victordeboer.com/wp-content/uploads/2017/12/machine-machine-communication-final.pdf">Fahad Ali's Msc Thesis</a> [PDF]</li>
+ 	<li>The codebase for the configuration files on <a href="https://github.com/fahad105/masterproject/">github.com/fahad105/masterproject/</a></li>
  	<li>His <a href="https://www.slideshare.net/vdeboer/fahad-alis-slides-for-machine-tomachine-communication-in-rural-conditions-realizing-kasadakanet-1">final presentation slides (embedded below)</a></li>
 </ul>
 </p>
@@ -56,6 +55,17 @@ You can find out more about Fahad's work through the following resources:
     </_ad:text>
 
     <_ad:image rdf:resource="http://www.victordeboer.com/wp-content/uploads/2017/12/fahadsituation.jpg" />
+
+
+    <_ad:relatedPerson rdf:parseType="Collection">
+      <!-- <rdf:Description rdf:about="/d2d/a/people/LoraAroyo#me" /> -->
+      <rdf:Description rdf:about="http://www.victordeboer.com/foaf.rdf#me" />
+    </_ad:relatedPerson>
+
+    <_ad:relatedProject rdf:parseType="Collection">
+      <!-- <rdf:Description rdf:about="/d2d/a/projects/Dive" /> -->
+    </_ad:relatedProject>
+
 
     <_ad:menulink rdf:resource="/news/StudentProjectFahadAli" />
 
